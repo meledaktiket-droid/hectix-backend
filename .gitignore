@@ -15,8 +15,8 @@ deploy/.env.*
 /contractdiff
 
 # Local uploads & backups (NEVER commit user data/DB dumps)
-.uploads/
-uploads/
+/.uploads/
+/uploads/
 *.sql
 !migrations/*.sql
 *.dump
