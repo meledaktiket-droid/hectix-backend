@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "id": "FVQncOiE2X9ZD49aEzzZkR1CYlvsfz94",
+      "name": "Sample Name",
+      "slug": "sample-slug",
+      "logo": null,
+      "createdAt": "2026-08-24T14:26:02.682Z",
+      "metadata": "{\"type\":\"entity\",\"name\":\"Sample Name\",\"businessType\":\"Other\",\"phone\":\"080000000000\",\"website\":\"https://example.com\"}",
+      "status": "pending",
+      "verificationData": null,
+      "statusNote": null,
+      "allowResubmit": false
+    },
+    {
+      "id": "RhlUUv8NCEkLlVikTOPsQ7QE0pbdkLox",
+      "name": "Sample Name",
+      "slug": "sample-slug",
+      "logo": null,
+      "createdAt": "2026-08-24T14:30:58.366Z",
+      "metadata": "{\"type\":\"personal\",\"name\":\"Sample Name\",\"phone\":\"080000000000\"}",
+      "status": "pending",
+      "verificationData": null,
+      "statusNote": null,
+      "allowResubmit": false
+    },
+    {
+      "id": "tfFo74LgvkOwbQ3Vwb4fGk2J9c4EVrbn",
+      "name": "Sample Name",
+      "slug": "sample-slug",
+      "logo": "https://example.com/images/sample.jpg",
+      "createdAt": "2026-05-30T12:24:16.778Z",
+      "metadata": "{\"type\":\"personal\",\"name\":\"Sample Name\",\"phone\":\"080000000000\"}",
+      "status": "active",
+      "verificationData": "{\"ktpNumber\":\"0000000000000000\",\"bankName\":\"mandiri\",\"accountNumber\":\"0000000000\",\"accountHolderName\":\"Sample Holder\"}",
+      "statusNote": null,
+      "allowResubmit": false
+    }
+  ],
+  "total": 8,
+  "page": 1,
+  "totalPages": 1
+}

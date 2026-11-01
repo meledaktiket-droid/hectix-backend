@@ -1,0 +1,53 @@
+{
+  "orders": [
+    {
+      "orderId": "e9ec3a3b-b059-4e34-90a8-76e9b2a2747e",
+      "referenceNumber": "HX-2026-0000-0000",
+      "eventId": "8aefd19c-b54d-4dfe-bf32-03957caddb46",
+      "eventName": "Sample Event",
+      "eventBannerUrl": "https://example.com/images/sample.jpg",
+      "eventStartsAt": "2026-12-04T06:00:00.000Z",
+      "tiers": [
+        {
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ],
+      "ticketCount": 1,
+      "statusLabel": "Akan Datang"
+    },
+    {
+      "orderId": "da10b833-53d4-484b-8166-09a8080bccae",
+      "referenceNumber": "HX-2026-0000-0000",
+      "eventId": "8aefd19c-b54d-4dfe-bf32-03957caddb46",
+      "eventName": "Sample Event",
+      "eventBannerUrl": "https://example.com/images/sample.jpg",
+      "eventStartsAt": "2026-12-04T06:00:00.000Z",
+      "tiers": [
+        {
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ],
+      "ticketCount": 1,
+      "statusLabel": "Akan Datang"
+    },
+    {
+      "orderId": "8d1b1093-f379-4157-828c-001696b3d7f7",
+      "referenceNumber": "HX-2026-0000-0000",
+      "eventId": "8aefd19c-b54d-4dfe-bf32-03957caddb46",
+      "eventName": "Sample Event",
+      "eventBannerUrl": "https://example.com/images/sample.jpg",
+      "eventStartsAt": "2026-12-04T06:00:00.000Z",
+      "tiers": [
+        {
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ],
+      "ticketCount": 1,
+      "statusLabel": "Akan Datang"
+    }
+  ],
+  "nextOffset": null
+}

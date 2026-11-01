@@ -1,0 +1,26 @@
+[
+  {
+    "id": "vwxryzkGVxgrRgNzMWaP5R0YfAlGvDyP",
+    "name": "Sample Name",
+    "email": "user@example.com",
+    "role": "super_admin",
+    "image": "https://example.com/images/sample.jpg",
+    "createdAt": "2026-05-30T11:42:13.450Z"
+  },
+  {
+    "id": "9ImG7FrbbbILtVfo8AJSj9tXC9VLi29U",
+    "name": "Sample Name",
+    "email": "user@example.com",
+    "role": "super_admin",
+    "image": "https://example.com/images/sample.jpg",
+    "createdAt": "2026-05-31T19:37:07.706Z"
+  },
+  {
+    "id": "UwW9HBid8bUu35PwHlecUVyeAnMuDCpg",
+    "name": "Sample Name",
+    "email": "user@example.com",
+    "role": "staff",
+    "image": "https://example.com/images/sample.jpg",
+    "createdAt": "2026-06-17T12:16:31.035Z"
+  }
+]

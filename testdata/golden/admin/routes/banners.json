@@ -1,0 +1,35 @@
+[
+  {
+    "id": "b33ea3c8-176a-4380-a06f-12c3b95150c1",
+    "tag": "Sample",
+    "description": "<p>Sample description</p>",
+    "imageUrl": "https://example.com/images/sample.jpg",
+    "displayOrder": 0,
+    "isActive": true,
+    "deletedAt": null,
+    "createdAt": "2026-06-15T08:04:00.177Z",
+    "updatedAt": "2026-06-15T08:04:00.177Z"
+  },
+  {
+    "id": "62837a6b-dca0-47a1-96d2-57ceed52862b",
+    "tag": "Sample",
+    "description": "<p>Sample description</p>",
+    "imageUrl": "https://example.com/images/sample.jpg",
+    "displayOrder": 1,
+    "isActive": true,
+    "deletedAt": null,
+    "createdAt": "2026-06-15T12:56:06.224Z",
+    "updatedAt": "2026-06-15T12:56:06.224Z"
+  },
+  {
+    "id": "749894fc-ed2e-4ff2-9eea-4fcb32b18340",
+    "tag": "Sample",
+    "description": "<p>Sample description</p>",
+    "imageUrl": "https://example.com/images/sample.jpg",
+    "displayOrder": 2,
+    "isActive": true,
+    "deletedAt": null,
+    "createdAt": "2026-06-15T12:56:21.702Z",
+    "updatedAt": "2026-06-15T12:56:35.783Z"
+  }
+]

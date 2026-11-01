@@ -1,0 +1,40 @@
+{
+  "tickets": [
+    {
+      "id": "76d33e22-d21e-4163-9492-49cfb41c11a5",
+      "eventId": "61d9bacf-c6c8-4105-9102-a486f59a46f4",
+      "name": "Sample Name",
+      "price": 70000,
+      "quantity": 75,
+      "sold": 75,
+      "benefits": [],
+      "displayOrder": 0,
+      "createdAt": "2026-08-24T14:20:21.017Z",
+      "updatedAt": "2026-09-29T08:00:51.603Z"
+    },
+    {
+      "id": "eede66d7-3e88-4d92-9570-767c80b9617b",
+      "eventId": "61d9bacf-c6c8-4105-9102-a486f59a46f4",
+      "name": "Sample Name",
+      "price": 95000,
+      "quantity": 625,
+      "sold": 625,
+      "benefits": [],
+      "displayOrder": 1,
+      "createdAt": "2026-08-26T16:55:11.106Z",
+      "updatedAt": "2026-09-29T08:00:51.598Z"
+    },
+    {
+      "id": "91779c06-9f13-4a76-af5e-f854ab9d7248",
+      "eventId": "61d9bacf-c6c8-4105-9102-a486f59a46f4",
+      "name": "Sample Name",
+      "price": 115000,
+      "quantity": 800,
+      "sold": 177,
+      "benefits": [],
+      "displayOrder": 2,
+      "createdAt": "2026-09-15T11:22:14.051Z",
+      "updatedAt": "2026-09-29T08:00:51.600Z"
+    }
+  ]
+}

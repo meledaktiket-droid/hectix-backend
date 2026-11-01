@@ -1,0 +1,21 @@
+{
+  "session": {
+    "expiresAt": "2026-10-09T10:17:14.264Z",
+    "token": "sample-session-token",
+    "createdAt": "2026-10-02T10:17:14.264Z",
+    "updatedAt": "2026-10-02T10:17:14.264Z",
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (sample)",
+    "userId": "Z6mKFDq0Nbd56fAcqWYxVKZgskRmpHH7",
+    "id": "capsess_web"
+  },
+  "user": {
+    "name": "Sample Name",
+    "email": "user@example.com",
+    "emailVerified": true,
+    "image": "https://example.com/images/sample.jpg",
+    "createdAt": "2026-09-28T07:01:29.010Z",
+    "updatedAt": "2026-09-28T11:48:55.874Z",
+    "id": "Z6mKFDq0Nbd56fAcqWYxVKZgskRmpHH7"
+  }
+}

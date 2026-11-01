@@ -1,0 +1,35 @@
+# Environment variables (NEVER commit secrets)
+.env
+.env.*
+!.env.example
+deploy/.env
+deploy/.env.*
+!deploy/.env.example
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+/api
+/contractdiff
+
+# Local uploads & backups (NEVER commit user data/DB dumps)
+.uploads/
+uploads/
+*.sql
+!migrations/*.sql
+*.dump
+*.backup
+*.bak
+*.tar.gz
+
+# Go test / coverage cache
+*.test
+*.out
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

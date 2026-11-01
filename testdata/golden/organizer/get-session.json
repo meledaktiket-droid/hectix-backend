@@ -1,0 +1,22 @@
+{
+  "session": {
+    "expiresAt": "2026-10-09T10:17:14.264Z",
+    "token": "sample-session-token",
+    "createdAt": "2026-10-02T10:17:14.264Z",
+    "updatedAt": "2026-10-02T10:17:14.264Z",
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (sample)",
+    "userId": "DUJZLmIjT0sPxoh0NfGniO3Ni6JPh4gO",
+    "activeOrganizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+    "id": "capsess_org"
+  },
+  "user": {
+    "name": "Sample Name",
+    "email": "user@example.com",
+    "emailVerified": true,
+    "image": "https://example.com/images/sample.jpg",
+    "createdAt": "2026-05-30T12:21:23.084Z",
+    "updatedAt": "2026-09-05T13:53:38.689Z",
+    "id": "DUJZLmIjT0sPxoh0NfGniO3Ni6JPh4gO"
+  }
+}

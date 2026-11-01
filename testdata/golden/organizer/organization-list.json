@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sample Name",
+    "slug": "sample-slug",
+    "logo": "https://example.com/images/sample.jpg",
+    "createdAt": "2026-05-30T20:35:08.827Z",
+    "metadata": "{\"type\":\"personal\",\"name\":\"Sample Name\",\"phone\":\"080000000000\"}",
+    "id": "KtpmF5Wb3vLcPLi4rLx3s0AXuB3jWlqF"
+  },
+  {
+    "name": "Sample Name",
+    "slug": "sample-slug",
+    "logo": null,
+    "createdAt": "2026-08-17T08:35:22.147Z",
+    "metadata": "{\"type\":\"personal\",\"name\":\"Sample Name\",\"phone\":\"080000000000\"}",
+    "id": "1mZX4tewiPKCCPmuz8aEkMMiKl78ULTV"
+  },
+  {
+    "name": "Sample Name",
+    "slug": "sample-slug",
+    "logo": null,
+    "createdAt": "2026-08-17T08:37:25.091Z",
+    "metadata": "{\"type\":\"personal\",\"name\":\"Sample Name\",\"phone\":\"080000000000\"}",
+    "id": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY"
+  }
+]

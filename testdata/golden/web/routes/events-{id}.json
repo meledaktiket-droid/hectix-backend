@@ -1,0 +1,46 @@
+{
+  "id": "8aefd19c-b54d-4dfe-bf32-03957caddb46",
+  "name": "Sample Name",
+  "description": "<p>Sample description</p>",
+  "bannerUrl": "https://example.com/images/sample.jpg",
+  "venueName": "Sample Venue",
+  "address": "Sample Address",
+  "city": "Bandar Lampung",
+  "startsAt": "2026-12-04T06:00:00.000Z",
+  "endsAt": "2026-12-04T15:30:00.000Z",
+  "organizationName": "Sample Org",
+  "organizationLogo": null,
+  "tickets": [
+    {
+      "id": "99bccfbb-d404-403d-b484-1af67d87862b",
+      "name": "Sample Name",
+      "price": 89000,
+      "quantity": 15,
+      "sold": 15,
+      "benefits": [],
+      "remaining": 0
+    },
+    {
+      "id": "297123e3-dc43-465d-95ac-6b07334a17ab",
+      "name": "Sample Name",
+      "price": 105000,
+      "quantity": 700,
+      "sold": 700,
+      "benefits": [],
+      "remaining": 0
+    }
+  ],
+  "performers": [
+    {
+      "name": "Sample Name",
+      "imageUrl": "https://example.com/images/sample.jpg"
+    }
+  ],
+  "commentCount": 29,
+  "commenterAvatars": [
+    "https://example.com/images/sample.jpg",
+    "https://example.com/images/sample.jpg",
+    "https://example.com/images/sample.jpg"
+  ],
+  "canComment": true
+}

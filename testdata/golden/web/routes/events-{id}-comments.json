@@ -1,0 +1,31 @@
+{
+  "comments": [
+    {
+      "id": "2ad04b61-bf4a-4448-982a-91ad8b801bda",
+      "content": "Sample comment",
+      "createdAt": "2026-09-30T11:33:05.159Z",
+      "author": {
+        "name": "Sample Name",
+        "image": "https://example.com/images/sample.jpg"
+      }
+    },
+    {
+      "id": "b5744cae-fac5-4be4-adc4-34a32443a9f2",
+      "content": "Sample comment",
+      "createdAt": "2026-09-29T03:19:02.531Z",
+      "author": {
+        "name": "Sample Name",
+        "image": "https://example.com/images/sample.jpg"
+      }
+    },
+    {
+      "id": "c39fe271-793b-43bc-a843-82916cd2c0d9",
+      "content": "Sample comment",
+      "createdAt": "2026-09-29T01:13:08.181Z",
+      "author": {
+        "name": "Sample Name",
+        "image": "https://example.com/images/sample.jpg"
+      }
+    }
+  ]
+}

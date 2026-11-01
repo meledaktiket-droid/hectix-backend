@@ -1,0 +1,22 @@
+{
+  "availableBalance": 84680000,
+  "platformFee": 7000,
+  "minPayout": 50000,
+  "history": [
+    {
+      "id": "de7dddd0-2083-4424-8baf-ac12c0ac87fb",
+      "organizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+      "amount": 34693000,
+      "platformFee": 7000,
+      "bankName": "BNI",
+      "accountNumber": "0000000000",
+      "accountHolderName": "Sample Holder",
+      "status": "pending",
+      "createdAt": "2026-08-29T16:17:20.352Z",
+      "processedAt": null,
+      "rejectionReason": null,
+      "processedBy": null,
+      "proofUrl": null
+    }
+  ]
+}

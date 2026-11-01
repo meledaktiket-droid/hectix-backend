@@ -1,0 +1,78 @@
+{
+  "orders": [
+    {
+      "id": "212ba59e-f231-4eb1-963e-ba9ea38c6f91",
+      "status": "expired",
+      "subtotal": 115000,
+      "createdAt": "2026-10-02T09:48:26.219Z",
+      "voucherCode": null,
+      "voucherDiscount": 0,
+      "paymentMethod": "qris",
+      "bank": null,
+      "referenceNumber": "HX-2026-0000-0000",
+      "eventName": "Sample Event",
+      "buyerName": "Sample Buyer",
+      "buyerEmail": "buyer@example.com",
+      "items": [
+        {
+          "orderId": "212ba59e-f231-4eb1-963e-ba9ea38c6f91",
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "5e2cfa91-247d-401c-ab02-57a2cdf83f9a",
+      "status": "paid",
+      "subtotal": 115000,
+      "createdAt": "2026-10-02T09:27:39.611Z",
+      "voucherCode": null,
+      "voucherDiscount": 0,
+      "paymentMethod": "qris",
+      "bank": null,
+      "referenceNumber": "HX-2026-0000-0000",
+      "eventName": "Sample Event",
+      "buyerName": "Sample Buyer",
+      "buyerEmail": "buyer@example.com",
+      "items": [
+        {
+          "orderId": "5e2cfa91-247d-401c-ab02-57a2cdf83f9a",
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "9e7c8ea7-546d-4abd-ac75-ac2ffecd5b86",
+      "status": "paid",
+      "subtotal": 115000,
+      "createdAt": "2026-10-02T06:49:17.667Z",
+      "voucherCode": null,
+      "voucherDiscount": 0,
+      "paymentMethod": "qris",
+      "bank": null,
+      "referenceNumber": "HX-2026-0000-0000",
+      "eventName": "Sample Event",
+      "buyerName": "Sample Buyer",
+      "buyerEmail": "buyer@example.com",
+      "items": [
+        {
+          "orderId": "9e7c8ea7-546d-4abd-ac75-ac2ffecd5b86",
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total": 1020,
+  "summary": {
+    "revenue": 84680000,
+    "counts": {
+      "expired": 290,
+      "paid": 665,
+      "cancelled": 65
+    },
+    "voucherCount": 30,
+    "discountTotal": 300000
+  }
+}

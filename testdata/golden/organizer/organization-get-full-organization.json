@@ -1,0 +1,68 @@
+{
+  "name": "Sample Name",
+  "slug": "sample-slug",
+  "logo": null,
+  "createdAt": "2026-08-17T08:37:25.091Z",
+  "metadata": "{\"type\":\"personal\",\"name\":\"Sample Name\",\"phone\":\"080000000000\"}",
+  "id": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+  "invitations": [
+    {
+      "organizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+      "email": "user@example.com",
+      "role": "admin",
+      "status": "canceled",
+      "expiresAt": "2026-08-31T14:29:35.841Z",
+      "createdAt": "2026-08-24T14:22:50.949Z",
+      "inviterId": "DUJZLmIjT0sPxoh0NfGniO3Ni6JPh4gO",
+      "id": "y1VrcRTdg3JlmZhIiVdA9VfDNWhoK3nW"
+    },
+    {
+      "organizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+      "email": "user@example.com",
+      "role": "admin",
+      "status": "accepted",
+      "expiresAt": "2026-08-31T14:30:24.683Z",
+      "createdAt": "2026-08-24T14:30:24.683Z",
+      "inviterId": "DUJZLmIjT0sPxoh0NfGniO3Ni6JPh4gO",
+      "id": "RCShvOdWqlPgXG5yzrIC7Kd83LOvz4ok"
+    },
+    {
+      "organizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+      "email": "user@example.com",
+      "role": "member",
+      "status": "canceled",
+      "expiresAt": "2026-08-31T14:29:42.441Z",
+      "createdAt": "2026-08-24T14:29:42.441Z",
+      "inviterId": "DUJZLmIjT0sPxoh0NfGniO3Ni6JPh4gO",
+      "id": "0hYTMbATAcfkM458DFS0PZBXNboPF0WJ"
+    }
+  ],
+  "members": [
+    {
+      "organizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+      "userId": "DUJZLmIjT0sPxoh0NfGniO3Ni6JPh4gO",
+      "role": "owner",
+      "createdAt": "2026-08-17T08:37:25.096Z",
+      "id": "HvhPfgGu5hmwz8jdk4Vb5zns5TbglihX",
+      "user": {
+        "id": "DUJZLmIjT0sPxoh0NfGniO3Ni6JPh4gO",
+        "name": "Sample Name",
+        "email": "user@example.com",
+        "image": "https://example.com/images/sample.jpg"
+      }
+    },
+    {
+      "organizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+      "userId": "a2TuYvkDjECFwL1moMvFY9Mu9Q7B3rvk",
+      "role": "admin",
+      "createdAt": "2026-09-26T15:56:26.608Z",
+      "id": "yGjAbZpVcvxj3e7v6oDEVDzDQt5AFHlw",
+      "user": {
+        "id": "a2TuYvkDjECFwL1moMvFY9Mu9Q7B3rvk",
+        "name": "Sample Name",
+        "email": "user@example.com",
+        "image": "https://example.com/images/sample.jpg"
+      }
+    }
+  ]
+}

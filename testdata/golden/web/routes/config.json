@@ -1,0 +1,12 @@
+{
+  "whatsappNumber": "620000000000",
+  "contactEmail": "contact@example.com",
+  "instagramUrl": "https://instagram.com/example",
+  "tiktokUrl": "https://www.tiktok.com/@example",
+  "serviceFee": 4000,
+  "platformFee": 7000,
+  "minPayout": 50000,
+  "taxPercent": 7,
+  "midtransVaFee": 4440,
+  "midtransQrisPercent": 0.7
+}

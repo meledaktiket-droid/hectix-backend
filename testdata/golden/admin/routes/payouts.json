@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": "de7dddd0-2083-4424-8baf-ac12c0ac87fb",
+      "organizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+      "orgName": "Sample Org",
+      "amount": 34693000,
+      "bankName": "BNI",
+      "accountNumber": "0000000000",
+      "accountHolderName": "Sample Holder",
+      "status": "pending",
+      "createdAt": "2026-08-29T16:17:20.352Z"
+    },
+    {
+      "id": "304175c0-f08d-4090-9a31-cb5a726ed669",
+      "organizationId": "tfFo74LgvkOwbQ3Vwb4fGk2J9c4EVrbn",
+      "orgName": "Sample Org",
+      "amount": 100000,
+      "bankName": "mandiri",
+      "accountNumber": "0000000000",
+      "accountHolderName": "Sample Holder",
+      "status": "processed",
+      "createdAt": "2026-05-30T17:57:47.179Z"
+    },
+    {
+      "id": "332785a1-1f90-4ee5-9dad-95a003bb94b9",
+      "organizationId": "KtpmF5Wb3vLcPLi4rLx3s0AXuB3jWlqF",
+      "orgName": "Sample Org",
+      "amount": 7203000,
+      "bankName": "BNI",
+      "accountNumber": "0000000000",
+      "accountHolderName": "Sample Holder",
+      "status": "processed",
+      "createdAt": "2026-06-29T13:39:15.357Z"
+    }
+  ],
+  "total": 5,
+  "page": 1,
+  "totalPages": 1
+}

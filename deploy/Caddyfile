@@ -1,0 +1,10 @@
+{
+	servers {
+		trusted_proxies static {$FRONTEND_IP}
+	}
+}
+
+{$API_HOST} {
+	encode zstd gzip
+	reverse_proxy api:8080
+}

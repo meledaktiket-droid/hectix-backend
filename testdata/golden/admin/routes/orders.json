@@ -1,0 +1,96 @@
+{
+  "orders": [
+    {
+      "id": "212ba59e-f231-4eb1-963e-ba9ea38c6f91",
+      "status": "expired",
+      "subtotal": 115000,
+      "tax": 8050,
+      "serviceFee": 4000,
+      "total": 127050,
+      "voucherCode": null,
+      "voucherDiscount": 0,
+      "createdAt": "2026-10-02T09:48:26.219Z",
+      "paymentMethod": "qris",
+      "bank": null,
+      "midtransFee": 0,
+      "referenceNumber": "HX-2026-0000-0000",
+      "orgName": "Sample Org",
+      "eventName": "Sample Event",
+      "buyerName": "Sample Buyer",
+      "buyerEmail": "buyer@example.com",
+      "items": [
+        {
+          "orderId": "212ba59e-f231-4eb1-963e-ba9ea38c6f91",
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "5e2cfa91-247d-401c-ab02-57a2cdf83f9a",
+      "status": "paid",
+      "subtotal": 115000,
+      "tax": 8050,
+      "serviceFee": 4000,
+      "total": 127050,
+      "voucherCode": null,
+      "voucherDiscount": 0,
+      "createdAt": "2026-10-02T09:27:39.611Z",
+      "paymentMethod": "qris",
+      "bank": null,
+      "midtransFee": 889.35,
+      "referenceNumber": "HX-2026-0000-0000",
+      "orgName": "Sample Org",
+      "eventName": "Sample Event",
+      "buyerName": "Sample Buyer",
+      "buyerEmail": "buyer@example.com",
+      "items": [
+        {
+          "orderId": "5e2cfa91-247d-401c-ab02-57a2cdf83f9a",
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "9e7c8ea7-546d-4abd-ac75-ac2ffecd5b86",
+      "status": "paid",
+      "subtotal": 115000,
+      "tax": 8050,
+      "serviceFee": 4000,
+      "total": 127050,
+      "voucherCode": null,
+      "voucherDiscount": 0,
+      "createdAt": "2026-10-02T06:49:17.667Z",
+      "paymentMethod": "qris",
+      "bank": null,
+      "midtransFee": 889.35,
+      "referenceNumber": "HX-2026-0000-0000",
+      "orgName": "Sample Org",
+      "eventName": "Sample Event",
+      "buyerName": "Sample Buyer",
+      "buyerEmail": "buyer@example.com",
+      "items": [
+        {
+          "orderId": "9e7c8ea7-546d-4abd-ac75-ac2ffecd5b86",
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total": 2452,
+  "summary": {
+    "grossRevenue": 195011650,
+    "serviceFeeRevenue": 5237000,
+    "midtransFee": 1780275,
+    "netRevenue": 193231375,
+    "counts": {
+      "expired": 879,
+      "paid": 1393,
+      "cancelled": 180
+    },
+    "voucherCount": 30,
+    "discountTotal": 300000
+  }
+}

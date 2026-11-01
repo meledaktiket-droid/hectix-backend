@@ -1,0 +1,83 @@
+{
+  "event": {
+    "id": "61d9bacf-c6c8-4105-9102-a486f59a46f4",
+    "name": "Sample Name",
+    "status": "published",
+    "startsAt": "2026-12-05T07:17:00.000Z",
+    "endsAt": "2026-12-04T17:17:00.000Z",
+    "venueName": "Sample Venue",
+    "city": "Malang",
+    "organizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+    "organizationName": "Sample Org"
+  },
+  "stats": [
+    {
+      "id": "76d33e22-d21e-4163-9492-49cfb41c11a5",
+      "name": "Sample Name",
+      "price": 70000,
+      "capacity": 75,
+      "sold": 75,
+      "revenue": 5250000
+    },
+    {
+      "id": "eede66d7-3e88-4d92-9570-767c80b9617b",
+      "name": "Sample Name",
+      "price": 95000,
+      "capacity": 625,
+      "sold": 625,
+      "revenue": 59375000
+    },
+    {
+      "id": "91779c06-9f13-4a76-af5e-f854ab9d7248",
+      "name": "Sample Name",
+      "price": 115000,
+      "capacity": 800,
+      "sold": 177,
+      "revenue": 20355000
+    }
+  ],
+  "buyers": [
+    {
+      "orderId": "212ba59e-f231-4eb1-963e-ba9ea38c6f91",
+      "status": "expired",
+      "createdAt": "2026-10-02T09:48:26.219Z",
+      "buyerName": "Sample Buyer",
+      "buyerEmail": "buyer@example.com",
+      "items": [
+        {
+          "orderId": "212ba59e-f231-4eb1-963e-ba9ea38c6f91",
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "orderId": "5e2cfa91-247d-401c-ab02-57a2cdf83f9a",
+      "status": "paid",
+      "createdAt": "2026-10-02T09:27:39.611Z",
+      "buyerName": "Sample Buyer",
+      "buyerEmail": "buyer@example.com",
+      "items": [
+        {
+          "orderId": "5e2cfa91-247d-401c-ab02-57a2cdf83f9a",
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "orderId": "9e7c8ea7-546d-4abd-ac75-ac2ffecd5b86",
+      "status": "paid",
+      "createdAt": "2026-10-02T06:49:17.667Z",
+      "buyerName": "Sample Buyer",
+      "buyerEmail": "buyer@example.com",
+      "items": [
+        {
+          "orderId": "9e7c8ea7-546d-4abd-ac75-ac2ffecd5b86",
+          "ticketTypeName": "Sample Ticket",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}

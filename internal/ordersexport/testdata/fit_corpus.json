@@ -1,0 +1,7352 @@
+[
+{
+"col": "buyer",
+"in": "Budi  Santoso Wijaya Kusuma",
+"want": "Budi  Santoso…"
+},
+{
+"col": "event",
+"in": "AVAVAVAV WAWA To Ty Yo Te",
+"want": "AVAVAVAV WAWA To…"
+},
+{
+"col": "tickets",
+"in": "Ab  ",
+"want": "Ab  "
+},
+{
+"col": "payment",
+"in": "Café fi Jakarta",
+"want": "Café fi Jakar…"
+},
+{
+"col": "voucher",
+"in": "1× AVAVA Panggung",
+"want": "1× AVAVA…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Line\nBreak more words here",
+"want": "Line"
+},
+{
+"col": "event",
+"in": "Zoë Dewi Kusumawardhani Prameswari",
+"want": "Zoë Dewi…"
+},
+{
+"col": "tickets",
+"in": "W W W W W W W W W W W W W W W",
+"want": "W W W W W W W W…"
+},
+{
+"col": "payment",
+"in": "WWWWW Jakarta Budi",
+"want": "WWWWW…"
+},
+{
+"col": "voucher",
+"in": "WWWWW 2026 Jakarta Ty Budi",
+"want": "WWWWW…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": " Leading space name here",
+"want": "Leading space…"
+},
+{
+"col": "event",
+"in": "Ni Luh Ayu Saraswati",
+"want": "Ni Luh Ayu Saraswati"
+},
+{
+"col": "tickets",
+"in": "& O'Brien Utama Regular",
+"want": "& O'Brien Utama…"
+},
+{
+"col": "payment",
+"in": "1× AVAVA Panggung",
+"want": "1× AVAVA…"
+},
+{
+"col": "voucher",
+"in": "Kusumawardhani  fi  2×  x",
+"want": "Kusumawardh…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Trailing spaces here      ",
+"want": "Trailing spaces…"
+},
+{
+"col": "event",
+"in": "Tab\there word",
+"want": "Tab\there word"
+},
+{
+"col": "tickets",
+"in": "Müller Ni Ty Kusumawardhani",
+"want": "Müller Ni Ty…"
+},
+{
+"col": "payment",
+"in": "WWWWW 2026 Jakarta Ty Budi",
+"want": "WWWWW…"
+},
+{
+"col": "voucher",
+"in": "Ölçek x Zoë Luh 1× Panggung",
+"want": "Ölçek x Zoë…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "",
+"want": ""
+},
+{
+"col": "event",
+"in": "Two\n\nNewlines",
+"want": "Two"
+},
+{
+"col": "tickets",
+"in": "Panggung Yoyo Wawan Ayu Keluarga",
+"want": "Panggung Yoyo…"
+},
+{
+"col": "payment",
+"in": "Kusumawardhani  fi  2×  x",
+"want": "Kusumawardhan…"
+},
+{
+"col": "voucher",
+"in": "iiiii  Paket  Rahmawati  Zoë  Konser",
+"want": "iiiii  Pake…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Kusumawardhaniprameswariputri",
+"want": "Kusumawardhaniprameswar…"
+},
+{
+"col": "event",
+"in": "日本語 名前",
+"want": "å,ž \rM"
+},
+{
+"col": "tickets",
+"in": "Konser Kusumawardhani 1× Santoso Early Rp",
+"want": "Konser…"
+},
+{
+"col": "payment",
+"in": "Ölçek x Zoë Luh 1× Panggung",
+"want": "Ölçek x Zoë…"
+},
+{
+"col": "voucher",
+"in": "Yoyo VIP — Ni Luh Café",
+"want": "Yoyo VIP —…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "a b c d e f g h i j k l m n o p q r s t",
+"want": "a b c d e f g h i j k l…"
+},
+{
+"col": "event",
+"in": "Ab  ",
+"want": "Ab  "
+},
+{
+"col": "tickets",
+"in": "Rahmawati",
+"want": "Rahmawati"
+},
+{
+"col": "payment",
+"in": "iiiii  Paket  Rahmawati  Zoë  Konser",
+"want": "iiiii  Paket…"
+},
+{
+"col": "voucher",
+"in": "Santoso ll ll x WWWWW &",
+"want": "Santoso ll…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "AVAVAVAV WAWA To Ty Yo Te",
+"want": "AVAVAVAV WAWA…"
+},
+{
+"col": "event",
+"in": "W W W W W W W W W W W W W W W",
+"want": "W W W W W W W W…"
+},
+{
+"col": "tickets",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "payment",
+"in": "Yoyo VIP — Ni Luh Café",
+"want": "Yoyo VIP —…"
+},
+{
+"col": "voucher",
+"in": "Ty To Luh Rahmawati",
+"want": "Ty To Luh R…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Zoë Dewi Kusumawardhani Prameswari",
+"want": "Zoë Dewi…"
+},
+{
+"col": "event",
+"in": "& O'Brien Utama Regular",
+"want": "& O'Brien Utama…"
+},
+{
+"col": "tickets",
+"in": "Kusumawardhani & Budi Ölçek Café",
+"want": "Kusumawardhani &…"
+},
+{
+"col": "payment",
+"in": "Santoso ll ll x WWWWW &",
+"want": "Santoso ll ll…"
+},
+{
+"col": "voucher",
+"in": "Ty Utama Kusumawardhani VIP",
+"want": "Ty Utama…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ni Luh Ayu Saraswati",
+"want": "Ni Luh Ayu…"
+},
+{
+"col": "event",
+"in": "Müller Ni Ty Kusumawardhani",
+"want": "Müller Ni Ty…"
+},
+{
+"col": "tickets",
+"in": "1× 2× Ty 1× Jakarta",
+"want": "1× 2× Ty 1× Jakarta"
+},
+{
+"col": "payment",
+"in": "Ty To Luh Rahmawati",
+"want": "Ty To Luh…"
+},
+{
+"col": "voucher",
+"in": "Ni Café",
+"want": "Ni Café"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Tab\there word",
+"want": "Tab\there word"
+},
+{
+"col": "event",
+"in": "Panggung Yoyo Wawan Ayu Keluarga",
+"want": "Panggung Yoyo…"
+},
+{
+"col": "tickets",
+"in": "1×",
+"want": "1×"
+},
+{
+"col": "payment",
+"in": "Ty Utama Kusumawardhani VIP",
+"want": "Ty Utama…"
+},
+{
+"col": "voucher",
+"in": "Ty  Early  ll  Müller",
+"want": "Ty  Early…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Two\n\nNewlines",
+"want": "Two"
+},
+{
+"col": "event",
+"in": "Konser Kusumawardhani 1× Santoso Early Rp",
+"want": "Konser…"
+},
+{
+"col": "tickets",
+"in": "—",
+"want": "—"
+},
+{
+"col": "payment",
+"in": "Ni Café",
+"want": "Ni Café"
+},
+{
+"col": "voucher",
+"in": "AVAVA Konser",
+"want": "AVAVA…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "日本語 名前",
+"want": "å,ž \rM"
+},
+{
+"col": "event",
+"in": "Rahmawati",
+"want": "Rahmawati"
+},
+{
+"col": "tickets",
+"in": "ll",
+"want": "ll"
+},
+{
+"col": "payment",
+"in": "Ty  Early  ll  Müller",
+"want": "Ty  Early  ll…"
+},
+{
+"col": "voucher",
+"in": "Wawan Ni To Yoyo Santoso",
+"want": "Wawan Ni…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ab  ",
+"want": "Ab  "
+},
+{
+"col": "event",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "tickets",
+"in": "WWWWW Regular",
+"want": "WWWWW Regular"
+},
+{
+"col": "payment",
+"in": "AVAVA Konser",
+"want": "AVAVA Konser"
+},
+{
+"col": "voucher",
+"in": "Paket",
+"want": "Paket"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "W W W W W W W W W W W W W W W",
+"want": "W W W W W W W W…"
+},
+{
+"col": "event",
+"in": "Kusumawardhani & Budi Ölçek Café",
+"want": "Kusumawardhani &…"
+},
+{
+"col": "tickets",
+"in": "x WWWWW Luh Kusumawardhani Luh",
+"want": "x WWWWW Luh…"
+},
+{
+"col": "payment",
+"in": "Wawan Ni To Yoyo Santoso",
+"want": "Wawan Ni To…"
+},
+{
+"col": "voucher",
+"in": "AVAVA Early Rahmawati LTA Café",
+"want": "AVAVA…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "& O'Brien Utama Regular",
+"want": "& O'Brien Utama…"
+},
+{
+"col": "event",
+"in": "1× 2× Ty 1× Jakarta",
+"want": "1× 2× Ty 1× Jakarta"
+},
+{
+"col": "tickets",
+"in": "Ty 2× Ty Jakarta Ni Santoso",
+"want": "Ty 2× Ty Jakarta Ni…"
+},
+{
+"col": "payment",
+"in": "Paket",
+"want": "Paket"
+},
+{
+"col": "voucher",
+"in": "VIP Panggung Festival Siti x",
+"want": "VIP…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Müller Ni Ty Kusumawardhani",
+"want": "Müller Ni Ty…"
+},
+{
+"col": "event",
+"in": "1×",
+"want": "1×"
+},
+{
+"col": "tickets",
+"in": "Café fi Jakarta",
+"want": "Café fi Jakarta"
+},
+{
+"col": "payment",
+"in": "AVAVA Early Rahmawati LTA Café",
+"want": "AVAVA Early…"
+},
+{
+"col": "voucher",
+"in": "Festival Ni Ni Keluarga Café Ölçek",
+"want": "Festival Ni…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Panggung Yoyo Wawan Ayu Keluarga",
+"want": "Panggung Yoyo…"
+},
+{
+"col": "event",
+"in": "—",
+"want": "—"
+},
+{
+"col": "tickets",
+"in": "WWWWW Jakarta Budi",
+"want": "WWWWW Jakarta…"
+},
+{
+"col": "payment",
+"in": "VIP Panggung Festival Siti x",
+"want": "VIP…"
+},
+{
+"col": "voucher",
+"in": "1×  Paket  Ni  Festival  Festival",
+"want": "1×  Paket…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Konser Kusumawardhani 1× Santoso Early Rp",
+"want": "Konser…"
+},
+{
+"col": "event",
+"in": "ll",
+"want": "ll"
+},
+{
+"col": "tickets",
+"in": "1× AVAVA Panggung",
+"want": "1× AVAVA…"
+},
+{
+"col": "payment",
+"in": "Festival Ni Ni Keluarga Café Ölçek",
+"want": "Festival Ni N…"
+},
+{
+"col": "voucher",
+"in": "Panggung WWWWW 1×",
+"want": "Panggung…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Rahmawati",
+"want": "Rahmawati"
+},
+{
+"col": "event",
+"in": "WWWWW Regular",
+"want": "WWWWW Regular"
+},
+{
+"col": "tickets",
+"in": "WWWWW 2026 Jakarta Ty Budi",
+"want": "WWWWW 2026…"
+},
+{
+"col": "payment",
+"in": "1×  Paket  Ni  Festival  Festival",
+"want": "1×  Paket  Ni…"
+},
+{
+"col": "voucher",
+"in": "Budi 2× Ölçek Siti",
+"want": "Budi 2× Ölç…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "event",
+"in": "x WWWWW Luh Kusumawardhani Luh",
+"want": "x WWWWW Luh…"
+},
+{
+"col": "tickets",
+"in": "Kusumawardhani  fi  2×  x",
+"want": "Kusumawardhani…"
+},
+{
+"col": "payment",
+"in": "Panggung WWWWW 1×",
+"want": "Panggung…"
+},
+{
+"col": "voucher",
+"in": "Budi AVAVA",
+"want": "Budi AVAVA"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Kusumawardhani & Budi Ölçek Café",
+"want": "Kusumawardhani &…"
+},
+{
+"col": "event",
+"in": "Ty 2× Ty Jakarta Ni Santoso",
+"want": "Ty 2× Ty Jakarta Ni…"
+},
+{
+"col": "tickets",
+"in": "Ölçek x Zoë Luh 1× Panggung",
+"want": "Ölçek x Zoë Luh 1×…"
+},
+{
+"col": "payment",
+"in": "Budi 2× Ölçek Siti",
+"want": "Budi 2×…"
+},
+{
+"col": "voucher",
+"in": "Müller",
+"want": "Müller"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "1× 2× Ty 1× Jakarta",
+"want": "1× 2× Ty 1× Jakarta"
+},
+{
+"col": "event",
+"in": "Café fi Jakarta",
+"want": "Café fi Jakarta"
+},
+{
+"col": "tickets",
+"in": "iiiii  Paket  Rahmawati  Zoë  Konser",
+"want": "iiiii  Paket-…"
+},
+{
+"col": "payment",
+"in": "Budi AVAVA",
+"want": "Budi AVAVA"
+},
+{
+"col": "voucher",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "1×",
+"want": "1×"
+},
+{
+"col": "event",
+"in": "WWWWW Jakarta Budi",
+"want": "WWWWW Jakarta…"
+},
+{
+"col": "tickets",
+"in": "Yoyo VIP — Ni Luh Café",
+"want": "Yoyo VIP — Ni Luh…"
+},
+{
+"col": "payment",
+"in": "Müller",
+"want": "Müller"
+},
+{
+"col": "voucher",
+"in": "1×",
+"want": "1×"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "—",
+"want": "—"
+},
+{
+"col": "event",
+"in": "1× AVAVA Panggung",
+"want": "1× AVAVA Panggung"
+},
+{
+"col": "tickets",
+"in": "Santoso ll ll x WWWWW &",
+"want": "Santoso ll ll x…"
+},
+{
+"col": "payment",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "voucher",
+"in": "LTA Utama LTA",
+"want": "LTA Utama…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "ll",
+"want": "ll"
+},
+{
+"col": "event",
+"in": "WWWWW 2026 Jakarta Ty Budi",
+"want": "WWWWW 2026…"
+},
+{
+"col": "tickets",
+"in": "Ty To Luh Rahmawati",
+"want": "Ty To Luh…"
+},
+{
+"col": "payment",
+"in": "1×",
+"want": "1×"
+},
+{
+"col": "voucher",
+"in": "Panggung Festival Budi Santoso Santoso",
+"want": "Panggung…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "WWWWW Regular",
+"want": "WWWWW Regular"
+},
+{
+"col": "event",
+"in": "Kusumawardhani  fi  2×  x",
+"want": "Kusumawardhani  fi-…"
+},
+{
+"col": "tickets",
+"in": "Ty Utama Kusumawardhani VIP",
+"want": "Ty Utama…"
+},
+{
+"col": "payment",
+"in": "LTA Utama LTA",
+"want": "LTA Utama LTA"
+},
+{
+"col": "voucher",
+"in": "AVAVA  Regular  Utama  LTA",
+"want": "AVAVA…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "x WWWWW Luh Kusumawardhani Luh",
+"want": "x WWWWW Luh…"
+},
+{
+"col": "event",
+"in": "Ölçek x Zoë Luh 1× Panggung",
+"want": "Ölçek x Zoë Luh 1×…"
+},
+{
+"col": "tickets",
+"in": "Ni Café",
+"want": "Ni Café"
+},
+{
+"col": "payment",
+"in": "Panggung Festival Budi Santoso Santoso",
+"want": "Panggung…"
+},
+{
+"col": "voucher",
+"in": "Jakarta VIP",
+"want": "Jakarta VIP"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ty 2× Ty Jakarta Ni Santoso",
+"want": "Ty 2× Ty Jakarta Ni…"
+},
+{
+"col": "event",
+"in": "iiiii  Paket  Rahmawati  Zoë  Konser",
+"want": "iiiii  Paket-…"
+},
+{
+"col": "tickets",
+"in": "Ty  Early  ll  Müller",
+"want": "Ty  Early  ll  Müller"
+},
+{
+"col": "payment",
+"in": "AVAVA  Regular  Utama  LTA",
+"want": "AVAVA…"
+},
+{
+"col": "voucher",
+"in": "1× Konser Keluarga Zoë",
+"want": "1× Konser…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Café fi Jakarta",
+"want": "Café fi Jakarta"
+},
+{
+"col": "event",
+"in": "Yoyo VIP — Ni Luh Café",
+"want": "Yoyo VIP — Ni Luh…"
+},
+{
+"col": "tickets",
+"in": "AVAVA Konser",
+"want": "AVAVA Konser"
+},
+{
+"col": "payment",
+"in": "Jakarta VIP",
+"want": "Jakarta VIP"
+},
+{
+"col": "voucher",
+"in": "Rp",
+"want": "Rp"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "WWWWW Jakarta Budi",
+"want": "WWWWW Jakarta…"
+},
+{
+"col": "event",
+"in": "Santoso ll ll x WWWWW &",
+"want": "Santoso ll ll x…"
+},
+{
+"col": "tickets",
+"in": "Wawan Ni To Yoyo Santoso",
+"want": "Wawan Ni To Yoyo…"
+},
+{
+"col": "payment",
+"in": "1× Konser Keluarga Zoë",
+"want": "1× Konser…"
+},
+{
+"col": "voucher",
+"in": "Siti  Ölçek  Utama  Rp  Ni",
+"want": "Siti  Ölçek…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "1× AVAVA Panggung",
+"want": "1× AVAVA…"
+},
+{
+"col": "event",
+"in": "Ty To Luh Rahmawati",
+"want": "Ty To Luh Rahmawati"
+},
+{
+"col": "tickets",
+"in": "Paket",
+"want": "Paket"
+},
+{
+"col": "payment",
+"in": "Rp",
+"want": "Rp"
+},
+{
+"col": "voucher",
+"in": "Siti Yoyo To WWWWW",
+"want": "Siti Yoyo T…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "WWWWW 2026 Jakarta Ty Budi",
+"want": "WWWWW 2026…"
+},
+{
+"col": "event",
+"in": "Ty Utama Kusumawardhani VIP",
+"want": "Ty Utama…"
+},
+{
+"col": "tickets",
+"in": "AVAVA Early Rahmawati LTA Café",
+"want": "AVAVA Early…"
+},
+{
+"col": "payment",
+"in": "Siti  Ölçek  Utama  Rp  Ni",
+"want": "Siti  Ölçek…"
+},
+{
+"col": "voucher",
+"in": "Ölçek Jakarta",
+"want": "Ölçek Jakar…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Kusumawardhani  fi  2×  x",
+"want": "Kusumawardhani…"
+},
+{
+"col": "event",
+"in": "Ni Café",
+"want": "Ni Café"
+},
+{
+"col": "tickets",
+"in": "VIP Panggung Festival Siti x",
+"want": "VIP Panggung…"
+},
+{
+"col": "payment",
+"in": "Siti Yoyo To WWWWW",
+"want": "Siti Yoyo To…"
+},
+{
+"col": "voucher",
+"in": "Konser Ayu iiiii",
+"want": "Konser Ayu…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ölçek x Zoë Luh 1× Panggung",
+"want": "Ölçek x Zoë Luh 1×…"
+},
+{
+"col": "event",
+"in": "Ty  Early  ll  Müller",
+"want": "Ty  Early  ll  Müller"
+},
+{
+"col": "tickets",
+"in": "Festival Ni Ni Keluarga Café Ölçek",
+"want": "Festival Ni Ni…"
+},
+{
+"col": "payment",
+"in": "Ölçek Jakarta",
+"want": "Ölçek Jakarta"
+},
+{
+"col": "voucher",
+"in": "Ni Paket Paket Regular Panggung",
+"want": "Ni Paket Pa…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "iiiii  Paket  Rahmawati  Zoë  Konser",
+"want": "iiiii  Paket-…"
+},
+{
+"col": "event",
+"in": "AVAVA Konser",
+"want": "AVAVA Konser"
+},
+{
+"col": "tickets",
+"in": "1×  Paket  Ni  Festival  Festival",
+"want": "1×  Paket  Ni-…"
+},
+{
+"col": "payment",
+"in": "Konser Ayu iiiii",
+"want": "Konser Ayu ii…"
+},
+{
+"col": "voucher",
+"in": "O'Brien",
+"want": "O'Brien"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Yoyo VIP — Ni Luh Café",
+"want": "Yoyo VIP — Ni Luh…"
+},
+{
+"col": "event",
+"in": "Wawan Ni To Yoyo Santoso",
+"want": "Wawan Ni To Yoyo…"
+},
+{
+"col": "tickets",
+"in": "Panggung WWWWW 1×",
+"want": "Panggung…"
+},
+{
+"col": "payment",
+"in": "Ni Paket Paket Regular Panggung",
+"want": "Ni Paket…"
+},
+{
+"col": "voucher",
+"in": "Wawan  Panggung  Jakarta  ll  2×  WWWWW",
+"want": "Wawan…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Santoso ll ll x WWWWW &",
+"want": "Santoso ll ll x…"
+},
+{
+"col": "event",
+"in": "Paket",
+"want": "Paket"
+},
+{
+"col": "tickets",
+"in": "Budi 2× Ölçek Siti",
+"want": "Budi 2× Ölçek Siti"
+},
+{
+"col": "payment",
+"in": "O'Brien",
+"want": "O'Brien"
+},
+{
+"col": "voucher",
+"in": "Rp  Santoso  Müller  WWWWW",
+"want": "Rp…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ty To Luh Rahmawati",
+"want": "Ty To Luh…"
+},
+{
+"col": "event",
+"in": "AVAVA Early Rahmawati LTA Café",
+"want": "AVAVA Early…"
+},
+{
+"col": "tickets",
+"in": "Budi AVAVA",
+"want": "Budi AVAVA"
+},
+{
+"col": "payment",
+"in": "Wawan  Panggung  Jakarta  ll  2×  WWWWW",
+"want": "Wawan…"
+},
+{
+"col": "voucher",
+"in": "Wawan Panggung & Panggung Ölçek To",
+"want": "Wawan…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ty Utama Kusumawardhani VIP",
+"want": "Ty Utama…"
+},
+{
+"col": "event",
+"in": "VIP Panggung Festival Siti x",
+"want": "VIP Panggung…"
+},
+{
+"col": "tickets",
+"in": "Müller",
+"want": "Müller"
+},
+{
+"col": "payment",
+"in": "Rp  Santoso  Müller  WWWWW",
+"want": "Rp  Santoso…"
+},
+{
+"col": "voucher",
+"in": "Ölçek WWWWW Regular VIP",
+"want": "Ölçek…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ni Café",
+"want": "Ni Café"
+},
+{
+"col": "event",
+"in": "Festival Ni Ni Keluarga Café Ölçek",
+"want": "Festival Ni Ni…"
+},
+{
+"col": "tickets",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "payment",
+"in": "Wawan Panggung & Panggung Ölçek To",
+"want": "Wawan…"
+},
+{
+"col": "voucher",
+"in": "Zoë ll AVAVA fi Zoë Paket",
+"want": "Zoë ll AVAV…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ty  Early  ll  Müller",
+"want": "Ty  Early  ll  Müller"
+},
+{
+"col": "event",
+"in": "1×  Paket  Ni  Festival  Festival",
+"want": "1×  Paket  Ni-…"
+},
+{
+"col": "tickets",
+"in": "1×",
+"want": "1×"
+},
+{
+"col": "payment",
+"in": "Ölçek WWWWW Regular VIP",
+"want": "Ölçek…"
+},
+{
+"col": "voucher",
+"in": "Santoso Siti",
+"want": "Santoso Siti"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "AVAVA Konser",
+"want": "AVAVA Konser"
+},
+{
+"col": "event",
+"in": "Panggung WWWWW 1×",
+"want": "Panggung WWWWW…"
+},
+{
+"col": "tickets",
+"in": "LTA Utama LTA",
+"want": "LTA Utama LTA"
+},
+{
+"col": "payment",
+"in": "Zoë ll AVAVA fi Zoë Paket",
+"want": "Zoë ll AVAVA…"
+},
+{
+"col": "voucher",
+"in": "Rahmawati Yoyo Siti Festival Siti Ni",
+"want": "Rahmawati…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Wawan Ni To Yoyo Santoso",
+"want": "Wawan Ni To Yoyo…"
+},
+{
+"col": "event",
+"in": "Budi 2× Ölçek Siti",
+"want": "Budi 2× Ölçek Siti"
+},
+{
+"col": "tickets",
+"in": "Panggung Festival Budi Santoso Santoso",
+"want": "Panggung Festival…"
+},
+{
+"col": "payment",
+"in": "Santoso Siti",
+"want": "Santoso Siti"
+},
+{
+"col": "voucher",
+"in": "VIP Early",
+"want": "VIP Early"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Paket",
+"want": "Paket"
+},
+{
+"col": "event",
+"in": "Budi AVAVA",
+"want": "Budi AVAVA"
+},
+{
+"col": "tickets",
+"in": "AVAVA  Regular  Utama  LTA",
+"want": "AVAVA  Regular-…"
+},
+{
+"col": "payment",
+"in": "Rahmawati Yoyo Siti Festival Siti Ni",
+"want": "Rahmawati…"
+},
+{
+"col": "voucher",
+"in": "Siti Kusumawardhani",
+"want": "Siti…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "AVAVA Early Rahmawati LTA Café",
+"want": "AVAVA Early…"
+},
+{
+"col": "event",
+"in": "Müller",
+"want": "Müller"
+},
+{
+"col": "tickets",
+"in": "Jakarta VIP",
+"want": "Jakarta VIP"
+},
+{
+"col": "payment",
+"in": "VIP Early",
+"want": "VIP Early"
+},
+{
+"col": "voucher",
+"in": "AVAVA Wawan Rp Wawan LTA Paket",
+"want": "AVAVA…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "VIP Panggung Festival Siti x",
+"want": "VIP Panggung…"
+},
+{
+"col": "event",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "tickets",
+"in": "1× Konser Keluarga Zoë",
+"want": "1× Konser Keluarga…"
+},
+{
+"col": "payment",
+"in": "Siti Kusumawardhani",
+"want": "Siti…"
+},
+{
+"col": "voucher",
+"in": "x Rp Wawan",
+"want": "x Rp Wawan"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Festival Ni Ni Keluarga Café Ölçek",
+"want": "Festival Ni Ni…"
+},
+{
+"col": "event",
+"in": "1×",
+"want": "1×"
+},
+{
+"col": "tickets",
+"in": "Rp",
+"want": "Rp"
+},
+{
+"col": "payment",
+"in": "AVAVA Wawan Rp Wawan LTA Paket",
+"want": "AVAVA Wawan…"
+},
+{
+"col": "voucher",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "1×  Paket  Ni  Festival  Festival",
+"want": "1×  Paket  Ni-…"
+},
+{
+"col": "event",
+"in": "LTA Utama LTA",
+"want": "LTA Utama LTA"
+},
+{
+"col": "tickets",
+"in": "Siti  Ölçek  Utama  Rp  Ni",
+"want": "Siti  Ölçek  Utama-…"
+},
+{
+"col": "payment",
+"in": "x Rp Wawan",
+"want": "x Rp Wawan"
+},
+{
+"col": "voucher",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Panggung WWWWW 1×",
+"want": "Panggung…"
+},
+{
+"col": "event",
+"in": "Panggung Festival Budi Santoso Santoso",
+"want": "Panggung Festival…"
+},
+{
+"col": "tickets",
+"in": "Siti Yoyo To WWWWW",
+"want": "Siti Yoyo To…"
+},
+{
+"col": "payment",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "voucher",
+"in": "2×  Paket",
+"want": "2×  Paket"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Budi 2× Ölçek Siti",
+"want": "Budi 2× Ölçek Siti"
+},
+{
+"col": "event",
+"in": "AVAVA  Regular  Utama  LTA",
+"want": "AVAVA  Regular-…"
+},
+{
+"col": "tickets",
+"in": "Ölçek Jakarta",
+"want": "Ölçek Jakarta"
+},
+{
+"col": "payment",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "voucher",
+"in": "Rahmawati iiiii x Yoyo Yoyo Konser",
+"want": "Rahmawati…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Budi AVAVA",
+"want": "Budi AVAVA"
+},
+{
+"col": "event",
+"in": "Jakarta VIP",
+"want": "Jakarta VIP"
+},
+{
+"col": "tickets",
+"in": "Konser Ayu iiiii",
+"want": "Konser Ayu iiiii"
+},
+{
+"col": "payment",
+"in": "2×  Paket",
+"want": "2×  Paket"
+},
+{
+"col": "voucher",
+"in": "2× Santoso Ölçek Rahmawati AVAVA Regular",
+"want": "2× Santoso…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Müller",
+"want": "Müller"
+},
+{
+"col": "event",
+"in": "1× Konser Keluarga Zoë",
+"want": "1× Konser Keluarga…"
+},
+{
+"col": "tickets",
+"in": "Ni Paket Paket Regular Panggung",
+"want": "Ni Paket Paket…"
+},
+{
+"col": "payment",
+"in": "Rahmawati iiiii x Yoyo Yoyo Konser",
+"want": "Rahmawati iii…"
+},
+{
+"col": "voucher",
+"in": "Regular Paket WWWWW O'Brien",
+"want": "Regular…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "event",
+"in": "Rp",
+"want": "Rp"
+},
+{
+"col": "tickets",
+"in": "O'Brien",
+"want": "O'Brien"
+},
+{
+"col": "payment",
+"in": "2× Santoso Ölçek Rahmawati AVAVA Regular",
+"want": "2× Santoso…"
+},
+{
+"col": "voucher",
+"in": "Keluarga Müller Santoso",
+"want": "Keluarga…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "1×",
+"want": "1×"
+},
+{
+"col": "event",
+"in": "Siti  Ölçek  Utama  Rp  Ni",
+"want": "Siti  Ölçek  Utama-…"
+},
+{
+"col": "tickets",
+"in": "Wawan  Panggung  Jakarta  ll  2×  WWWWW",
+"want": "Wawan  Panggung-…"
+},
+{
+"col": "payment",
+"in": "Regular Paket WWWWW O'Brien",
+"want": "Regular…"
+},
+{
+"col": "voucher",
+"in": "LTA Luh",
+"want": "LTA Luh"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "LTA Utama LTA",
+"want": "LTA Utama LTA"
+},
+{
+"col": "event",
+"in": "Siti Yoyo To WWWWW",
+"want": "Siti Yoyo To…"
+},
+{
+"col": "tickets",
+"in": "Rp  Santoso  Müller  WWWWW",
+"want": "Rp  Santoso-…"
+},
+{
+"col": "payment",
+"in": "Keluarga Müller Santoso",
+"want": "Keluarga…"
+},
+{
+"col": "voucher",
+"in": "Paket Paket Bird",
+"want": "Paket Paket…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Panggung Festival Budi Santoso Santoso",
+"want": "Panggung Festival…"
+},
+{
+"col": "event",
+"in": "Ölçek Jakarta",
+"want": "Ölçek Jakarta"
+},
+{
+"col": "tickets",
+"in": "Wawan Panggung & Panggung Ölçek To",
+"want": "Wawan Panggung…"
+},
+{
+"col": "payment",
+"in": "LTA Luh",
+"want": "LTA Luh"
+},
+{
+"col": "voucher",
+"in": "Rahmawati",
+"want": "Rahmawati"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "AVAVA  Regular  Utama  LTA",
+"want": "AVAVA  Regular-…"
+},
+{
+"col": "event",
+"in": "Konser Ayu iiiii",
+"want": "Konser Ayu iiiii"
+},
+{
+"col": "tickets",
+"in": "Ölçek WWWWW Regular VIP",
+"want": "Ölçek WWWWW…"
+},
+{
+"col": "payment",
+"in": "Paket Paket Bird",
+"want": "Paket Paket…"
+},
+{
+"col": "voucher",
+"in": "Kusumawardhani  Keluarga  2026  Konser  Jakarta",
+"want": "Kusumawardh…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Jakarta VIP",
+"want": "Jakarta VIP"
+},
+{
+"col": "event",
+"in": "Ni Paket Paket Regular Panggung",
+"want": "Ni Paket Paket…"
+},
+{
+"col": "tickets",
+"in": "Zoë ll AVAVA fi Zoë Paket",
+"want": "Zoë ll AVAVA fi Zoë…"
+},
+{
+"col": "payment",
+"in": "Rahmawati",
+"want": "Rahmawati"
+},
+{
+"col": "voucher",
+"in": "VIP Festival Panggung Early",
+"want": "VIP Festiva…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "1× Konser Keluarga Zoë",
+"want": "1× Konser Keluarga…"
+},
+{
+"col": "event",
+"in": "O'Brien",
+"want": "O'Brien"
+},
+{
+"col": "tickets",
+"in": "Santoso Siti",
+"want": "Santoso Siti"
+},
+{
+"col": "payment",
+"in": "Kusumawardhani  Keluarga  2026  Konser  Jakarta",
+"want": "Kusumawardhan…"
+},
+{
+"col": "voucher",
+"in": "Jakarta",
+"want": "Jakarta"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Rp",
+"want": "Rp"
+},
+{
+"col": "event",
+"in": "Wawan  Panggung  Jakarta  ll  2×  WWWWW",
+"want": "Wawan  Panggung-…"
+},
+{
+"col": "tickets",
+"in": "Rahmawati Yoyo Siti Festival Siti Ni",
+"want": "Rahmawati Yoyo Siti…"
+},
+{
+"col": "payment",
+"in": "VIP Festival Panggung Early",
+"want": "VIP Festival…"
+},
+{
+"col": "voucher",
+"in": "Siti  Luh  O'Brien  Rp  1×  Panggung",
+"want": "Siti  Luh…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Siti  Ölçek  Utama  Rp  Ni",
+"want": "Siti  Ölçek  Utama-…"
+},
+{
+"col": "event",
+"in": "Rp  Santoso  Müller  WWWWW",
+"want": "Rp  Santoso  Müller-…"
+},
+{
+"col": "tickets",
+"in": "VIP Early",
+"want": "VIP Early"
+},
+{
+"col": "payment",
+"in": "Jakarta",
+"want": "Jakarta"
+},
+{
+"col": "voucher",
+"in": "Siti O'Brien ll",
+"want": "Siti O'Brie…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Siti Yoyo To WWWWW",
+"want": "Siti Yoyo To…"
+},
+{
+"col": "event",
+"in": "Wawan Panggung & Panggung Ölçek To",
+"want": "Wawan Panggung &…"
+},
+{
+"col": "tickets",
+"in": "Siti Kusumawardhani",
+"want": "Siti…"
+},
+{
+"col": "payment",
+"in": "Siti  Luh  O'Brien  Rp  1×  Panggung",
+"want": "Siti  Luh  O'…"
+},
+{
+"col": "voucher",
+"in": "Rahmawati Wawan Rahmawati Ayu x",
+"want": "Rahmawati…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ölçek Jakarta",
+"want": "Ölçek Jakarta"
+},
+{
+"col": "event",
+"in": "Ölçek WWWWW Regular VIP",
+"want": "Ölçek WWWWW…"
+},
+{
+"col": "tickets",
+"in": "AVAVA Wawan Rp Wawan LTA Paket",
+"want": "AVAVA Wawan Rp…"
+},
+{
+"col": "payment",
+"in": "Siti O'Brien ll",
+"want": "Siti O'Brien…"
+},
+{
+"col": "voucher",
+"in": "Festival Ni Keluarga Bird Rahmawati fi",
+"want": "Festival Ni…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Konser Ayu iiiii",
+"want": "Konser Ayu iiiii"
+},
+{
+"col": "event",
+"in": "Zoë ll AVAVA fi Zoë Paket",
+"want": "Zoë ll AVAVA fi Zoë…"
+},
+{
+"col": "tickets",
+"in": "x Rp Wawan",
+"want": "x Rp Wawan"
+},
+{
+"col": "payment",
+"in": "Rahmawati Wawan Rahmawati Ayu x",
+"want": "Rahmawati…"
+},
+{
+"col": "voucher",
+"in": "Jakarta — AVAVA Müller",
+"want": "Jakarta —…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ni Paket Paket Regular Panggung",
+"want": "Ni Paket Paket…"
+},
+{
+"col": "event",
+"in": "Santoso Siti",
+"want": "Santoso Siti"
+},
+{
+"col": "tickets",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "payment",
+"in": "Festival Ni Keluarga Bird Rahmawati fi",
+"want": "Festival Ni K…"
+},
+{
+"col": "voucher",
+"in": "Jakarta Kusumawardhani",
+"want": "Jakarta Kus…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "O'Brien",
+"want": "O'Brien"
+},
+{
+"col": "event",
+"in": "Rahmawati Yoyo Siti Festival Siti Ni",
+"want": "Rahmawati Yoyo Siti…"
+},
+{
+"col": "tickets",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "payment",
+"in": "Jakarta — AVAVA Müller",
+"want": "Jakarta —…"
+},
+{
+"col": "voucher",
+"in": "Utama WWWWW Jakarta & 1× Yoyo",
+"want": "Utama…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Wawan  Panggung  Jakarta  ll  2×  WWWWW",
+"want": "Wawan  Panggung-…"
+},
+{
+"col": "event",
+"in": "VIP Early",
+"want": "VIP Early"
+},
+{
+"col": "tickets",
+"in": "2×  Paket",
+"want": "2×  Paket"
+},
+{
+"col": "payment",
+"in": "Jakarta Kusumawardhani",
+"want": "Jakarta…"
+},
+{
+"col": "voucher",
+"in": "Luh 2026 Jakarta",
+"want": "Luh 2026…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Rp  Santoso  Müller  WWWWW",
+"want": "Rp  Santoso-…"
+},
+{
+"col": "event",
+"in": "Siti Kusumawardhani",
+"want": "Siti Kusumawardhani"
+},
+{
+"col": "tickets",
+"in": "Rahmawati iiiii x Yoyo Yoyo Konser",
+"want": "Rahmawati iiiii x…"
+},
+{
+"col": "payment",
+"in": "Utama WWWWW Jakarta & 1× Yoyo",
+"want": "Utama…"
+},
+{
+"col": "voucher",
+"in": "Yoyo Siti",
+"want": "Yoyo Siti"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Wawan Panggung & Panggung Ölçek To",
+"want": "Wawan Panggung…"
+},
+{
+"col": "event",
+"in": "AVAVA Wawan Rp Wawan LTA Paket",
+"want": "AVAVA Wawan Rp…"
+},
+{
+"col": "tickets",
+"in": "2× Santoso Ölçek Rahmawati AVAVA Regular",
+"want": "2× Santoso Ölçek…"
+},
+{
+"col": "payment",
+"in": "Luh 2026 Jakarta",
+"want": "Luh 2026…"
+},
+{
+"col": "voucher",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ölçek WWWWW Regular VIP",
+"want": "Ölçek WWWWW…"
+},
+{
+"col": "event",
+"in": "x Rp Wawan",
+"want": "x Rp Wawan"
+},
+{
+"col": "tickets",
+"in": "Regular Paket WWWWW O'Brien",
+"want": "Regular Paket…"
+},
+{
+"col": "payment",
+"in": "Yoyo Siti",
+"want": "Yoyo Siti"
+},
+{
+"col": "voucher",
+"in": "Ty",
+"want": "Ty"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Zoë ll AVAVA fi Zoë Paket",
+"want": "Zoë ll AVAVA fi Zoë…"
+},
+{
+"col": "event",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "tickets",
+"in": "Keluarga Müller Santoso",
+"want": "Keluarga Müller…"
+},
+{
+"col": "payment",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "voucher",
+"in": "1× Konser Regular",
+"want": "1× Konser…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Santoso Siti",
+"want": "Santoso Siti"
+},
+{
+"col": "event",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "tickets",
+"in": "LTA Luh",
+"want": "LTA Luh"
+},
+{
+"col": "payment",
+"in": "Ty",
+"want": "Ty"
+},
+{
+"col": "voucher",
+"in": "O'Brien 2×",
+"want": "O'Brien 2×"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Rahmawati Yoyo Siti Festival Siti Ni",
+"want": "Rahmawati Yoyo Siti…"
+},
+{
+"col": "event",
+"in": "2×  Paket",
+"want": "2×  Paket"
+},
+{
+"col": "tickets",
+"in": "Paket Paket Bird",
+"want": "Paket Paket Bird"
+},
+{
+"col": "payment",
+"in": "1× Konser Regular",
+"want": "1× Konser…"
+},
+{
+"col": "voucher",
+"in": "iiiii & Keluarga Regular",
+"want": "iiiii & Kel…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "VIP Early",
+"want": "VIP Early"
+},
+{
+"col": "event",
+"in": "Rahmawati iiiii x Yoyo Yoyo Konser",
+"want": "Rahmawati iiiii x Yoyo…"
+},
+{
+"col": "tickets",
+"in": "Rahmawati",
+"want": "Rahmawati"
+},
+{
+"col": "payment",
+"in": "O'Brien 2×",
+"want": "O'Brien 2×"
+},
+{
+"col": "voucher",
+"in": "Kusumawardhani AVAVA Kusumawardhani Müller O'Brien",
+"want": "Kusumawardh…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Siti Kusumawardhani",
+"want": "Siti…"
+},
+{
+"col": "event",
+"in": "2× Santoso Ölçek Rahmawati AVAVA Regular",
+"want": "2× Santoso Ölçek…"
+},
+{
+"col": "tickets",
+"in": "Kusumawardhani  Keluarga  2026  Konser  Jakarta",
+"want": "Kusumawardhani…"
+},
+{
+"col": "payment",
+"in": "iiiii & Keluarga Regular",
+"want": "iiiii & Kelua…"
+},
+{
+"col": "voucher",
+"in": "Café Budi",
+"want": "Café Budi"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "AVAVA Wawan Rp Wawan LTA Paket",
+"want": "AVAVA Wawan Rp…"
+},
+{
+"col": "event",
+"in": "Regular Paket WWWWW O'Brien",
+"want": "Regular Paket…"
+},
+{
+"col": "tickets",
+"in": "VIP Festival Panggung Early",
+"want": "VIP Festival…"
+},
+{
+"col": "payment",
+"in": "Kusumawardhani AVAVA Kusumawardhani Müller O'Brien",
+"want": "Kusumawardhan…"
+},
+{
+"col": "voucher",
+"in": "Panggung 1×",
+"want": "Panggung 1×"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "x Rp Wawan",
+"want": "x Rp Wawan"
+},
+{
+"col": "event",
+"in": "Keluarga Müller Santoso",
+"want": "Keluarga Müller…"
+},
+{
+"col": "tickets",
+"in": "Jakarta",
+"want": "Jakarta"
+},
+{
+"col": "payment",
+"in": "Café Budi",
+"want": "Café Budi"
+},
+{
+"col": "voucher",
+"in": "Santoso Müller Luh O'Brien Regular",
+"want": "Santoso…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "event",
+"in": "LTA Luh",
+"want": "LTA Luh"
+},
+{
+"col": "tickets",
+"in": "Siti  Luh  O'Brien  Rp  1×  Panggung",
+"want": "Siti  Luh  O'Brien-…"
+},
+{
+"col": "payment",
+"in": "Panggung 1×",
+"want": "Panggung 1×"
+},
+{
+"col": "voucher",
+"in": "Paket Ölçek Yoyo Keluarga Budi Paket",
+"want": "Paket…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "event",
+"in": "Paket Paket Bird",
+"want": "Paket Paket Bird"
+},
+{
+"col": "tickets",
+"in": "Siti O'Brien ll",
+"want": "Siti O'Brien ll"
+},
+{
+"col": "payment",
+"in": "Santoso Müller Luh O'Brien Regular",
+"want": "Santoso…"
+},
+{
+"col": "voucher",
+"in": "2× & 2026 x Utama",
+"want": "2× & 2026 x…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "2×  Paket",
+"want": "2×  Paket"
+},
+{
+"col": "event",
+"in": "Rahmawati",
+"want": "Rahmawati"
+},
+{
+"col": "tickets",
+"in": "Rahmawati Wawan Rahmawati Ayu x",
+"want": "Rahmawati Wawan…"
+},
+{
+"col": "payment",
+"in": "Paket Ölçek Yoyo Keluarga Budi Paket",
+"want": "Paket Ölçek…"
+},
+{
+"col": "voucher",
+"in": "Rp Early Bird O'Brien 1×",
+"want": "Rp Early Bi…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Rahmawati iiiii x Yoyo Yoyo Konser",
+"want": "Rahmawati iiiii x…"
+},
+{
+"col": "event",
+"in": "Kusumawardhani  Keluarga  2026  Konser  Jakarta",
+"want": "Kusumawardhani…"
+},
+{
+"col": "tickets",
+"in": "Festival Ni Keluarga Bird Rahmawati fi",
+"want": "Festival Ni Keluarga…"
+},
+{
+"col": "payment",
+"in": "2× & 2026 x Utama",
+"want": "2× & 2026 x…"
+},
+{
+"col": "voucher",
+"in": "Yoyo  Rp  Café  fi",
+"want": "Yoyo  Rp  C…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "2× Santoso Ölçek Rahmawati AVAVA Regular",
+"want": "2× Santoso Ölçek…"
+},
+{
+"col": "event",
+"in": "VIP Festival Panggung Early",
+"want": "VIP Festival…"
+},
+{
+"col": "tickets",
+"in": "Jakarta — AVAVA Müller",
+"want": "Jakarta — AVAVA…"
+},
+{
+"col": "payment",
+"in": "Rp Early Bird O'Brien 1×",
+"want": "Rp Early Bird…"
+},
+{
+"col": "voucher",
+"in": "ll  Rahmawati  iiiii",
+"want": "ll…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Regular Paket WWWWW O'Brien",
+"want": "Regular Paket…"
+},
+{
+"col": "event",
+"in": "Jakarta",
+"want": "Jakarta"
+},
+{
+"col": "tickets",
+"in": "Jakarta Kusumawardhani",
+"want": "Jakarta…"
+},
+{
+"col": "payment",
+"in": "Yoyo  Rp  Café  fi",
+"want": "Yoyo  Rp  Caf…"
+},
+{
+"col": "voucher",
+"in": "1× Jakarta",
+"want": "1× Jakarta"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Keluarga Müller Santoso",
+"want": "Keluarga Müller…"
+},
+{
+"col": "event",
+"in": "Siti  Luh  O'Brien  Rp  1×  Panggung",
+"want": "Siti  Luh  O'Brien  Rp-…"
+},
+{
+"col": "tickets",
+"in": "Utama WWWWW Jakarta & 1× Yoyo",
+"want": "Utama WWWWW…"
+},
+{
+"col": "payment",
+"in": "ll  Rahmawati  iiiii",
+"want": "ll  Rahmawati…"
+},
+{
+"col": "voucher",
+"in": "Ty Konser Wawan —",
+"want": "Ty Konser…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "LTA Luh",
+"want": "LTA Luh"
+},
+{
+"col": "event",
+"in": "Siti O'Brien ll",
+"want": "Siti O'Brien ll"
+},
+{
+"col": "tickets",
+"in": "Luh 2026 Jakarta",
+"want": "Luh 2026 Jakarta"
+},
+{
+"col": "payment",
+"in": "1× Jakarta",
+"want": "1× Jakarta"
+},
+{
+"col": "voucher",
+"in": "Jakarta",
+"want": "Jakarta"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Paket Paket Bird",
+"want": "Paket Paket Bird"
+},
+{
+"col": "event",
+"in": "Rahmawati Wawan Rahmawati Ayu x",
+"want": "Rahmawati Wawan…"
+},
+{
+"col": "tickets",
+"in": "Yoyo Siti",
+"want": "Yoyo Siti"
+},
+{
+"col": "payment",
+"in": "Ty Konser Wawan —",
+"want": "Ty Konser…"
+},
+{
+"col": "voucher",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Rahmawati",
+"want": "Rahmawati"
+},
+{
+"col": "event",
+"in": "Festival Ni Keluarga Bird Rahmawati fi",
+"want": "Festival Ni Keluarga…"
+},
+{
+"col": "tickets",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "payment",
+"in": "Jakarta",
+"want": "Jakarta"
+},
+{
+"col": "voucher",
+"in": "Keluarga Café Keluarga Ayu",
+"want": "Keluarga…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Kusumawardhani  Keluarga  2026  Konser  Jakarta",
+"want": "Kusumawardhani…"
+},
+{
+"col": "event",
+"in": "Jakarta — AVAVA Müller",
+"want": "Jakarta — AVAVA…"
+},
+{
+"col": "tickets",
+"in": "Ty",
+"want": "Ty"
+},
+{
+"col": "payment",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "voucher",
+"in": "Regular Regular Café — Ölçek",
+"want": "Regular…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "VIP Festival Panggung Early",
+"want": "VIP Festival…"
+},
+{
+"col": "event",
+"in": "Jakarta Kusumawardhani",
+"want": "Jakarta…"
+},
+{
+"col": "tickets",
+"in": "1× Konser Regular",
+"want": "1× Konser Regular"
+},
+{
+"col": "payment",
+"in": "Keluarga Café Keluarga Ayu",
+"want": "Keluarga…"
+},
+{
+"col": "voucher",
+"in": "Yoyo WWWWW VIP Jakarta LTA",
+"want": "Yoyo…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Jakarta",
+"want": "Jakarta"
+},
+{
+"col": "event",
+"in": "Utama WWWWW Jakarta & 1× Yoyo",
+"want": "Utama WWWWW…"
+},
+{
+"col": "tickets",
+"in": "O'Brien 2×",
+"want": "O'Brien 2×"
+},
+{
+"col": "payment",
+"in": "Regular Regular Café — Ölçek",
+"want": "Regular…"
+},
+{
+"col": "voucher",
+"in": "2026 Kusumawardhani To 2026 Luh",
+"want": "2026…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Siti  Luh  O'Brien  Rp  1×  Panggung",
+"want": "Siti  Luh  O'Brien-…"
+},
+{
+"col": "event",
+"in": "Luh 2026 Jakarta",
+"want": "Luh 2026 Jakarta"
+},
+{
+"col": "tickets",
+"in": "iiiii & Keluarga Regular",
+"want": "iiiii & Keluarga…"
+},
+{
+"col": "payment",
+"in": "Yoyo WWWWW VIP Jakarta LTA",
+"want": "Yoyo…"
+},
+{
+"col": "voucher",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Siti O'Brien ll",
+"want": "Siti O'Brien ll"
+},
+{
+"col": "event",
+"in": "Yoyo Siti",
+"want": "Yoyo Siti"
+},
+{
+"col": "tickets",
+"in": "Kusumawardhani AVAVA Kusumawardhani Müller O'Brien",
+"want": "Kusumawardhani…"
+},
+{
+"col": "payment",
+"in": "2026 Kusumawardhani To 2026 Luh",
+"want": "2026…"
+},
+{
+"col": "voucher",
+"in": "Konser ll Budi Early Café Kusumawardhani",
+"want": "Konser ll B…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Rahmawati Wawan Rahmawati Ayu x",
+"want": "Rahmawati Wawan…"
+},
+{
+"col": "event",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "tickets",
+"in": "Café Budi",
+"want": "Café Budi"
+},
+{
+"col": "payment",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "voucher",
+"in": "Rahmawati — O'Brien Festival &",
+"want": "Rahmawati…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Festival Ni Keluarga Bird Rahmawati fi",
+"want": "Festival Ni Keluarga…"
+},
+{
+"col": "event",
+"in": "Ty",
+"want": "Ty"
+},
+{
+"col": "tickets",
+"in": "Panggung 1×",
+"want": "Panggung 1×"
+},
+{
+"col": "payment",
+"in": "Konser ll Budi Early Café Kusumawardhani",
+"want": "Konser ll Bud…"
+},
+{
+"col": "voucher",
+"in": "Regular & AVAVA Müller",
+"want": "Regular &…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Jakarta — AVAVA Müller",
+"want": "Jakarta — AVAVA…"
+},
+{
+"col": "event",
+"in": "1× Konser Regular",
+"want": "1× Konser Regular"
+},
+{
+"col": "tickets",
+"in": "Santoso Müller Luh O'Brien Regular",
+"want": "Santoso Müller Luh…"
+},
+{
+"col": "payment",
+"in": "Rahmawati — O'Brien Festival &",
+"want": "Rahmawati —…"
+},
+{
+"col": "voucher",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Jakarta Kusumawardhani",
+"want": "Jakarta…"
+},
+{
+"col": "event",
+"in": "O'Brien 2×",
+"want": "O'Brien 2×"
+},
+{
+"col": "tickets",
+"in": "Paket Ölçek Yoyo Keluarga Budi Paket",
+"want": "Paket Ölçek Yoyo…"
+},
+{
+"col": "payment",
+"in": "Regular & AVAVA Müller",
+"want": "Regular &…"
+},
+{
+"col": "voucher",
+"in": "Panggung Ni LTA Zoë Café",
+"want": "Panggung…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Utama WWWWW Jakarta & 1× Yoyo",
+"want": "Utama WWWWW…"
+},
+{
+"col": "event",
+"in": "iiiii & Keluarga Regular",
+"want": "iiiii & Keluarga…"
+},
+{
+"col": "tickets",
+"in": "2× & 2026 x Utama",
+"want": "2× & 2026 x Utama"
+},
+{
+"col": "payment",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "voucher",
+"in": "Konser Wawan & Budi iiiii Bird",
+"want": "Konser…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Luh 2026 Jakarta",
+"want": "Luh 2026 Jakarta"
+},
+{
+"col": "event",
+"in": "Kusumawardhani AVAVA Kusumawardhani Müller O'Brien",
+"want": "Kusumawardhani…"
+},
+{
+"col": "tickets",
+"in": "Rp Early Bird O'Brien 1×",
+"want": "Rp Early Bird…"
+},
+{
+"col": "payment",
+"in": "Panggung Ni LTA Zoë Café",
+"want": "Panggung Ni…"
+},
+{
+"col": "voucher",
+"in": "Ty 2× O'Brien Kusumawardhani Wawan",
+"want": "Ty 2× O'Bri…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Yoyo Siti",
+"want": "Yoyo Siti"
+},
+{
+"col": "event",
+"in": "Café Budi",
+"want": "Café Budi"
+},
+{
+"col": "tickets",
+"in": "Yoyo  Rp  Café  fi",
+"want": "Yoyo  Rp  Café  fi"
+},
+{
+"col": "payment",
+"in": "Konser Wawan & Budi iiiii Bird",
+"want": "Konser…"
+},
+{
+"col": "voucher",
+"in": "Luh  Santoso  Panggung  Santoso  Ni  iiiii",
+"want": "Luh  Santos…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "event",
+"in": "Panggung 1×",
+"want": "Panggung 1×"
+},
+{
+"col": "tickets",
+"in": "ll  Rahmawati  iiiii",
+"want": "ll  Rahmawati  iiiii"
+},
+{
+"col": "payment",
+"in": "Ty 2× O'Brien Kusumawardhani Wawan",
+"want": "Ty 2× O'Brien…"
+},
+{
+"col": "voucher",
+"in": "Café",
+"want": "Café"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ty",
+"want": "Ty"
+},
+{
+"col": "event",
+"in": "Santoso Müller Luh O'Brien Regular",
+"want": "Santoso Müller Luh…"
+},
+{
+"col": "tickets",
+"in": "1× Jakarta",
+"want": "1× Jakarta"
+},
+{
+"col": "payment",
+"in": "Luh  Santoso  Panggung  Santoso  Ni  iiiii",
+"want": "Luh  Santoso…"
+},
+{
+"col": "voucher",
+"in": "2026",
+"want": "2026"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "1× Konser Regular",
+"want": "1× Konser Regular"
+},
+{
+"col": "event",
+"in": "Paket Ölçek Yoyo Keluarga Budi Paket",
+"want": "Paket Ölçek Yoyo…"
+},
+{
+"col": "tickets",
+"in": "Ty Konser Wawan —",
+"want": "Ty Konser Wawan…"
+},
+{
+"col": "payment",
+"in": "Café",
+"want": "Café"
+},
+{
+"col": "voucher",
+"in": "2026 2× Bird 2026 Wawan",
+"want": "2026 2× Bir…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "O'Brien 2×",
+"want": "O'Brien 2×"
+},
+{
+"col": "event",
+"in": "2× & 2026 x Utama",
+"want": "2× & 2026 x Utama"
+},
+{
+"col": "tickets",
+"in": "Jakarta",
+"want": "Jakarta"
+},
+{
+"col": "payment",
+"in": "2026",
+"want": "2026"
+},
+{
+"col": "voucher",
+"in": "Ayu fi AVAVA",
+"want": "Ayu fi AVAVA"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "iiiii & Keluarga Regular",
+"want": "iiiii & Keluarga…"
+},
+{
+"col": "event",
+"in": "Rp Early Bird O'Brien 1×",
+"want": "Rp Early Bird O'Brien…"
+},
+{
+"col": "tickets",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "payment",
+"in": "2026 2× Bird 2026 Wawan",
+"want": "2026 2× Bird…"
+},
+{
+"col": "voucher",
+"in": "x",
+"want": "x"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Kusumawardhani AVAVA Kusumawardhani Müller O'Brien",
+"want": "Kusumawardhani…"
+},
+{
+"col": "event",
+"in": "Yoyo  Rp  Café  fi",
+"want": "Yoyo  Rp  Café  fi"
+},
+{
+"col": "tickets",
+"in": "Keluarga Café Keluarga Ayu",
+"want": "Keluarga Café…"
+},
+{
+"col": "payment",
+"in": "Ayu fi AVAVA",
+"want": "Ayu fi AVAVA"
+},
+{
+"col": "voucher",
+"in": "1× Rahmawati",
+"want": "1×…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Café Budi",
+"want": "Café Budi"
+},
+{
+"col": "event",
+"in": "ll  Rahmawati  iiiii",
+"want": "ll  Rahmawati  iiiii"
+},
+{
+"col": "tickets",
+"in": "Regular Regular Café — Ölçek",
+"want": "Regular Regular…"
+},
+{
+"col": "payment",
+"in": "x",
+"want": "x"
+},
+{
+"col": "voucher",
+"in": "O'Brien  Rp  Zoë  VIP  Kusumawardhani  Jakarta",
+"want": "O'Brien  Rp…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Panggung 1×",
+"want": "Panggung 1×"
+},
+{
+"col": "event",
+"in": "1× Jakarta",
+"want": "1× Jakarta"
+},
+{
+"col": "tickets",
+"in": "Yoyo WWWWW VIP Jakarta LTA",
+"want": "Yoyo WWWWW VIP…"
+},
+{
+"col": "payment",
+"in": "1× Rahmawati",
+"want": "1× Rahmawati"
+},
+{
+"col": "voucher",
+"in": "2026 O'Brien Early Wawan x",
+"want": "2026 O'Brie…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Santoso Müller Luh O'Brien Regular",
+"want": "Santoso Müller Luh…"
+},
+{
+"col": "event",
+"in": "Ty Konser Wawan —",
+"want": "Ty Konser Wawan —"
+},
+{
+"col": "tickets",
+"in": "2026 Kusumawardhani To 2026 Luh",
+"want": "2026…"
+},
+{
+"col": "payment",
+"in": "O'Brien  Rp  Zoë  VIP  Kusumawardhani  Jakarta",
+"want": "O'Brien  Rp…"
+},
+{
+"col": "voucher",
+"in": "Konser Ayu Festival To O'Brien Rp",
+"want": "Konser Ayu…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Paket Ölçek Yoyo Keluarga Budi Paket",
+"want": "Paket Ölçek Yoyo…"
+},
+{
+"col": "event",
+"in": "Jakarta",
+"want": "Jakarta"
+},
+{
+"col": "tickets",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "payment",
+"in": "2026 O'Brien Early Wawan x",
+"want": "2026 O'Brien…"
+},
+{
+"col": "voucher",
+"in": "2026 Paket AVAVA Rahmawati Rp AVAVA",
+"want": "2026 Paket…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "2× & 2026 x Utama",
+"want": "2× & 2026 x Utama"
+},
+{
+"col": "event",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "tickets",
+"in": "Konser ll Budi Early Café Kusumawardhani",
+"want": "Konser ll Budi Early…"
+},
+{
+"col": "payment",
+"in": "Konser Ayu Festival To O'Brien Rp",
+"want": "Konser Ayu…"
+},
+{
+"col": "voucher",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Rp Early Bird O'Brien 1×",
+"want": "Rp Early Bird…"
+},
+{
+"col": "event",
+"in": "Keluarga Café Keluarga Ayu",
+"want": "Keluarga Café…"
+},
+{
+"col": "tickets",
+"in": "Rahmawati — O'Brien Festival &",
+"want": "Rahmawati —…"
+},
+{
+"col": "payment",
+"in": "2026 Paket AVAVA Rahmawati Rp AVAVA",
+"want": "2026 Paket…"
+},
+{
+"col": "voucher",
+"in": "VIP Zoë Regular Keluarga",
+"want": "VIP Zoë…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Yoyo  Rp  Café  fi",
+"want": "Yoyo  Rp  Café  fi"
+},
+{
+"col": "event",
+"in": "Regular Regular Café — Ölçek",
+"want": "Regular Regular Café…"
+},
+{
+"col": "tickets",
+"in": "Regular & AVAVA Müller",
+"want": "Regular & AVAVA…"
+},
+{
+"col": "payment",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "voucher",
+"in": "Ayu",
+"want": "Ayu"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "ll  Rahmawati  iiiii",
+"want": "ll  Rahmawati  iiiii"
+},
+{
+"col": "event",
+"in": "Yoyo WWWWW VIP Jakarta LTA",
+"want": "Yoyo WWWWW VIP…"
+},
+{
+"col": "tickets",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "payment",
+"in": "VIP Zoë Regular Keluarga",
+"want": "VIP Zoë…"
+},
+{
+"col": "voucher",
+"in": "Ölçek  Early  Rahmawati  O'Brien",
+"want": "Ölçek  Earl…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "1× Jakarta",
+"want": "1× Jakarta"
+},
+{
+"col": "event",
+"in": "2026 Kusumawardhani To 2026 Luh",
+"want": "2026…"
+},
+{
+"col": "tickets",
+"in": "Panggung Ni LTA Zoë Café",
+"want": "Panggung Ni LTA…"
+},
+{
+"col": "payment",
+"in": "Ayu",
+"want": "Ayu"
+},
+{
+"col": "voucher",
+"in": "Ni —",
+"want": "Ni —"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ty Konser Wawan —",
+"want": "Ty Konser Wawan…"
+},
+{
+"col": "event",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "tickets",
+"in": "Konser Wawan & Budi iiiii Bird",
+"want": "Konser Wawan &…"
+},
+{
+"col": "payment",
+"in": "Ölçek  Early  Rahmawati  O'Brien",
+"want": "Ölçek  Early…"
+},
+{
+"col": "voucher",
+"in": "Budi Konser Budi Siti",
+"want": "Budi…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Jakarta",
+"want": "Jakarta"
+},
+{
+"col": "event",
+"in": "Konser ll Budi Early Café Kusumawardhani",
+"want": "Konser ll Budi Early…"
+},
+{
+"col": "tickets",
+"in": "Ty 2× O'Brien Kusumawardhani Wawan",
+"want": "Ty 2× O'Brien…"
+},
+{
+"col": "payment",
+"in": "Ni —",
+"want": "Ni —"
+},
+{
+"col": "voucher",
+"in": "Rahmawati Paket & VIP Rahmawati",
+"want": "Rahmawati…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "event",
+"in": "Rahmawati — O'Brien Festival &",
+"want": "Rahmawati —…"
+},
+{
+"col": "tickets",
+"in": "Luh  Santoso  Panggung  Santoso  Ni  iiiii",
+"want": "Luh  Santoso-…"
+},
+{
+"col": "payment",
+"in": "Budi Konser Budi Siti",
+"want": "Budi Konser…"
+},
+{
+"col": "voucher",
+"in": "To Festival Yoyo Budi Ni",
+"want": "To Festival…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Keluarga Café Keluarga Ayu",
+"want": "Keluarga Café…"
+},
+{
+"col": "event",
+"in": "Regular & AVAVA Müller",
+"want": "Regular & AVAVA…"
+},
+{
+"col": "tickets",
+"in": "Café",
+"want": "Café"
+},
+{
+"col": "payment",
+"in": "Rahmawati Paket & VIP Rahmawati",
+"want": "Rahmawati…"
+},
+{
+"col": "voucher",
+"in": "Ni Luh Luh Keluarga Bird VIP",
+"want": "Ni Luh Luh…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Regular Regular Café — Ölçek",
+"want": "Regular Regular…"
+},
+{
+"col": "event",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "tickets",
+"in": "2026",
+"want": "2026"
+},
+{
+"col": "payment",
+"in": "To Festival Yoyo Budi Ni",
+"want": "To Festival Y…"
+},
+{
+"col": "voucher",
+"in": "2× Müller Early 2× Müller",
+"want": "2× Müller E…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Yoyo WWWWW VIP Jakarta LTA",
+"want": "Yoyo WWWWW VIP…"
+},
+{
+"col": "event",
+"in": "Panggung Ni LTA Zoë Café",
+"want": "Panggung Ni LTA Zoë…"
+},
+{
+"col": "tickets",
+"in": "2026 2× Bird 2026 Wawan",
+"want": "2026 2× Bird 2026…"
+},
+{
+"col": "payment",
+"in": "Ni Luh Luh Keluarga Bird VIP",
+"want": "Ni Luh Luh…"
+},
+{
+"col": "voucher",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "2026 Kusumawardhani To 2026 Luh",
+"want": "2026…"
+},
+{
+"col": "event",
+"in": "Konser Wawan & Budi iiiii Bird",
+"want": "Konser Wawan &…"
+},
+{
+"col": "tickets",
+"in": "Ayu fi AVAVA",
+"want": "Ayu fi AVAVA"
+},
+{
+"col": "payment",
+"in": "2× Müller Early 2× Müller",
+"want": "2× Müller Ear…"
+},
+{
+"col": "voucher",
+"in": "Siti Bird Early Festival Rp O'Brien",
+"want": "Siti Bird E…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "AVAVA",
+"want": "AVAVA"
+},
+{
+"col": "event",
+"in": "Ty 2× O'Brien Kusumawardhani Wawan",
+"want": "Ty 2× O'Brien…"
+},
+{
+"col": "tickets",
+"in": "x",
+"want": "x"
+},
+{
+"col": "payment",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "voucher",
+"in": "Ölçek Festival iiiii",
+"want": "Ölçek Festi…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Konser ll Budi Early Café Kusumawardhani",
+"want": "Konser ll Budi Early…"
+},
+{
+"col": "event",
+"in": "Luh  Santoso  Panggung  Santoso  Ni  iiiii",
+"want": "Luh  Santoso-…"
+},
+{
+"col": "tickets",
+"in": "1× Rahmawati",
+"want": "1× Rahmawati"
+},
+{
+"col": "payment",
+"in": "Siti Bird Early Festival Rp O'Brien",
+"want": "Siti Bird Ear…"
+},
+{
+"col": "voucher",
+"in": "Kusumawardhani Ayu 1× Kusumawardhani AVAVA",
+"want": "Kusumawardh…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Rahmawati — O'Brien Festival &",
+"want": "Rahmawati —…"
+},
+{
+"col": "event",
+"in": "Café",
+"want": "Café"
+},
+{
+"col": "tickets",
+"in": "O'Brien  Rp  Zoë  VIP  Kusumawardhani  Jakarta",
+"want": "O'Brien  Rp  Zoë-…"
+},
+{
+"col": "payment",
+"in": "Ölçek Festival iiiii",
+"want": "Ölçek…"
+},
+{
+"col": "voucher",
+"in": "Paket  Utama  —  AVAVA",
+"want": "Paket…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Regular & AVAVA Müller",
+"want": "Regular & AVAVA…"
+},
+{
+"col": "event",
+"in": "2026",
+"want": "2026"
+},
+{
+"col": "tickets",
+"in": "2026 O'Brien Early Wawan x",
+"want": "2026 O'Brien Early…"
+},
+{
+"col": "payment",
+"in": "Kusumawardhani Ayu 1× Kusumawardhani AVAVA",
+"want": "Kusumawardhan…"
+},
+{
+"col": "voucher",
+"in": "Bird Luh O'Brien",
+"want": "Bird Luh O'…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "event",
+"in": "2026 2× Bird 2026 Wawan",
+"want": "2026 2× Bird 2026…"
+},
+{
+"col": "tickets",
+"in": "Konser Ayu Festival To O'Brien Rp",
+"want": "Konser Ayu Festival…"
+},
+{
+"col": "payment",
+"in": "Paket  Utama  —  AVAVA",
+"want": "Paket  Utama…"
+},
+{
+"col": "voucher",
+"in": "iiiii  Jakarta",
+"want": "iiiii  Jaka…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Panggung Ni LTA Zoë Café",
+"want": "Panggung Ni LTA…"
+},
+{
+"col": "event",
+"in": "Ayu fi AVAVA",
+"want": "Ayu fi AVAVA"
+},
+{
+"col": "tickets",
+"in": "2026 Paket AVAVA Rahmawati Rp AVAVA",
+"want": "2026 Paket AVAVA…"
+},
+{
+"col": "payment",
+"in": "Bird Luh O'Brien",
+"want": "Bird Luh O'Br…"
+},
+{
+"col": "voucher",
+"in": "fi  Santoso  Regular",
+"want": "fi  Santoso…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Konser Wawan & Budi iiiii Bird",
+"want": "Konser Wawan &…"
+},
+{
+"col": "event",
+"in": "x",
+"want": "x"
+},
+{
+"col": "tickets",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "payment",
+"in": "iiiii  Jakarta",
+"want": "iiiii  Jakarta"
+},
+{
+"col": "voucher",
+"in": "ll Early Café",
+"want": "ll Early Ca…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ty 2× O'Brien Kusumawardhani Wawan",
+"want": "Ty 2× O'Brien…"
+},
+{
+"col": "event",
+"in": "1× Rahmawati",
+"want": "1× Rahmawati"
+},
+{
+"col": "tickets",
+"in": "VIP Zoë Regular Keluarga",
+"want": "VIP Zoë Regular…"
+},
+{
+"col": "payment",
+"in": "fi  Santoso  Regular",
+"want": "fi  Santoso…"
+},
+{
+"col": "voucher",
+"in": "Santoso 2026 Early",
+"want": "Santoso…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Luh  Santoso  Panggung  Santoso  Ni  iiiii",
+"want": "Luh  Santoso-…"
+},
+{
+"col": "event",
+"in": "O'Brien  Rp  Zoë  VIP  Kusumawardhani  Jakarta",
+"want": "O'Brien  Rp  Zoë-…"
+},
+{
+"col": "tickets",
+"in": "Ayu",
+"want": "Ayu"
+},
+{
+"col": "payment",
+"in": "ll Early Café",
+"want": "ll Early Café"
+},
+{
+"col": "voucher",
+"in": "x Rp Rp Ayu Bird Siti",
+"want": "x Rp Rp…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Café",
+"want": "Café"
+},
+{
+"col": "event",
+"in": "2026 O'Brien Early Wawan x",
+"want": "2026 O'Brien Early…"
+},
+{
+"col": "tickets",
+"in": "Ölçek  Early  Rahmawati  O'Brien",
+"want": "Ölçek  Early-…"
+},
+{
+"col": "payment",
+"in": "Santoso 2026 Early",
+"want": "Santoso…"
+},
+{
+"col": "voucher",
+"in": "LTA  Kusumawardhani  Budi  Early  x  ll",
+"want": "LTA…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "2026",
+"want": "2026"
+},
+{
+"col": "event",
+"in": "Konser Ayu Festival To O'Brien Rp",
+"want": "Konser Ayu Festival…"
+},
+{
+"col": "tickets",
+"in": "Ni —",
+"want": "Ni —"
+},
+{
+"col": "payment",
+"in": "x Rp Rp Ayu Bird Siti",
+"want": "x Rp Rp Ayu…"
+},
+{
+"col": "voucher",
+"in": "Müller — Keluarga",
+"want": "Müller —…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "2026 2× Bird 2026 Wawan",
+"want": "2026 2× Bird 2026…"
+},
+{
+"col": "event",
+"in": "2026 Paket AVAVA Rahmawati Rp AVAVA",
+"want": "2026 Paket AVAVA…"
+},
+{
+"col": "tickets",
+"in": "Budi Konser Budi Siti",
+"want": "Budi Konser Budi…"
+},
+{
+"col": "payment",
+"in": "LTA  Kusumawardhani  Budi  Early  x  ll",
+"want": "LTA…"
+},
+{
+"col": "voucher",
+"in": "Paket Café x AVAVA Keluarga",
+"want": "Paket Café…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ayu fi AVAVA",
+"want": "Ayu fi AVAVA"
+},
+{
+"col": "event",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "tickets",
+"in": "Rahmawati Paket & VIP Rahmawati",
+"want": "Rahmawati Paket &…"
+},
+{
+"col": "payment",
+"in": "Müller — Keluarga",
+"want": "Müller —…"
+},
+{
+"col": "voucher",
+"in": "Café ll 2× Panggung fi",
+"want": "Café ll 2×…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "x",
+"want": "x"
+},
+{
+"col": "event",
+"in": "VIP Zoë Regular Keluarga",
+"want": "VIP Zoë Regular…"
+},
+{
+"col": "tickets",
+"in": "To Festival Yoyo Budi Ni",
+"want": "To Festival Yoyo…"
+},
+{
+"col": "payment",
+"in": "Paket Café x AVAVA Keluarga",
+"want": "Paket Café x…"
+},
+{
+"col": "voucher",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "1× Rahmawati",
+"want": "1× Rahmawati"
+},
+{
+"col": "event",
+"in": "Ayu",
+"want": "Ayu"
+},
+{
+"col": "tickets",
+"in": "Ni Luh Luh Keluarga Bird VIP",
+"want": "Ni Luh Luh Keluarga…"
+},
+{
+"col": "payment",
+"in": "Café ll 2× Panggung fi",
+"want": "Café ll 2× Pa…"
+},
+{
+"col": "voucher",
+"in": "Yoyo",
+"want": "Yoyo"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "O'Brien  Rp  Zoë  VIP  Kusumawardhani  Jakarta",
+"want": "O'Brien  Rp  Zoë-…"
+},
+{
+"col": "event",
+"in": "Ölçek  Early  Rahmawati  O'Brien",
+"want": "Ölçek  Early-…"
+},
+{
+"col": "tickets",
+"in": "2× Müller Early 2× Müller",
+"want": "2× Müller Early 2×…"
+},
+{
+"col": "payment",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "voucher",
+"in": "VIP Jakarta Ty Kusumawardhani",
+"want": "VIP Jakarta…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "2026 O'Brien Early Wawan x",
+"want": "2026 O'Brien Early…"
+},
+{
+"col": "event",
+"in": "Ni —",
+"want": "Ni —"
+},
+{
+"col": "tickets",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "payment",
+"in": "Yoyo",
+"want": "Yoyo"
+},
+{
+"col": "voucher",
+"in": "AVAVA Early To Santoso",
+"want": "AVAVA…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Konser Ayu Festival To O'Brien Rp",
+"want": "Konser Ayu Festival…"
+},
+{
+"col": "event",
+"in": "Budi Konser Budi Siti",
+"want": "Budi Konser Budi Siti"
+},
+{
+"col": "tickets",
+"in": "Siti Bird Early Festival Rp O'Brien",
+"want": "Siti Bird Early…"
+},
+{
+"col": "payment",
+"in": "VIP Jakarta Ty Kusumawardhani",
+"want": "VIP Jakarta…"
+},
+{
+"col": "voucher",
+"in": "Wawan Festival",
+"want": "Wawan…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "2026 Paket AVAVA Rahmawati Rp AVAVA",
+"want": "2026 Paket AVAVA…"
+},
+{
+"col": "event",
+"in": "Rahmawati Paket & VIP Rahmawati",
+"want": "Rahmawati Paket &…"
+},
+{
+"col": "tickets",
+"in": "Ölçek Festival iiiii",
+"want": "Ölçek Festival iiiii"
+},
+{
+"col": "payment",
+"in": "AVAVA Early To Santoso",
+"want": "AVAVA Early…"
+},
+{
+"col": "voucher",
+"in": "Kusumawardhani",
+"want": "Kusumawardh…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "event",
+"in": "To Festival Yoyo Budi Ni",
+"want": "To Festival Yoyo Budi…"
+},
+{
+"col": "tickets",
+"in": "Kusumawardhani Ayu 1× Kusumawardhani AVAVA",
+"want": "Kusumawardhani…"
+},
+{
+"col": "payment",
+"in": "Wawan Festival",
+"want": "Wawan Festival"
+},
+{
+"col": "voucher",
+"in": "Santoso Zoë Ayu Ayu & Kusumawardhani",
+"want": "Santoso…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "VIP Zoë Regular Keluarga",
+"want": "VIP Zoë Regular…"
+},
+{
+"col": "event",
+"in": "Ni Luh Luh Keluarga Bird VIP",
+"want": "Ni Luh Luh Keluarga…"
+},
+{
+"col": "tickets",
+"in": "Paket  Utama  —  AVAVA",
+"want": "Paket  Utama  —-…"
+},
+{
+"col": "payment",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "voucher",
+"in": "Wawan Rp",
+"want": "Wawan Rp"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ayu",
+"want": "Ayu"
+},
+{
+"col": "event",
+"in": "2× Müller Early 2× Müller",
+"want": "2× Müller Early 2×…"
+},
+{
+"col": "tickets",
+"in": "Bird Luh O'Brien",
+"want": "Bird Luh O'Brien"
+},
+{
+"col": "payment",
+"in": "Santoso Zoë Ayu Ayu & Kusumawardhani",
+"want": "Santoso Zoë…"
+},
+{
+"col": "voucher",
+"in": "Zoë Ni To",
+"want": "Zoë Ni To"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ölçek  Early  Rahmawati  O'Brien",
+"want": "Ölçek  Early-…"
+},
+{
+"col": "event",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "tickets",
+"in": "iiiii  Jakarta",
+"want": "iiiii  Jakarta"
+},
+{
+"col": "payment",
+"in": "Wawan Rp",
+"want": "Wawan Rp"
+},
+{
+"col": "voucher",
+"in": "Konser",
+"want": "Konser"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ni —",
+"want": "Ni —"
+},
+{
+"col": "event",
+"in": "Siti Bird Early Festival Rp O'Brien",
+"want": "Siti Bird Early…"
+},
+{
+"col": "tickets",
+"in": "fi  Santoso  Regular",
+"want": "fi  Santoso  Regular"
+},
+{
+"col": "payment",
+"in": "Zoë Ni To",
+"want": "Zoë Ni To"
+},
+{
+"col": "voucher",
+"in": "Ayu WWWWW Luh Siti Wawan Siti",
+"want": "Ayu…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Budi Konser Budi Siti",
+"want": "Budi Konser Budi…"
+},
+{
+"col": "event",
+"in": "Ölçek Festival iiiii",
+"want": "Ölçek Festival iiiii"
+},
+{
+"col": "tickets",
+"in": "ll Early Café",
+"want": "ll Early Café"
+},
+{
+"col": "payment",
+"in": "Konser",
+"want": "Konser"
+},
+{
+"col": "voucher",
+"in": "iiiii",
+"want": "iiiii"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Rahmawati Paket & VIP Rahmawati",
+"want": "Rahmawati Paket &…"
+},
+{
+"col": "event",
+"in": "Kusumawardhani Ayu 1× Kusumawardhani AVAVA",
+"want": "Kusumawardhani…"
+},
+{
+"col": "tickets",
+"in": "Santoso 2026 Early",
+"want": "Santoso 2026 Early"
+},
+{
+"col": "payment",
+"in": "Ayu WWWWW Luh Siti Wawan Siti",
+"want": "Ayu WWWWW…"
+},
+{
+"col": "voucher",
+"in": "Rahmawati Keluarga",
+"want": "Rahmawati…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "To Festival Yoyo Budi Ni",
+"want": "To Festival Yoyo…"
+},
+{
+"col": "event",
+"in": "Paket  Utama  —  AVAVA",
+"want": "Paket  Utama  —-…"
+},
+{
+"col": "tickets",
+"in": "x Rp Rp Ayu Bird Siti",
+"want": "x Rp Rp Ayu Bird…"
+},
+{
+"col": "payment",
+"in": "iiiii",
+"want": "iiiii"
+},
+{
+"col": "voucher",
+"in": "Festival",
+"want": "Festival"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ni Luh Luh Keluarga Bird VIP",
+"want": "Ni Luh Luh Keluarga…"
+},
+{
+"col": "event",
+"in": "Bird Luh O'Brien",
+"want": "Bird Luh O'Brien"
+},
+{
+"col": "tickets",
+"in": "LTA  Kusumawardhani  Budi  Early  x  ll",
+"want": "LTA…"
+},
+{
+"col": "payment",
+"in": "Rahmawati Keluarga",
+"want": "Rahmawati…"
+},
+{
+"col": "voucher",
+"in": "Luh 1× fi Siti",
+"want": "Luh 1× fi S…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "2× Müller Early 2× Müller",
+"want": "2× Müller Early 2×…"
+},
+{
+"col": "event",
+"in": "iiiii  Jakarta",
+"want": "iiiii  Jakarta"
+},
+{
+"col": "tickets",
+"in": "Müller — Keluarga",
+"want": "Müller — Keluarga"
+},
+{
+"col": "payment",
+"in": "Festival",
+"want": "Festival"
+},
+{
+"col": "voucher",
+"in": "Bird",
+"want": "Bird"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "event",
+"in": "fi  Santoso  Regular",
+"want": "fi  Santoso  Regular"
+},
+{
+"col": "tickets",
+"in": "Paket Café x AVAVA Keluarga",
+"want": "Paket Café x AVAVA…"
+},
+{
+"col": "payment",
+"in": "Luh 1× fi Siti",
+"want": "Luh 1× fi Siti"
+},
+{
+"col": "voucher",
+"in": "&",
+"want": "&"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Siti Bird Early Festival Rp O'Brien",
+"want": "Siti Bird Early…"
+},
+{
+"col": "event",
+"in": "ll Early Café",
+"want": "ll Early Café"
+},
+{
+"col": "tickets",
+"in": "Café ll 2× Panggung fi",
+"want": "Café ll 2× Panggung…"
+},
+{
+"col": "payment",
+"in": "Bird",
+"want": "Bird"
+},
+{
+"col": "voucher",
+"in": "2× To Santoso",
+"want": "2× To Santo…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ölçek Festival iiiii",
+"want": "Ölçek Festival iiiii"
+},
+{
+"col": "event",
+"in": "Santoso 2026 Early",
+"want": "Santoso 2026 Early"
+},
+{
+"col": "tickets",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "payment",
+"in": "&",
+"want": "&"
+},
+{
+"col": "voucher",
+"in": "O'Brien  Siti  AVAVA  Ty  To  To",
+"want": "O'Brien  Si…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Kusumawardhani Ayu 1× Kusumawardhani AVAVA",
+"want": "Kusumawardhani…"
+},
+{
+"col": "event",
+"in": "x Rp Rp Ayu Bird Siti",
+"want": "x Rp Rp Ayu Bird Siti"
+},
+{
+"col": "tickets",
+"in": "Yoyo",
+"want": "Yoyo"
+},
+{
+"col": "payment",
+"in": "2× To Santoso",
+"want": "2× To Santoso"
+},
+{
+"col": "voucher",
+"in": "2026 AVAVA VIP Yoyo Rp",
+"want": "2026…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Paket  Utama  —  AVAVA",
+"want": "Paket  Utama  —-…"
+},
+{
+"col": "event",
+"in": "LTA  Kusumawardhani  Budi  Early  x  ll",
+"want": "LTA…"
+},
+{
+"col": "tickets",
+"in": "VIP Jakarta Ty Kusumawardhani",
+"want": "VIP Jakarta Ty…"
+},
+{
+"col": "payment",
+"in": "O'Brien  Siti  AVAVA  Ty  To  To",
+"want": "O'Brien  Siti…"
+},
+{
+"col": "voucher",
+"in": "Ölçek O'Brien Kusumawardhani Yoyo 2× To",
+"want": "Ölçek O'Bri…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Bird Luh O'Brien",
+"want": "Bird Luh O'Brien"
+},
+{
+"col": "event",
+"in": "Müller — Keluarga",
+"want": "Müller — Keluarga"
+},
+{
+"col": "tickets",
+"in": "AVAVA Early To Santoso",
+"want": "AVAVA Early To…"
+},
+{
+"col": "payment",
+"in": "2026 AVAVA VIP Yoyo Rp",
+"want": "2026 AVAVA…"
+},
+{
+"col": "voucher",
+"in": "Kusumawardhani Yoyo Regular & Ni",
+"want": "Kusumawardh…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "iiiii  Jakarta",
+"want": "iiiii  Jakarta"
+},
+{
+"col": "event",
+"in": "Paket Café x AVAVA Keluarga",
+"want": "Paket Café x AVAVA…"
+},
+{
+"col": "tickets",
+"in": "Wawan Festival",
+"want": "Wawan Festival"
+},
+{
+"col": "payment",
+"in": "Ölçek O'Brien Kusumawardhani Yoyo 2× To",
+"want": "Ölçek…"
+},
+{
+"col": "voucher",
+"in": "Santoso Zoë Ölçek Ni Ni",
+"want": "Santoso…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "fi  Santoso  Regular",
+"want": "fi  Santoso  Regular"
+},
+{
+"col": "event",
+"in": "Café ll 2× Panggung fi",
+"want": "Café ll 2× Panggung fi"
+},
+{
+"col": "tickets",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "payment",
+"in": "Kusumawardhani Yoyo Regular & Ni",
+"want": "Kusumawardhan…"
+},
+{
+"col": "voucher",
+"in": "Kusumawardhani",
+"want": "Kusumawardh…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "ll Early Café",
+"want": "ll Early Café"
+},
+{
+"col": "event",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "tickets",
+"in": "Santoso Zoë Ayu Ayu & Kusumawardhani",
+"want": "Santoso Zoë Ayu…"
+},
+{
+"col": "payment",
+"in": "Santoso Zoë Ölçek Ni Ni",
+"want": "Santoso Zoë…"
+},
+{
+"col": "voucher",
+"in": "Konser x Kusumawardhani x Siti",
+"want": "Konser x Ku…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Santoso 2026 Early",
+"want": "Santoso 2026 Early"
+},
+{
+"col": "event",
+"in": "Yoyo",
+"want": "Yoyo"
+},
+{
+"col": "tickets",
+"in": "Wawan Rp",
+"want": "Wawan Rp"
+},
+{
+"col": "payment",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "voucher",
+"in": "& Wawan Ty",
+"want": "& Wawan Ty"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "x Rp Rp Ayu Bird Siti",
+"want": "x Rp Rp Ayu Bird…"
+},
+{
+"col": "event",
+"in": "VIP Jakarta Ty Kusumawardhani",
+"want": "VIP Jakarta Ty…"
+},
+{
+"col": "tickets",
+"in": "Zoë Ni To",
+"want": "Zoë Ni To"
+},
+{
+"col": "payment",
+"in": "Konser x Kusumawardhani x Siti",
+"want": "Konser x…"
+},
+{
+"col": "voucher",
+"in": "WWWWW Kusumawardhani Ölçek x Müller Santoso",
+"want": "WWWWW…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "LTA  Kusumawardhani  Budi  Early  x  ll",
+"want": "LTA…"
+},
+{
+"col": "event",
+"in": "AVAVA Early To Santoso",
+"want": "AVAVA Early To…"
+},
+{
+"col": "tickets",
+"in": "Konser",
+"want": "Konser"
+},
+{
+"col": "payment",
+"in": "& Wawan Ty",
+"want": "& Wawan Ty"
+},
+{
+"col": "voucher",
+"in": "Kusumawardhani  Café",
+"want": "Kusumawardh…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Müller — Keluarga",
+"want": "Müller — Keluarga"
+},
+{
+"col": "event",
+"in": "Wawan Festival",
+"want": "Wawan Festival"
+},
+{
+"col": "tickets",
+"in": "Ayu WWWWW Luh Siti Wawan Siti",
+"want": "Ayu WWWWW Luh…"
+},
+{
+"col": "payment",
+"in": "WWWWW Kusumawardhani Ölçek x Müller Santoso",
+"want": "WWWWW…"
+},
+{
+"col": "voucher",
+"in": "Ty Yoyo x Rp Regular VIP",
+"want": "Ty Yoyo x R…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Paket Café x AVAVA Keluarga",
+"want": "Paket Café x AVAVA…"
+},
+{
+"col": "event",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "tickets",
+"in": "iiiii",
+"want": "iiiii"
+},
+{
+"col": "payment",
+"in": "Kusumawardhani  Café",
+"want": "Kusumawardhan…"
+},
+{
+"col": "voucher",
+"in": "Zoë",
+"want": "Zoë"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Café ll 2× Panggung fi",
+"want": "Café ll 2× Panggung…"
+},
+{
+"col": "event",
+"in": "Santoso Zoë Ayu Ayu & Kusumawardhani",
+"want": "Santoso Zoë Ayu Ayu…"
+},
+{
+"col": "tickets",
+"in": "Rahmawati Keluarga",
+"want": "Rahmawati…"
+},
+{
+"col": "payment",
+"in": "Ty Yoyo x Rp Regular VIP",
+"want": "Ty Yoyo x Rp…"
+},
+{
+"col": "voucher",
+"in": "Luh  Yoyo  Zoë  fi",
+"want": "Luh  Yoyo…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "2×",
+"want": "2×"
+},
+{
+"col": "event",
+"in": "Wawan Rp",
+"want": "Wawan Rp"
+},
+{
+"col": "tickets",
+"in": "Festival",
+"want": "Festival"
+},
+{
+"col": "payment",
+"in": "Zoë",
+"want": "Zoë"
+},
+{
+"col": "voucher",
+"in": "iiiii x Utama VIP WWWWW",
+"want": "iiiii x Uta…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Yoyo",
+"want": "Yoyo"
+},
+{
+"col": "event",
+"in": "Zoë Ni To",
+"want": "Zoë Ni To"
+},
+{
+"col": "tickets",
+"in": "Luh 1× fi Siti",
+"want": "Luh 1× fi Siti"
+},
+{
+"col": "payment",
+"in": "Luh  Yoyo  Zoë  fi",
+"want": "Luh  Yoyo  Zo…"
+},
+{
+"col": "voucher",
+"in": "Ayu & Ni",
+"want": "Ayu & Ni"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "VIP Jakarta Ty Kusumawardhani",
+"want": "VIP Jakarta Ty…"
+},
+{
+"col": "event",
+"in": "Konser",
+"want": "Konser"
+},
+{
+"col": "tickets",
+"in": "Bird",
+"want": "Bird"
+},
+{
+"col": "payment",
+"in": "iiiii x Utama VIP WWWWW",
+"want": "iiiii x Utama…"
+},
+{
+"col": "voucher",
+"in": "AVAVA Ölçek",
+"want": "AVAVA Ölçek"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "AVAVA Early To Santoso",
+"want": "AVAVA Early To…"
+},
+{
+"col": "event",
+"in": "Ayu WWWWW Luh Siti Wawan Siti",
+"want": "Ayu WWWWW Luh…"
+},
+{
+"col": "tickets",
+"in": "&",
+"want": "&"
+},
+{
+"col": "payment",
+"in": "Ayu & Ni",
+"want": "Ayu & Ni"
+},
+{
+"col": "voucher",
+"in": "O'Brien 2026 fi 2026 Konser Bird",
+"want": "O'Brien 202…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Wawan Festival",
+"want": "Wawan Festival"
+},
+{
+"col": "event",
+"in": "iiiii",
+"want": "iiiii"
+},
+{
+"col": "tickets",
+"in": "2× To Santoso",
+"want": "2× To Santoso"
+},
+{
+"col": "payment",
+"in": "AVAVA Ölçek",
+"want": "AVAVA Ölçek"
+},
+{
+"col": "voucher",
+"in": "2×  Ty  Yoyo  Festival",
+"want": "2×  Ty  Yoy…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "event",
+"in": "Rahmawati Keluarga",
+"want": "Rahmawati Keluarga"
+},
+{
+"col": "tickets",
+"in": "O'Brien  Siti  AVAVA  Ty  To  To",
+"want": "O'Brien  Siti-…"
+},
+{
+"col": "payment",
+"in": "O'Brien 2026 fi 2026 Konser Bird",
+"want": "O'Brien 2026…"
+},
+{
+"col": "voucher",
+"in": "Müller iiiii iiiii & Yoyo",
+"want": "Müller iiii…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Santoso Zoë Ayu Ayu & Kusumawardhani",
+"want": "Santoso Zoë Ayu…"
+},
+{
+"col": "event",
+"in": "Festival",
+"want": "Festival"
+},
+{
+"col": "tickets",
+"in": "2026 AVAVA VIP Yoyo Rp",
+"want": "2026 AVAVA VIP…"
+},
+{
+"col": "payment",
+"in": "2×  Ty  Yoyo  Festival",
+"want": "2×  Ty  Yoyo…"
+},
+{
+"col": "voucher",
+"in": "Bird",
+"want": "Bird"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Wawan Rp",
+"want": "Wawan Rp"
+},
+{
+"col": "event",
+"in": "Luh 1× fi Siti",
+"want": "Luh 1× fi Siti"
+},
+{
+"col": "tickets",
+"in": "Ölçek O'Brien Kusumawardhani Yoyo 2× To",
+"want": "Ölçek O'Brien…"
+},
+{
+"col": "payment",
+"in": "Müller iiiii iiiii & Yoyo",
+"want": "Müller iiiii…"
+},
+{
+"col": "voucher",
+"in": "Siti Festival",
+"want": "Siti Festiv…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Zoë Ni To",
+"want": "Zoë Ni To"
+},
+{
+"col": "event",
+"in": "Bird",
+"want": "Bird"
+},
+{
+"col": "tickets",
+"in": "Kusumawardhani Yoyo Regular & Ni",
+"want": "Kusumawardhani…"
+},
+{
+"col": "payment",
+"in": "Bird",
+"want": "Bird"
+},
+{
+"col": "voucher",
+"in": "Jakarta  Café  Bird",
+"want": "Jakarta  Ca…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Konser",
+"want": "Konser"
+},
+{
+"col": "event",
+"in": "&",
+"want": "&"
+},
+{
+"col": "tickets",
+"in": "Santoso Zoë Ölçek Ni Ni",
+"want": "Santoso Zoë Ölçek…"
+},
+{
+"col": "payment",
+"in": "Siti Festival",
+"want": "Siti Festival"
+},
+{
+"col": "voucher",
+"in": "x Konser Ty Keluarga Zoë WWWWW",
+"want": "x Konser Ty…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ayu WWWWW Luh Siti Wawan Siti",
+"want": "Ayu WWWWW Luh…"
+},
+{
+"col": "event",
+"in": "2× To Santoso",
+"want": "2× To Santoso"
+},
+{
+"col": "tickets",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "payment",
+"in": "Jakarta  Café  Bird",
+"want": "Jakarta  Café…"
+},
+{
+"col": "voucher",
+"in": "2026",
+"want": "2026"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "iiiii",
+"want": "iiiii"
+},
+{
+"col": "event",
+"in": "O'Brien  Siti  AVAVA  Ty  To  To",
+"want": "O'Brien  Siti  AVAVA-…"
+},
+{
+"col": "tickets",
+"in": "Konser x Kusumawardhani x Siti",
+"want": "Konser x…"
+},
+{
+"col": "payment",
+"in": "x Konser Ty Keluarga Zoë WWWWW",
+"want": "x Konser Ty K…"
+},
+{
+"col": "voucher",
+"in": "Santoso To Yoyo VIP Ayu",
+"want": "Santoso To…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Rahmawati Keluarga",
+"want": "Rahmawati…"
+},
+{
+"col": "event",
+"in": "2026 AVAVA VIP Yoyo Rp",
+"want": "2026 AVAVA VIP Yoyo…"
+},
+{
+"col": "tickets",
+"in": "& Wawan Ty",
+"want": "& Wawan Ty"
+},
+{
+"col": "payment",
+"in": "2026",
+"want": "2026"
+},
+{
+"col": "voucher",
+"in": "—  Bird  2026  Utama  Jakarta",
+"want": "—  Bird  20…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Festival",
+"want": "Festival"
+},
+{
+"col": "event",
+"in": "Ölçek O'Brien Kusumawardhani Yoyo 2× To",
+"want": "Ölçek O'Brien…"
+},
+{
+"col": "tickets",
+"in": "WWWWW Kusumawardhani Ölçek x Müller Santoso",
+"want": "WWWWW…"
+},
+{
+"col": "payment",
+"in": "Santoso To Yoyo VIP Ayu",
+"want": "Santoso To…"
+},
+{
+"col": "voucher",
+"in": "Keluarga Rahmawati",
+"want": "Keluarga…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Luh 1× fi Siti",
+"want": "Luh 1× fi Siti"
+},
+{
+"col": "event",
+"in": "Kusumawardhani Yoyo Regular & Ni",
+"want": "Kusumawardhani…"
+},
+{
+"col": "tickets",
+"in": "Kusumawardhani  Café",
+"want": "Kusumawardhani…"
+},
+{
+"col": "payment",
+"in": "—  Bird  2026  Utama  Jakarta",
+"want": "—  Bird  2026…"
+},
+{
+"col": "voucher",
+"in": "Café Ni LTA iiiii Zoë",
+"want": "Café Ni LTA…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Bird",
+"want": "Bird"
+},
+{
+"col": "event",
+"in": "Santoso Zoë Ölçek Ni Ni",
+"want": "Santoso Zoë Ölçek Ni…"
+},
+{
+"col": "tickets",
+"in": "Ty Yoyo x Rp Regular VIP",
+"want": "Ty Yoyo x Rp…"
+},
+{
+"col": "payment",
+"in": "Keluarga Rahmawati",
+"want": "Keluarga…"
+},
+{
+"col": "voucher",
+"in": "Budi 2026 WWWWW To Utama",
+"want": "Budi 2026…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "&",
+"want": "&"
+},
+{
+"col": "event",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "tickets",
+"in": "Zoë",
+"want": "Zoë"
+},
+{
+"col": "payment",
+"in": "Café Ni LTA iiiii Zoë",
+"want": "Café Ni LTA i…"
+},
+{
+"col": "voucher",
+"in": "&  Café",
+"want": "&  Café"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "2× To Santoso",
+"want": "2× To Santoso"
+},
+{
+"col": "event",
+"in": "Konser x Kusumawardhani x Siti",
+"want": "Konser x…"
+},
+{
+"col": "tickets",
+"in": "Luh  Yoyo  Zoë  fi",
+"want": "Luh  Yoyo  Zoë  fi"
+},
+{
+"col": "payment",
+"in": "Budi 2026 WWWWW To Utama",
+"want": "Budi 2026…"
+},
+{
+"col": "voucher",
+"in": "Jakarta VIP Kusumawardhani 2× Kusumawardhani Siti",
+"want": "Jakarta VIP…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "O'Brien  Siti  AVAVA  Ty  To  To",
+"want": "O'Brien  Siti-…"
+},
+{
+"col": "event",
+"in": "& Wawan Ty",
+"want": "& Wawan Ty"
+},
+{
+"col": "tickets",
+"in": "iiiii x Utama VIP WWWWW",
+"want": "iiiii x Utama VIP…"
+},
+{
+"col": "payment",
+"in": "&  Café",
+"want": "&  Café"
+},
+{
+"col": "voucher",
+"in": "Rahmawati  ll  Ty  To  Panggung",
+"want": "Rahmawati…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "2026 AVAVA VIP Yoyo Rp",
+"want": "2026 AVAVA VIP…"
+},
+{
+"col": "event",
+"in": "WWWWW Kusumawardhani Ölçek x Müller Santoso",
+"want": "WWWWW…"
+},
+{
+"col": "tickets",
+"in": "Ayu & Ni",
+"want": "Ayu & Ni"
+},
+{
+"col": "payment",
+"in": "Jakarta VIP Kusumawardhani 2× Kusumawardhani Siti",
+"want": "Jakarta VIP…"
+},
+{
+"col": "voucher",
+"in": "Rahmawati LTA Regular",
+"want": "Rahmawati…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ölçek O'Brien Kusumawardhani Yoyo 2× To",
+"want": "Ölçek O'Brien…"
+},
+{
+"col": "event",
+"in": "Kusumawardhani  Café",
+"want": "Kusumawardhani…"
+},
+{
+"col": "tickets",
+"in": "AVAVA Ölçek",
+"want": "AVAVA Ölçek"
+},
+{
+"col": "payment",
+"in": "Rahmawati  ll  Ty  To  Panggung",
+"want": "Rahmawati  ll…"
+},
+{
+"col": "voucher",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Kusumawardhani Yoyo Regular & Ni",
+"want": "Kusumawardhani…"
+},
+{
+"col": "event",
+"in": "Ty Yoyo x Rp Regular VIP",
+"want": "Ty Yoyo x Rp Regular…"
+},
+{
+"col": "tickets",
+"in": "O'Brien 2026 fi 2026 Konser Bird",
+"want": "O'Brien 2026 fi…"
+},
+{
+"col": "payment",
+"in": "Rahmawati LTA Regular",
+"want": "Rahmawati…"
+},
+{
+"col": "voucher",
+"in": "Müller Festival Early fi Panggung Paket",
+"want": "Müller Fest…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Santoso Zoë Ölçek Ni Ni",
+"want": "Santoso Zoë Ölçek…"
+},
+{
+"col": "event",
+"in": "Zoë",
+"want": "Zoë"
+},
+{
+"col": "tickets",
+"in": "2×  Ty  Yoyo  Festival",
+"want": "2×  Ty  Yoyo  Festival"
+},
+{
+"col": "payment",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "voucher",
+"in": "Ni Konser",
+"want": "Ni Konser"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "event",
+"in": "Luh  Yoyo  Zoë  fi",
+"want": "Luh  Yoyo  Zoë  fi"
+},
+{
+"col": "tickets",
+"in": "Müller iiiii iiiii & Yoyo",
+"want": "Müller iiiii iiiii & Yo…"
+},
+{
+"col": "payment",
+"in": "Müller Festival Early fi Panggung Paket",
+"want": "Müller Festiv…"
+},
+{
+"col": "voucher",
+"in": "Zoë",
+"want": "Zoë"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Konser x Kusumawardhani x Siti",
+"want": "Konser x…"
+},
+{
+"col": "event",
+"in": "iiiii x Utama VIP WWWWW",
+"want": "iiiii x Utama VIP…"
+},
+{
+"col": "tickets",
+"in": "Bird",
+"want": "Bird"
+},
+{
+"col": "payment",
+"in": "Ni Konser",
+"want": "Ni Konser"
+},
+{
+"col": "voucher",
+"in": "Ni iiiii Siti",
+"want": "Ni iiiii Si…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "& Wawan Ty",
+"want": "& Wawan Ty"
+},
+{
+"col": "event",
+"in": "Ayu & Ni",
+"want": "Ayu & Ni"
+},
+{
+"col": "tickets",
+"in": "Siti Festival",
+"want": "Siti Festival"
+},
+{
+"col": "payment",
+"in": "Zoë",
+"want": "Zoë"
+},
+{
+"col": "voucher",
+"in": "Ty Müller 2026 Utama Konser Siti",
+"want": "Ty Müller 2…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "WWWWW Kusumawardhani Ölçek x Müller Santoso",
+"want": "WWWWW…"
+},
+{
+"col": "event",
+"in": "AVAVA Ölçek",
+"want": "AVAVA Ölçek"
+},
+{
+"col": "tickets",
+"in": "Jakarta  Café  Bird",
+"want": "Jakarta  Café  Bird"
+},
+{
+"col": "payment",
+"in": "Ni iiiii Siti",
+"want": "Ni iiiii Siti"
+},
+{
+"col": "voucher",
+"in": "Rp Paket Müller Regular Santoso",
+"want": "Rp Paket…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Kusumawardhani  Café",
+"want": "Kusumawardhani…"
+},
+{
+"col": "event",
+"in": "O'Brien 2026 fi 2026 Konser Bird",
+"want": "O'Brien 2026 fi 2026…"
+},
+{
+"col": "tickets",
+"in": "x Konser Ty Keluarga Zoë WWWWW",
+"want": "x Konser Ty…"
+},
+{
+"col": "payment",
+"in": "Ty Müller 2026 Utama Konser Siti",
+"want": "Ty Müller 202…"
+},
+{
+"col": "voucher",
+"in": "Keluarga Panggung Zoë Konser To",
+"want": "Keluarga…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ty Yoyo x Rp Regular VIP",
+"want": "Ty Yoyo x Rp…"
+},
+{
+"col": "event",
+"in": "2×  Ty  Yoyo  Festival",
+"want": "2×  Ty  Yoyo  Festival"
+},
+{
+"col": "tickets",
+"in": "2026",
+"want": "2026"
+},
+{
+"col": "payment",
+"in": "Rp Paket Müller Regular Santoso",
+"want": "Rp Paket…"
+},
+{
+"col": "voucher",
+"in": "ll x",
+"want": "ll x"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Zoë",
+"want": "Zoë"
+},
+{
+"col": "event",
+"in": "Müller iiiii iiiii & Yoyo",
+"want": "Müller iiiii iiiii & Yoyo"
+},
+{
+"col": "tickets",
+"in": "Santoso To Yoyo VIP Ayu",
+"want": "Santoso To Yoyo…"
+},
+{
+"col": "payment",
+"in": "Keluarga Panggung Zoë Konser To",
+"want": "Keluarga…"
+},
+{
+"col": "voucher",
+"in": "iiiii 1× Luh 2× Rahmawati AVAVA",
+"want": "iiiii 1× Lu…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Luh  Yoyo  Zoë  fi",
+"want": "Luh  Yoyo  Zoë  fi"
+},
+{
+"col": "event",
+"in": "Bird",
+"want": "Bird"
+},
+{
+"col": "tickets",
+"in": "—  Bird  2026  Utama  Jakarta",
+"want": "—  Bird  2026-…"
+},
+{
+"col": "payment",
+"in": "ll x",
+"want": "ll x"
+},
+{
+"col": "voucher",
+"in": "Santoso Budi Festival — & Festival",
+"want": "Santoso…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "iiiii x Utama VIP WWWWW",
+"want": "iiiii x Utama VIP…"
+},
+{
+"col": "event",
+"in": "Siti Festival",
+"want": "Siti Festival"
+},
+{
+"col": "tickets",
+"in": "Keluarga Rahmawati",
+"want": "Keluarga…"
+},
+{
+"col": "payment",
+"in": "iiiii 1× Luh 2× Rahmawati AVAVA",
+"want": "iiiii 1× Luh…"
+},
+{
+"col": "voucher",
+"in": "Bird Müller Budi",
+"want": "Bird Müller…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ayu & Ni",
+"want": "Ayu & Ni"
+},
+{
+"col": "event",
+"in": "Jakarta  Café  Bird",
+"want": "Jakarta  Café  Bird"
+},
+{
+"col": "tickets",
+"in": "Café Ni LTA iiiii Zoë",
+"want": "Café Ni LTA iiiii Zoë"
+},
+{
+"col": "payment",
+"in": "Santoso Budi Festival — & Festival",
+"want": "Santoso…"
+},
+{
+"col": "voucher",
+"in": "Paket Kusumawardhani iiiii Siti Ni",
+"want": "Paket…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "AVAVA Ölçek",
+"want": "AVAVA Ölçek"
+},
+{
+"col": "event",
+"in": "x Konser Ty Keluarga Zoë WWWWW",
+"want": "x Konser Ty Keluarga…"
+},
+{
+"col": "tickets",
+"in": "Budi 2026 WWWWW To Utama",
+"want": "Budi 2026…"
+},
+{
+"col": "payment",
+"in": "Bird Müller Budi",
+"want": "Bird Müller B…"
+},
+{
+"col": "voucher",
+"in": "— LTA",
+"want": "— LTA"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "O'Brien 2026 fi 2026 Konser Bird",
+"want": "O'Brien 2026 fi…"
+},
+{
+"col": "event",
+"in": "2026",
+"want": "2026"
+},
+{
+"col": "tickets",
+"in": "&  Café",
+"want": "&  Café"
+},
+{
+"col": "payment",
+"in": "Paket Kusumawardhani iiiii Siti Ni",
+"want": "Paket…"
+},
+{
+"col": "voucher",
+"in": "Konser Rp",
+"want": "Konser Rp"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "2×  Ty  Yoyo  Festival",
+"want": "2×  Ty  Yoyo  Festival"
+},
+{
+"col": "event",
+"in": "Santoso To Yoyo VIP Ayu",
+"want": "Santoso To Yoyo VIP…"
+},
+{
+"col": "tickets",
+"in": "Jakarta VIP Kusumawardhani 2× Kusumawardhani Siti",
+"want": "Jakarta VIP…"
+},
+{
+"col": "payment",
+"in": "— LTA",
+"want": "— LTA"
+},
+{
+"col": "voucher",
+"in": "Early x AVAVA",
+"want": "Early x AVA…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Müller iiiii iiiii & Yoyo",
+"want": "Müller iiiii iiiii & Yo…"
+},
+{
+"col": "event",
+"in": "—  Bird  2026  Utama  Jakarta",
+"want": "—  Bird  2026-…"
+},
+{
+"col": "tickets",
+"in": "Rahmawati  ll  Ty  To  Panggung",
+"want": "Rahmawati  ll  Ty-…"
+},
+{
+"col": "payment",
+"in": "Konser Rp",
+"want": "Konser Rp"
+},
+{
+"col": "voucher",
+"in": "WWWWW",
+"want": "WWWWW"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Bird",
+"want": "Bird"
+},
+{
+"col": "event",
+"in": "Keluarga Rahmawati",
+"want": "Keluarga Rahmawati"
+},
+{
+"col": "tickets",
+"in": "Rahmawati LTA Regular",
+"want": "Rahmawati LTA…"
+},
+{
+"col": "payment",
+"in": "Early x AVAVA",
+"want": "Early x AVAVA"
+},
+{
+"col": "voucher",
+"in": "ll Wawan",
+"want": "ll Wawan"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Siti Festival",
+"want": "Siti Festival"
+},
+{
+"col": "event",
+"in": "Café Ni LTA iiiii Zoë",
+"want": "Café Ni LTA iiiii Zoë"
+},
+{
+"col": "tickets",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "payment",
+"in": "WWWWW",
+"want": "WWWWW"
+},
+{
+"col": "voucher",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Jakarta  Café  Bird",
+"want": "Jakarta  Café  Bird"
+},
+{
+"col": "event",
+"in": "Budi 2026 WWWWW To Utama",
+"want": "Budi 2026 WWWWW…"
+},
+{
+"col": "tickets",
+"in": "Müller Festival Early fi Panggung Paket",
+"want": "Müller Festival Early…"
+},
+{
+"col": "payment",
+"in": "ll Wawan",
+"want": "ll Wawan"
+},
+{
+"col": "voucher",
+"in": "Rahmawati Wawan Ayu LTA Zoë Budi",
+"want": "Rahmawati…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "x Konser Ty Keluarga Zoë WWWWW",
+"want": "x Konser Ty…"
+},
+{
+"col": "event",
+"in": "&  Café",
+"want": "&  Café"
+},
+{
+"col": "tickets",
+"in": "Ni Konser",
+"want": "Ni Konser"
+},
+{
+"col": "payment",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "voucher",
+"in": "2×  2×  Panggung  To  Ni",
+"want": "2×  2×  Pan…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "2026",
+"want": "2026"
+},
+{
+"col": "event",
+"in": "Jakarta VIP Kusumawardhani 2× Kusumawardhani Siti",
+"want": "Jakarta VIP…"
+},
+{
+"col": "tickets",
+"in": "Zoë",
+"want": "Zoë"
+},
+{
+"col": "payment",
+"in": "Rahmawati Wawan Ayu LTA Zoë Budi",
+"want": "Rahmawati…"
+},
+{
+"col": "voucher",
+"in": "ll iiiii Festival",
+"want": "ll iiiii Fe…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Santoso To Yoyo VIP Ayu",
+"want": "Santoso To Yoyo…"
+},
+{
+"col": "event",
+"in": "Rahmawati  ll  Ty  To  Panggung",
+"want": "Rahmawati  ll  Ty  To-…"
+},
+{
+"col": "tickets",
+"in": "Ni iiiii Siti",
+"want": "Ni iiiii Siti"
+},
+{
+"col": "payment",
+"in": "2×  2×  Panggung  To  Ni",
+"want": "2×  2×-…"
+},
+{
+"col": "voucher",
+"in": "Budi Ölçek Santoso",
+"want": "Budi Ölçek…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "—  Bird  2026  Utama  Jakarta",
+"want": "—  Bird  2026-…"
+},
+{
+"col": "event",
+"in": "Rahmawati LTA Regular",
+"want": "Rahmawati LTA…"
+},
+{
+"col": "tickets",
+"in": "Ty Müller 2026 Utama Konser Siti",
+"want": "Ty Müller 2026…"
+},
+{
+"col": "payment",
+"in": "ll iiiii Festival",
+"want": "ll iiiii Fest…"
+},
+{
+"col": "voucher",
+"in": "Ty Rp fi 1×",
+"want": "Ty Rp fi 1×"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Keluarga Rahmawati",
+"want": "Keluarga…"
+},
+{
+"col": "event",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "tickets",
+"in": "Rp Paket Müller Regular Santoso",
+"want": "Rp Paket Müller…"
+},
+{
+"col": "payment",
+"in": "Budi Ölçek Santoso",
+"want": "Budi Ölçek…"
+},
+{
+"col": "voucher",
+"in": "To Ayu Café Kusumawardhani iiiii",
+"want": "To Ayu Café…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Café Ni LTA iiiii Zoë",
+"want": "Café Ni LTA iiiii Zoë"
+},
+{
+"col": "event",
+"in": "Müller Festival Early fi Panggung Paket",
+"want": "Müller Festival Early…"
+},
+{
+"col": "tickets",
+"in": "Keluarga Panggung Zoë Konser To",
+"want": "Keluarga Panggung…"
+},
+{
+"col": "payment",
+"in": "Ty Rp fi 1×",
+"want": "Ty Rp fi 1×"
+},
+{
+"col": "voucher",
+"in": "Paket Konser Bird",
+"want": "Paket…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Budi 2026 WWWWW To Utama",
+"want": "Budi 2026…"
+},
+{
+"col": "event",
+"in": "Ni Konser",
+"want": "Ni Konser"
+},
+{
+"col": "tickets",
+"in": "ll x",
+"want": "ll x"
+},
+{
+"col": "payment",
+"in": "To Ayu Café Kusumawardhani iiiii",
+"want": "To Ayu Café…"
+},
+{
+"col": "voucher",
+"in": "Ayu VIP",
+"want": "Ayu VIP"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "&  Café",
+"want": "&  Café"
+},
+{
+"col": "event",
+"in": "Zoë",
+"want": "Zoë"
+},
+{
+"col": "tickets",
+"in": "iiiii 1× Luh 2× Rahmawati AVAVA",
+"want": "iiiii 1× Luh 2×…"
+},
+{
+"col": "payment",
+"in": "Paket Konser Bird",
+"want": "Paket Konser…"
+},
+{
+"col": "voucher",
+"in": "Ayu Ni To",
+"want": "Ayu Ni To"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Jakarta VIP Kusumawardhani 2× Kusumawardhani Siti",
+"want": "Jakarta VIP…"
+},
+{
+"col": "event",
+"in": "Ni iiiii Siti",
+"want": "Ni iiiii Siti"
+},
+{
+"col": "tickets",
+"in": "Santoso Budi Festival — & Festival",
+"want": "Santoso Budi…"
+},
+{
+"col": "payment",
+"in": "Ayu VIP",
+"want": "Ayu VIP"
+},
+{
+"col": "voucher",
+"in": "Budi  Santoso Wijaya Kusuma",
+"want": "Budi  Santo…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Rahmawati  ll  Ty  To  Panggung",
+"want": "Rahmawati  ll  Ty-…"
+},
+{
+"col": "event",
+"in": "Ty Müller 2026 Utama Konser Siti",
+"want": "Ty Müller 2026 Utama…"
+},
+{
+"col": "tickets",
+"in": "Bird Müller Budi",
+"want": "Bird Müller Budi"
+},
+{
+"col": "payment",
+"in": "Ayu Ni To",
+"want": "Ayu Ni To"
+},
+{
+"col": "voucher",
+"in": "Line\nBreak more words here",
+"want": "Line"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Rahmawati LTA Regular",
+"want": "Rahmawati LTA…"
+},
+{
+"col": "event",
+"in": "Rp Paket Müller Regular Santoso",
+"want": "Rp Paket Müller…"
+},
+{
+"col": "tickets",
+"in": "Paket Kusumawardhani iiiii Siti Ni",
+"want": "Paket…"
+},
+{
+"col": "payment",
+"in": "Budi  Santoso Wijaya Kusuma",
+"want": "Budi…"
+},
+{
+"col": "voucher",
+"in": " Leading space name here",
+"want": "Leading sp…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Early",
+"want": "Early"
+},
+{
+"col": "event",
+"in": "Keluarga Panggung Zoë Konser To",
+"want": "Keluarga Panggung…"
+},
+{
+"col": "tickets",
+"in": "— LTA",
+"want": "— LTA"
+},
+{
+"col": "payment",
+"in": "Line\nBreak more words here",
+"want": "Line"
+},
+{
+"col": "voucher",
+"in": "Trailing spaces here      ",
+"want": "Trailing sp…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Müller Festival Early fi Panggung Paket",
+"want": "Müller Festival Early…"
+},
+{
+"col": "event",
+"in": "ll x",
+"want": "ll x"
+},
+{
+"col": "tickets",
+"in": "Konser Rp",
+"want": "Konser Rp"
+},
+{
+"col": "payment",
+"in": " Leading space name here",
+"want": "Leading…"
+},
+{
+"col": "voucher",
+"in": null,
+"want": "—"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ni Konser",
+"want": "Ni Konser"
+},
+{
+"col": "event",
+"in": "iiiii 1× Luh 2× Rahmawati AVAVA",
+"want": "iiiii 1× Luh 2×…"
+},
+{
+"col": "tickets",
+"in": "Early x AVAVA",
+"want": "Early x AVAVA"
+},
+{
+"col": "payment",
+"in": "Trailing spaces here      ",
+"want": "Trailing spac…"
+},
+{
+"col": "voucher",
+"in": "Kusumawardhaniprameswariputri",
+"want": "Kusumawardh…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Zoë",
+"want": "Zoë"
+},
+{
+"col": "event",
+"in": "Santoso Budi Festival — & Festival",
+"want": "Santoso Budi Festival…"
+},
+{
+"col": "tickets",
+"in": "WWWWW",
+"want": "WWWWW"
+},
+{
+"col": "payment",
+"in": "",
+"want": ""
+},
+{
+"col": "voucher",
+"in": "a b c d e f g h i j k l m n o p q r s t",
+"want": "a b c d e f…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ni iiiii Siti",
+"want": "Ni iiiii Siti"
+},
+{
+"col": "event",
+"in": "Bird Müller Budi",
+"want": "Bird Müller Budi"
+},
+{
+"col": "tickets",
+"in": "ll Wawan",
+"want": "ll Wawan"
+},
+{
+"col": "payment",
+"in": "Kusumawardhaniprameswariputri",
+"want": "Kusumawardhan…"
+},
+{
+"col": "voucher",
+"in": "AVAVAVAV WAWA To Ty Yo Te",
+"want": "AVAVAVAV…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ty Müller 2026 Utama Konser Siti",
+"want": "Ty Müller 2026…"
+},
+{
+"col": "event",
+"in": "Paket Kusumawardhani iiiii Siti Ni",
+"want": "Paket…"
+},
+{
+"col": "tickets",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "payment",
+"in": "a b c d e f g h i j k l m n o p q r s t",
+"want": "a b c d e f g…"
+},
+{
+"col": "voucher",
+"in": "Zoë Dewi Kusumawardhani Prameswari",
+"want": "Zoë Dewi…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Rp Paket Müller Regular Santoso",
+"want": "Rp Paket Müller…"
+},
+{
+"col": "event",
+"in": "— LTA",
+"want": "— LTA"
+},
+{
+"col": "tickets",
+"in": "Rahmawati Wawan Ayu LTA Zoë Budi",
+"want": "Rahmawati Wawan…"
+},
+{
+"col": "payment",
+"in": "AVAVAVAV WAWA To Ty Yo Te",
+"want": "AVAVAVAV…"
+},
+{
+"col": "voucher",
+"in": "Ni Luh Ayu Saraswati",
+"want": "Ni Luh Ayu…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Keluarga Panggung Zoë Konser To",
+"want": "Keluarga Panggung…"
+},
+{
+"col": "event",
+"in": "Konser Rp",
+"want": "Konser Rp"
+},
+{
+"col": "tickets",
+"in": "2×  2×  Panggung  To  Ni",
+"want": "2×  2×  Panggung-…"
+},
+{
+"col": "payment",
+"in": "Zoë Dewi Kusumawardhani Prameswari",
+"want": "Zoë Dewi…"
+},
+{
+"col": "voucher",
+"in": "Tab\there word",
+"want": "Tab\there wo…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "ll x",
+"want": "ll x"
+},
+{
+"col": "event",
+"in": "Early x AVAVA",
+"want": "Early x AVAVA"
+},
+{
+"col": "tickets",
+"in": "ll iiiii Festival",
+"want": "ll iiiii Festival"
+},
+{
+"col": "payment",
+"in": "Ni Luh Ayu Saraswati",
+"want": "Ni Luh Ayu…"
+},
+{
+"col": "voucher",
+"in": "Two\n\nNewlines",
+"want": "Two"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "iiiii 1× Luh 2× Rahmawati AVAVA",
+"want": "iiiii 1× Luh 2×…"
+},
+{
+"col": "event",
+"in": "WWWWW",
+"want": "WWWWW"
+},
+{
+"col": "tickets",
+"in": "Budi Ölçek Santoso",
+"want": "Budi Ölçek Santoso"
+},
+{
+"col": "payment",
+"in": "Tab\there word",
+"want": "Tab\there word"
+},
+{
+"col": "voucher",
+"in": "日本語 名前",
+"want": "å,ž \rM"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Santoso Budi Festival — & Festival",
+"want": "Santoso Budi…"
+},
+{
+"col": "event",
+"in": "ll Wawan",
+"want": "ll Wawan"
+},
+{
+"col": "tickets",
+"in": "Ty Rp fi 1×",
+"want": "Ty Rp fi 1×"
+},
+{
+"col": "payment",
+"in": "Two\n\nNewlines",
+"want": "Two"
+},
+{
+"col": "voucher",
+"in": "Ab  ",
+"want": "Ab  "
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Bird Müller Budi",
+"want": "Bird Müller Budi"
+},
+{
+"col": "event",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "tickets",
+"in": "To Ayu Café Kusumawardhani iiiii",
+"want": "To Ayu Café…"
+},
+{
+"col": "payment",
+"in": "日本語 名前",
+"want": "å,ž \rM"
+},
+{
+"col": "voucher",
+"in": "W W W W W W W W W W W W W W W",
+"want": "W W W W W…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Paket Kusumawardhani iiiii Siti Ni",
+"want": "Paket…"
+},
+{
+"col": "event",
+"in": "Rahmawati Wawan Ayu LTA Zoë Budi",
+"want": "Rahmawati Wawan…"
+},
+{
+"col": "tickets",
+"in": "Paket Konser Bird",
+"want": "Paket Konser Bird"
+},
+{
+"col": "payment",
+"in": "Ab  ",
+"want": "Ab  "
+},
+{
+"col": "voucher",
+"in": "& O'Brien Utama Regular",
+"want": "& O'Brien U…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "— LTA",
+"want": "— LTA"
+},
+{
+"col": "event",
+"in": "2×  2×  Panggung  To  Ni",
+"want": "2×  2×  Panggung-…"
+},
+{
+"col": "tickets",
+"in": "Ayu VIP",
+"want": "Ayu VIP"
+},
+{
+"col": "payment",
+"in": "W W W W W W W W W W W W W W W",
+"want": "W W W W W W…"
+},
+{
+"col": "voucher",
+"in": "Müller Ni Ty Kusumawardhani",
+"want": "Müller Ni T…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Konser Rp",
+"want": "Konser Rp"
+},
+{
+"col": "event",
+"in": "ll iiiii Festival",
+"want": "ll iiiii Festival"
+},
+{
+"col": "tickets",
+"in": "Ayu Ni To",
+"want": "Ayu Ni To"
+},
+{
+"col": "payment",
+"in": "& O'Brien Utama Regular",
+"want": "& O'Brien…"
+},
+{
+"col": "voucher",
+"in": "Panggung Yoyo Wawan Ayu Keluarga",
+"want": "Panggung…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Early x AVAVA",
+"want": "Early x AVAVA"
+},
+{
+"col": "event",
+"in": "Budi Ölçek Santoso",
+"want": "Budi Ölçek Santoso"
+},
+{
+"col": "tickets",
+"in": "Budi  Santoso Wijaya Kusuma",
+"want": "Budi  Santoso…"
+},
+{
+"col": "payment",
+"in": "Müller Ni Ty Kusumawardhani",
+"want": "Müller Ni Ty…"
+},
+{
+"col": "voucher",
+"in": "Konser Kusumawardhani 1× Santoso Early Rp",
+"want": "Konser…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "WWWWW",
+"want": "WWWWW"
+},
+{
+"col": "event",
+"in": "Ty Rp fi 1×",
+"want": "Ty Rp fi 1×"
+},
+{
+"col": "tickets",
+"in": "Line\nBreak more words here",
+"want": "Line"
+},
+{
+"col": "payment",
+"in": "Panggung Yoyo Wawan Ayu Keluarga",
+"want": "Panggung…"
+},
+{
+"col": "voucher",
+"in": "Rahmawati",
+"want": "Rahmawati"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "ll Wawan",
+"want": "ll Wawan"
+},
+{
+"col": "event",
+"in": "To Ayu Café Kusumawardhani iiiii",
+"want": "To Ayu Café…"
+},
+{
+"col": "tickets",
+"in": " Leading space name here",
+"want": "Leading space…"
+},
+{
+"col": "payment",
+"in": "Konser Kusumawardhani 1× Santoso Early Rp",
+"want": "Konser…"
+},
+{
+"col": "voucher",
+"in": "Kusumawardhani",
+"want": "Kusumawardh…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Utama",
+"want": "Utama"
+},
+{
+"col": "event",
+"in": "Paket Konser Bird",
+"want": "Paket Konser Bird"
+},
+{
+"col": "tickets",
+"in": "Trailing spaces here      ",
+"want": "Trailing spaces…"
+},
+{
+"col": "payment",
+"in": "Rahmawati",
+"want": "Rahmawati"
+},
+{
+"col": "voucher",
+"in": "Kusumawardhani & Budi Ölçek Café",
+"want": "Kusumawardh…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Rahmawati Wawan Ayu LTA Zoë Budi",
+"want": "Rahmawati Wawan…"
+},
+{
+"col": "event",
+"in": "Ayu VIP",
+"want": "Ayu VIP"
+},
+{
+"col": "tickets",
+"in": "",
+"want": ""
+},
+{
+"col": "payment",
+"in": "Kusumawardhani",
+"want": "Kusumawardhani"
+},
+{
+"col": "voucher",
+"in": "1× 2× Ty 1× Jakarta",
+"want": "1× 2× Ty 1×…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "2×  2×  Panggung  To  Ni",
+"want": "2×  2×  Panggung-…"
+},
+{
+"col": "event",
+"in": "Ayu Ni To",
+"want": "Ayu Ni To"
+},
+{
+"col": "tickets",
+"in": "Kusumawardhaniprameswariputri",
+"want": "Kusumawardhaniprameswar…"
+},
+{
+"col": "payment",
+"in": "Kusumawardhani & Budi Ölçek Café",
+"want": "Kusumawardhan…"
+},
+{
+"col": "voucher",
+"in": "1×",
+"want": "1×"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "ll iiiii Festival",
+"want": "ll iiiii Festival"
+},
+{
+"col": "event",
+"in": "Budi  Santoso Wijaya Kusuma",
+"want": "Budi  Santoso Wijaya…"
+},
+{
+"col": "tickets",
+"in": "a b c d e f g h i j k l m n o p q r s t",
+"want": "a b c d e f g h i j k l…"
+},
+{
+"col": "payment",
+"in": "1× 2× Ty 1× Jakarta",
+"want": "1× 2× Ty 1× J…"
+},
+{
+"col": "voucher",
+"in": "—",
+"want": "—"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Budi Ölçek Santoso",
+"want": "Budi Ölçek Santoso"
+},
+{
+"col": "event",
+"in": "Line\nBreak more words here",
+"want": "Line"
+},
+{
+"col": "tickets",
+"in": "AVAVAVAV WAWA To Ty Yo Te",
+"want": "AVAVAVAV WAWA…"
+},
+{
+"col": "payment",
+"in": "1×",
+"want": "1×"
+},
+{
+"col": "voucher",
+"in": "ll",
+"want": "ll"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ty Rp fi 1×",
+"want": "Ty Rp fi 1×"
+},
+{
+"col": "event",
+"in": " Leading space name here",
+"want": "Leading space name…"
+},
+{
+"col": "tickets",
+"in": "Zoë Dewi Kusumawardhani Prameswari",
+"want": "Zoë Dewi…"
+},
+{
+"col": "payment",
+"in": "—",
+"want": "—"
+},
+{
+"col": "voucher",
+"in": "WWWWW Regular",
+"want": "WWWWW…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "To Ayu Café Kusumawardhani iiiii",
+"want": "To Ayu Café…"
+},
+{
+"col": "event",
+"in": "Trailing spaces here      ",
+"want": "Trailing spaces…"
+},
+{
+"col": "tickets",
+"in": "Ni Luh Ayu Saraswati",
+"want": "Ni Luh Ayu…"
+},
+{
+"col": "payment",
+"in": "ll",
+"want": "ll"
+},
+{
+"col": "voucher",
+"in": "x WWWWW Luh Kusumawardhani Luh",
+"want": "x WWWWW…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Paket Konser Bird",
+"want": "Paket Konser Bird"
+},
+{
+"col": "event",
+"in": "",
+"want": ""
+},
+{
+"col": "tickets",
+"in": "Tab\there word",
+"want": "Tab\there word"
+},
+{
+"col": "payment",
+"in": "WWWWW Regular",
+"want": "WWWWW…"
+},
+{
+"col": "voucher",
+"in": "Ty 2× Ty Jakarta Ni Santoso",
+"want": "Ty 2× Ty Ja…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+},
+{
+"col": "buyer",
+"in": "Ayu VIP",
+"want": "Ayu VIP"
+},
+{
+"col": "event",
+"in": "Kusumawardhaniprameswariputri",
+"want": "Kusumawardhaniprameswarip…"
+},
+{
+"col": "tickets",
+"in": "Two\n\nNewlines",
+"want": "Two"
+},
+{
+"col": "payment",
+"in": "x WWWWW Luh Kusumawardhani Luh",
+"want": "x WWWWW…"
+},
+{
+"col": "voucher",
+"in": "Café fi Jakarta",
+"want": "Café fi Jak…"
+},
+{
+"col": "status",
+"in": "x y z longstatus words",
+"want": "x y z…"
+},
+{
+"col": "buyer",
+"in": "Ayu Ni To",
+"want": "Ayu Ni To"
+},
+{
+"col": "event",
+"in": "a b c d e f g h i j k l m n o p q r s t",
+"want": "a b c d e f g h i j k l…"
+},
+{
+"col": "tickets",
+"in": "日本語 名前",
+"want": "å,ž \rM"
+},
+{
+"col": "payment",
+"in": "Ty 2× Ty Jakarta Ni Santoso",
+"want": "Ty 2× Ty Jaka…"
+},
+{
+"col": "voucher",
+"in": "WWWWW Jakarta Budi",
+"want": "WWWWW…"
+},
+{
+"col": "status",
+"in": "paid",
+"want": "Paid"
+}
+]

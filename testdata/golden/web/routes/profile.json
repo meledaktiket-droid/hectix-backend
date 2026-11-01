@@ -1,0 +1,13 @@
+{
+  "name": "Sample Name",
+  "email": "user@example.com",
+  "image": "https://example.com/images/sample.jpg",
+  "coverImage": null,
+  "location": null,
+  "gender": "male",
+  "instagram": "sample_ig",
+  "tiktok": null,
+  "memberSince": 2026,
+  "eventCount": 1,
+  "commentCount": 0
+}

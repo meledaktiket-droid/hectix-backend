@@ -1,0 +1,10 @@
+﻿"Reference","Organization","Buyer","Email","Event","Tickets","Subtotal","Discount","Voucher","Tax","Fee","Total","Midtrans","Net","Status","Date"
+"HX-1","Acme, Inc.","Budi ""Bud"" Santoso","budi@example.com","Konser Senja","2× VIP, 1× Regular","Rp 405.000","−Rp 45.000","SENJA10","Rp 40.500","Rp 7.120","Rp 452.620","−Rp 4.000","Rp 448.620","Paid","3 Mei 2026"
+"0b5c6e1e-3f7a-4c2d-9b8e-123456789abc","Zoë Müller Events","Line
+Break","zoe@example.com","Festival, ""Kuliner""
+Bandung","","Rp 163.450","","","Rp 0","Rp 0","Rp 163.450","−Rp 1.144,15","Rp 162.305,85","Paid","31 Mei 2026"
+"HX-3","Ni Luh Ayu 日本","Putu","putu@example.com","Jazz","1× Festival","Rp 80.000","","","Rp 8.000","Rp 7.120","Rp 95.120","","","Pending","1 Jan 2026"
+"HX-4","Acme","","x@example.com","Gratis","3× Free","Rp 0","−Rp 50.000","FREE100","Rp 0","Rp 0","Rp 0","−Rp 4.000","-Rp 4.000","Paid","31 Des 2026"
+"HX-5","Acme","Refund","r@example.com","E","1× A","Rp 1.234.567","","","Rp 123.457","Rp 7.120","Rp 1.365.144","","","refunded","17 Agu 2026"
+"HX-6","Acme","Q","q@example.com","E","1× A","Rp 1.250","","","Rp 0","Rp 0","Rp 1.250","−Rp 8,75","Rp 1.241,25","Paid","10 Feb 2026"
+"'=HYPERLINK(""http://x"")","'+Org","'-2+3","'@evil","'	Tab","1× =1+1","Rp 1.000","","'CR","Rp 0","Rp 0","Rp 1.000","","","'=cmd","11 Feb 2026"

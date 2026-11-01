@@ -1,0 +1,56 @@
+{
+  "stats": {
+    "totalOrgs": 8,
+    "totalEvents": 10,
+    "totalUsers": 2549,
+    "totalOrders": 1393,
+    "totalGmv": 195011650,
+    "ticketSales": 175855000,
+    "taxCollected": 13919650,
+    "serviceFeeProfit": 5237000,
+    "platformFeeProfit": 7000,
+    "estimatedMidtransCost": 1780275
+  },
+  "revenueByDay": [
+    {
+      "date": "2026-09-02",
+      "revenue": 2334100
+    },
+    {
+      "date": "2026-09-03",
+      "revenue": 2453650
+    },
+    {
+      "date": "2026-09-04",
+      "revenue": 1501700
+    }
+  ],
+  "ordersByStatus": [
+    {
+      "status": "cancelled",
+      "count": 180
+    },
+    {
+      "status": "expired",
+      "count": 879
+    },
+    {
+      "status": "paid",
+      "count": 1393
+    }
+  ],
+  "topEvents": [
+    {
+      "eventName": "Sample Event",
+      "revenue": 94554100
+    },
+    {
+      "eventName": "Sample Event",
+      "revenue": 82101450
+    },
+    {
+      "eventName": "Sample Event",
+      "revenue": 10354000
+    }
+  ]
+}

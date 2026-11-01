@@ -1,0 +1,166 @@
+{
+ "midtransVaFee": 4000,
+ "midtransQrisPercent": 0.7,
+ "rows": [
+  {
+   "referenceNumber": "HX-1",
+   "id": "id-1",
+   "orgName": "Acme, Inc.",
+   "buyerName": "Budi \"Bud\" Santoso",
+   "buyerEmail": "budi@example.com",
+   "eventName": "Konser Senja",
+   "items": [
+    [
+     2,
+     "VIP"
+    ],
+    [
+     1,
+     "Regular"
+    ]
+   ],
+   "subtotal": 405000,
+   "tax": 40500,
+   "serviceFee": 7120,
+   "total": 452620,
+   "voucherCode": "SENJA10",
+   "voucherDiscount": 45000,
+   "paymentMethod": "va_bank",
+   "status": "paid",
+   "createdAt": "2026-05-03T04:00:00Z"
+  },
+  {
+   "referenceNumber": null,
+   "id": "0b5c6e1e-3f7a-4c2d-9b8e-123456789abc",
+   "orgName": "Zoë Müller Events",
+   "buyerName": "Line\nBreak",
+   "buyerEmail": "zoe@example.com",
+   "eventName": "Festival, \"Kuliner\"\r\nBandung",
+   "items": [],
+   "subtotal": 163450,
+   "tax": 0,
+   "serviceFee": 0,
+   "total": 163450,
+   "voucherCode": null,
+   "voucherDiscount": 0,
+   "paymentMethod": "qris",
+   "status": "paid",
+   "createdAt": "2026-05-31T17:30:00Z"
+  },
+  {
+   "referenceNumber": "HX-3",
+   "id": "id-3",
+   "orgName": "Ni Luh Ayu 日本",
+   "buyerName": "Putu",
+   "buyerEmail": "putu@example.com",
+   "eventName": "Jazz",
+   "items": [
+    [
+     1,
+     "Festival"
+    ]
+   ],
+   "subtotal": 80000,
+   "tax": 8000,
+   "serviceFee": 7120,
+   "total": 95120,
+   "voucherCode": null,
+   "voucherDiscount": 0,
+   "paymentMethod": "qris",
+   "status": "pending_payment",
+   "createdAt": "2026-01-01T00:00:00Z"
+  },
+  {
+   "referenceNumber": "HX-4",
+   "id": "id-4",
+   "orgName": "Acme",
+   "buyerName": "",
+   "buyerEmail": "x@example.com",
+   "eventName": "Gratis",
+   "items": [
+    [
+     3,
+     "Free"
+    ]
+   ],
+   "subtotal": 0,
+   "tax": 0,
+   "serviceFee": 0,
+   "total": 0,
+   "voucherCode": "FREE100",
+   "voucherDiscount": 50000,
+   "paymentMethod": "va_bank",
+   "status": "paid",
+   "createdAt": "2026-12-31T23:59:59Z"
+  },
+  {
+   "referenceNumber": "HX-5",
+   "id": "id-5",
+   "orgName": "Acme",
+   "buyerName": "Refund",
+   "buyerEmail": "r@example.com",
+   "eventName": "E",
+   "items": [
+    [
+     1,
+     "A"
+    ]
+   ],
+   "subtotal": 1234567,
+   "tax": 123457,
+   "serviceFee": 7120,
+   "total": 1365144,
+   "voucherCode": null,
+   "voucherDiscount": 0,
+   "paymentMethod": "credit_card",
+   "status": "refunded",
+   "createdAt": "2026-08-17T12:00:00Z"
+  },
+  {
+   "referenceNumber": "HX-6",
+   "id": "id-6",
+   "orgName": "Acme",
+   "buyerName": "Q",
+   "buyerEmail": "q@example.com",
+   "eventName": "E",
+   "items": [
+    [
+     1,
+     "A"
+    ]
+   ],
+   "subtotal": 1250,
+   "tax": 0,
+   "serviceFee": 0,
+   "total": 1250,
+   "voucherCode": null,
+   "voucherDiscount": 0,
+   "paymentMethod": "qris",
+   "status": "paid",
+   "createdAt": "2026-02-10T12:00:00Z"
+  },
+  {
+   "referenceNumber": "=HYPERLINK(\"http://x\")",
+   "id": "id-7",
+   "orgName": "+Org",
+   "buyerName": "-2+3",
+   "buyerEmail": "@evil",
+   "eventName": "\tTab",
+   "items": [
+    [
+     1,
+     "=1+1"
+    ]
+   ],
+   "subtotal": 1000,
+   "tax": 0,
+   "serviceFee": 0,
+   "total": 1000,
+   "voucherCode": "\rCR",
+   "voucherDiscount": 0,
+   "paymentMethod": "va_bank",
+   "status": "=cmd",
+   "createdAt": "2026-02-11T12:00:00Z"
+  }
+ ]
+}

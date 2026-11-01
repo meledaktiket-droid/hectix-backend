@@ -1,0 +1,28 @@
+{
+  "id": "8d1b1093-f379-4157-828c-001696b3d7f7",
+  "referenceNumber": "HX-2026-0000-0000",
+  "barcode": "SAMPLEBARCODE0000",
+  "status": "paid",
+  "paymentMethod": "qris",
+  "bank": null,
+  "subtotal": 105000,
+  "tax": 7350,
+  "serviceFee": 4000,
+  "total": 116350,
+  "voucherDiscount": 0,
+  "createdAt": "2026-09-28T11:58:42.437Z",
+  "eventId": "8aefd19c-b54d-4dfe-bf32-03957caddb46",
+  "eventName": "Sample Event",
+  "eventStartsAt": "2026-12-04T06:00:00.000Z",
+  "eventBannerUrl": "https://example.com/images/sample.jpg",
+  "eventVenueName": "Sample Venue",
+  "eventCity": "Bandar Lampung",
+  "buyerName": "Sample Buyer",
+  "items": [
+    {
+      "ticketTypeName": "Sample Ticket",
+      "price": 105000,
+      "quantity": 1
+    }
+  ]
+}

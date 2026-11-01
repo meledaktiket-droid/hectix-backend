@@ -1,0 +1,64 @@
+{
+  "id": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+  "name": "Sample Name",
+  "slug": "sample-slug",
+  "logo": null,
+  "createdAt": "2026-08-17T08:37:25.091Z",
+  "metadata": "{\"type\":\"personal\",\"name\":\"Sample Name\",\"phone\":\"080000000000\"}",
+  "status": "active",
+  "verificationData": "{\"ktpNumber\":\"0000000000000000\",\"bankName\":\"BNI\",\"accountNumber\":\"0000000000\",\"accountHolderName\":\"Sample Holder\"}",
+  "statusNote": null,
+  "allowResubmit": false,
+  "members": [
+    {
+      "id": "HvhPfgGu5hmwz8jdk4Vb5zns5TbglihX",
+      "role": "owner",
+      "createdAt": "2026-08-17T08:37:25.096Z",
+      "userId": "DUJZLmIjT0sPxoh0NfGniO3Ni6JPh4gO",
+      "name": "Sample Name",
+      "email": "user@example.com",
+      "image": "https://example.com/images/sample.jpg"
+    },
+    {
+      "id": "yGjAbZpVcvxj3e7v6oDEVDzDQt5AFHlw",
+      "role": "admin",
+      "createdAt": "2026-09-26T15:56:26.608Z",
+      "userId": "a2TuYvkDjECFwL1moMvFY9Mu9Q7B3rvk",
+      "name": "Sample Name",
+      "email": "user@example.com",
+      "image": "https://example.com/images/sample.jpg"
+    }
+  ],
+  "history": [
+    {
+      "id": "c963708a-37c6-465b-9c91-f9b6e0a86712",
+      "fromStatus": "review",
+      "toStatus": "active",
+      "note": null,
+      "actorType": "admin",
+      "actorName": "Sample Actor",
+      "actorEmail": "actor@example.com",
+      "createdAt": "2026-08-17T11:18:30.970Z"
+    },
+    {
+      "id": "a5ba99cb-7c03-4c63-b002-4a27053dcf70",
+      "fromStatus": "pending",
+      "toStatus": "review",
+      "note": null,
+      "actorType": "organizer",
+      "actorName": "Sample Actor",
+      "actorEmail": "actor@example.com",
+      "createdAt": "2026-08-17T08:38:02.303Z"
+    },
+    {
+      "id": "a4acc047-1735-48e8-8389-addf44c7e45f",
+      "fromStatus": null,
+      "toStatus": "pending",
+      "note": null,
+      "actorType": "organizer",
+      "actorName": "Sample Actor",
+      "actorEmail": "actor@example.com",
+      "createdAt": "2026-08-17T08:37:25.466Z"
+    }
+  ]
+}

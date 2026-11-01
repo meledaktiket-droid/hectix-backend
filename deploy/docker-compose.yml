@@ -1,0 +1,55 @@
+name: hectix
+
+services:
+  db:
+    image: postgres:17
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: hectix
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: hectix
+      TZ: UTC
+      PGTZ: UTC
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hectix -d hectix"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: ..
+    image: hectix-api
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://hectix:${DB_PASSWORD}@db:5432/hectix?sslmode=disable&timezone=UTC
+      UPLOAD_DIR: /uploads
+    volumes:
+      - uploads:/uploads
+    depends_on:
+      db:
+        condition: service_healthy
+    stop_grace_period: 3m
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
+  uploads:
+  caddy_data:
+  caddy_config:

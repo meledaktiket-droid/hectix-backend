@@ -1,0 +1,27 @@
+{
+  "events": [
+    {
+      "id": "61d9bacf-c6c8-4105-9102-a486f59a46f4",
+      "organizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+      "name": "Sample Name",
+      "description": "<p>Sample description</p>",
+      "venueName": "Sample Venue",
+      "address": "Sample Address",
+      "city": "Malang",
+      "bannerUrl": "https://example.com/images/sample.jpg",
+      "categories": [
+        "musik"
+      ],
+      "startsAt": "2026-12-05T07:17:00.000Z",
+      "endsAt": "2026-12-04T17:17:00.000Z",
+      "status": "published",
+      "visibility": "public",
+      "attendeeForm": false,
+      "deletedAt": null,
+      "createdAt": "2026-08-24T14:20:20.813Z",
+      "updatedAt": "2026-09-29T08:00:51.476Z",
+      "soldCount": 877,
+      "capacity": 1500
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "favorites": [
+    {
+      "eventId": "8aefd19c-b54d-4dfe-bf32-03957caddb46",
+      "name": "Sample Name",
+      "bannerUrl": "https://example.com/images/sample.jpg",
+      "venueName": "Sample Venue",
+      "city": "Bandar Lampung",
+      "startsAt": "2026-12-04T06:00:00.000Z"
+    }
+  ],
+  "nextOffset": null
+}

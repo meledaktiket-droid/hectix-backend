@@ -1,0 +1,51 @@
+{
+  "user": {
+    "id": "Z6mKFDq0Nbd56fAcqWYxVKZgskRmpHH7",
+    "name": "Sample Name",
+    "email": "user@example.com",
+    "image": "https://example.com/images/sample.jpg",
+    "role": "user",
+    "location": null,
+    "gender": "male",
+    "instagram": "sample_ig",
+    "tiktok": null,
+    "createdAt": "2026-09-28T07:01:29.010Z"
+  },
+  "stats": {
+    "totalOrders": 5,
+    "paidOrders": 4,
+    "pendingOrders": 0,
+    "totalSpent": 465400
+  },
+  "orders": [
+    {
+      "id": "8d1b1093-f379-4157-828c-001696b3d7f7",
+      "referenceNumber": "HX-2026-0000-0000",
+      "status": "paid",
+      "total": 116350,
+      "createdAt": "2026-09-28T11:58:42.437Z",
+      "eventName": "Sample Event",
+      "orgName": "Sample Org"
+    },
+    {
+      "id": "b603bfb9-a811-4950-a18a-3d122a69a773",
+      "referenceNumber": "HX-2026-0000-0000",
+      "status": "paid",
+      "total": 116350,
+      "createdAt": "2026-09-28T11:52:16.664Z",
+      "eventName": "Sample Event",
+      "orgName": "Sample Org"
+    },
+    {
+      "id": "da10b833-53d4-484b-8166-09a8080bccae",
+      "referenceNumber": "HX-2026-0000-0000",
+      "status": "paid",
+      "total": 116350,
+      "createdAt": "2026-09-28T11:51:47.611Z",
+      "eventName": "Sample Event",
+      "orgName": "Sample Org"
+    }
+  ],
+  "ordersPage": 1,
+  "ordersTotalPages": 1
+}

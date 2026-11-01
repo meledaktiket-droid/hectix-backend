@@ -1,0 +1,52 @@
+{
+  "stats": {
+    "totalRevenue": 84680000,
+    "totalOrders": 665,
+    "totalEvents": 2,
+    "totalTicketsSold": 877
+  },
+  "revenueByDay": [
+    {
+      "date": "2026-09-02",
+      "revenue": 2090000
+    },
+    {
+      "date": "2026-09-03",
+      "revenue": 2185000
+    },
+    {
+      "date": "2026-09-04",
+      "revenue": 1330000
+    }
+  ],
+  "ordersByStatus": [
+    {
+      "status": "cancelled",
+      "count": 65
+    },
+    {
+      "status": "expired",
+      "count": 290
+    },
+    {
+      "status": "paid",
+      "count": 665
+    }
+  ],
+  "topEvents": [
+    {
+      "eventName": "Sample Event",
+      "revenue": 84680000
+    }
+  ],
+  "upcomingEvents": [
+    {
+      "id": "61d9bacf-c6c8-4105-9102-a486f59a46f4",
+      "name": "Sample Name",
+      "startsAt": "2026-12-05T07:17:00.000Z",
+      "city": "Malang",
+      "sold": 877,
+      "capacity": 1500
+    }
+  ]
+}

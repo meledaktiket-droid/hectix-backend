@@ -1,0 +1,34 @@
+{
+  "performers": [
+    {
+      "id": "3f2f4752-6153-4c73-b68b-0d3350190fd8",
+      "eventId": "61d9bacf-c6c8-4105-9102-a486f59a46f4",
+      "name": "Sample Name",
+      "imageUrl": "https://example.com/images/sample.jpg",
+      "displayOrder": 2,
+      "deletedAt": null,
+      "createdAt": "2026-08-26T16:28:48.908Z",
+      "updatedAt": "2026-08-26T16:28:48.908Z"
+    },
+    {
+      "id": "a466cad3-12a6-4add-8b6a-088274c381cd",
+      "eventId": "61d9bacf-c6c8-4105-9102-a486f59a46f4",
+      "name": "Sample Name",
+      "imageUrl": "https://example.com/images/sample.jpg",
+      "displayOrder": 2,
+      "deletedAt": null,
+      "createdAt": "2026-08-26T16:28:48.916Z",
+      "updatedAt": "2026-08-26T16:28:48.916Z"
+    },
+    {
+      "id": "15c1896b-b9ae-4c0f-95c9-381e4b7a20d2",
+      "eventId": "61d9bacf-c6c8-4105-9102-a486f59a46f4",
+      "name": "Sample Name",
+      "imageUrl": "https://example.com/images/sample.jpg",
+      "displayOrder": 4,
+      "deletedAt": null,
+      "createdAt": "2026-09-08T18:02:05.679Z",
+      "updatedAt": "2026-09-08T18:02:05.679Z"
+    }
+  ]
+}

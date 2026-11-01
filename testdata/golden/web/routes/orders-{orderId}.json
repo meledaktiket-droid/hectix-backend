@@ -1,0 +1,27 @@
+{
+  "id": "8d1b1093-f379-4157-828c-001696b3d7f7",
+  "status": "paid",
+  "paymentMethod": "qris",
+  "bank": null,
+  "vaNumber": null,
+  "referenceNumber": "HX-2026-0000-0000",
+  "qrisUrl": "https://example.com/qris/sample",
+  "subtotal": 105000,
+  "tax": 7350,
+  "serviceFee": 4000,
+  "total": 116350,
+  "voucherDiscount": 0,
+  "sendEticket": true,
+  "expiresAt": "2026-09-28T12:13:42.437Z",
+  "eventId": "8aefd19c-b54d-4dfe-bf32-03957caddb46",
+  "eventName": "Sample Event",
+  "eventStartsAt": "2026-12-04T06:00:00.000Z",
+  "eventBannerUrl": "https://example.com/images/sample.jpg",
+  "items": [
+    {
+      "ticketTypeName": "Sample Ticket",
+      "price": 105000,
+      "quantity": 1
+    }
+  ]
+}

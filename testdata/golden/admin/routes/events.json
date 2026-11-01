@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "id": "8aefd19c-b54d-4dfe-bf32-03957caddb46",
+      "name": "Sample Name",
+      "status": "published",
+      "startsAt": "2026-12-04T06:00:00.000Z",
+      "endsAt": "2026-12-04T15:30:00.000Z",
+      "city": "Bandar Lampung",
+      "venueName": "Sample Venue",
+      "organizationId": "3rjLEusJO4JBpo6hUxKCbZkoV1sWi1UY",
+      "organizationName": "Sample Org",
+      "createdAt": "2026-09-23T10:30:53.811Z"
+    },
+    {
+      "id": "fee3805c-4d6d-43f6-9d9d-e700b991200c",
+      "name": "Sample Name",
+      "status": "draft",
+      "startsAt": "2026-09-01T11:40:00.000Z",
+      "endsAt": "2026-09-29T11:40:00.000Z",
+      "city": "Malang",
+      "venueName": "Sample Venue",
+      "organizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+      "organizationName": "Sample Org",
+      "createdAt": "2026-08-24T18:43:02.653Z"
+    },
+    {
+      "id": "61d9bacf-c6c8-4105-9102-a486f59a46f4",
+      "name": "Sample Name",
+      "status": "published",
+      "startsAt": "2026-12-05T07:17:00.000Z",
+      "endsAt": "2026-12-04T17:17:00.000Z",
+      "city": "Malang",
+      "venueName": "Sample Venue",
+      "organizationId": "LR64qEPTy1nGCA7ehhUd5814YgU5MhpY",
+      "organizationName": "Sample Org",
+      "createdAt": "2026-08-24T14:20:20.813Z"
+    }
+  ],
+  "total": 10,
+  "page": 1,
+  "totalPages": 1
+}
