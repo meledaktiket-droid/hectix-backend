@@ -26,6 +26,8 @@ services:
     environment:
       DATABASE_URL: postgres://hectix:${DB_PASSWORD}@db:5432/hectix?sslmode=disable&timezone=UTC
       UPLOAD_DIR: /uploads
+    ports:
+      - "8080:8080"
     volumes:
       - uploads:/uploads
     depends_on:
