@@ -25,6 +25,11 @@ func Mount(r chi.Router, d deps.Deps) {
 	r.Get("/api/orders", h.listOrders)
 	r.Get("/api/orders/export", h.exportOrders)
 
+	r.Get("/api/scanner/samples", h.scannerSamples)
+	r.Post("/api/scanner/lookup", h.scannerLookup)
+	r.Post("/api/scanner/checkin", h.scannerCheckin)
+	r.Post("/api/scanner/reset", h.scannerReset)
+
 	r.Get("/api/orgs", h.listOrgs)
 	r.Get("/api/orgs/{id}", h.getOrg)
 	r.With(RequireStaff(CanVerifyOrgs)).Patch("/api/orgs/{id}", h.patchOrg)

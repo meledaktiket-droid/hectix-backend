@@ -77,9 +77,10 @@ func emptyError(w http.ResponseWriter, status int) {
 }
 
 var orgRolePerms = map[string]map[string][]string{
-	"owner":  {"organization": {"update", "delete"}, "member": {"create", "update", "delete"}, "invitation": {"create", "cancel"}},
-	"admin":  {"organization": {"update"}, "member": {"create", "update", "delete"}, "invitation": {"create", "cancel"}},
-	"member": {},
+	"owner":     {"organization": {"update", "delete"}, "member": {"create", "update", "delete"}, "invitation": {"create", "cancel"}},
+	"admin":     {"organization": {"update"}, "member": {"create", "update", "delete"}, "invitation": {"create", "cancel"}},
+	"member":    {},
+	"volunteer": {},
 }
 
 func hasOrgPermission(role, resource, action string, allowCreatorAll bool) bool {
@@ -97,7 +98,7 @@ func hasOrgPermission(role, resource, action string, allowCreatorAll bool) bool 
 
 func hasRole(role, want string) bool { return slices.Contains(strings.Split(role, ","), want) }
 
-var orgRoleLabels = map[string]string{"owner": "Owner", "admin": "Admin", "member": "Member"}
+var orgRoleLabels = map[string]string{"owner": "Owner", "admin": "Admin", "member": "Member", "volunteer": "Volunteer"}
 
 type Organization struct {
 	Name      string     `json:"name"`

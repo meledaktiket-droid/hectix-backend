@@ -48,7 +48,7 @@ func forbidden(w http.ResponseWriter) { httpx.Error(w, http.StatusForbidden, "Fo
 func notFound(w http.ResponseWriter)  { httpx.Error(w, http.StatusNotFound, "Not found") }
 func badJSON(w http.ResponseWriter)   { httpx.Error(w, http.StatusBadRequest, "Invalid JSON body") }
 
-func (h *handlers) org(w http.ResponseWriter, r *http.Request) (*orgCtx, bool) {
+func (h *handlers) scannerOrg(w http.ResponseWriter, r *http.Request) (*orgCtx, bool) {
 	ctx := r.Context()
 	if err := auth.LoadError(ctx); err != nil {
 		serverError(w, "session", err)
@@ -75,6 +75,18 @@ func (h *handlers) org(w http.ResponseWriter, r *http.Request) (*orgCtx, bool) {
 		return nil, false
 	}
 	return &orgCtx{user: u, orgID: orgID, role: role}, true
+}
+
+func (h *handlers) org(w http.ResponseWriter, r *http.Request) (*orgCtx, bool) {
+	c, ok := h.scannerOrg(w, r)
+	if !ok {
+		return nil, false
+	}
+	if c.role == "volunteer" {
+		forbidden(w)
+		return nil, false
+	}
+	return c, true
 }
 
 func (h *handlers) memberRole(ctx context.Context, orgID, userID string) (string, error) {
