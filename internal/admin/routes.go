@@ -21,6 +21,9 @@ func Mount(r chi.Router, d deps.Deps) {
 
 	r.Get("/api/events", h.listEvents)
 	r.Get("/api/events/{id}", h.getEvent)
+	r.Get("/api/events/{id}/batches", h.listEventBatches)
+	content.Post("/api/events/{id}/batches", h.createEventBatch)
+	r.Get("/api/events/{id}/batches/{batchId}/export", h.exportEventBatch)
 
 	r.Get("/api/orders", h.listOrders)
 	r.Get("/api/orders/export", h.exportOrders)
