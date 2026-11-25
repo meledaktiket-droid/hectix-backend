@@ -17,6 +17,7 @@ import (
 	"hectix/backend/internal/orders"
 	organizerroutes "hectix/backend/internal/organizer"
 	"hectix/backend/internal/payments"
+	scannerroutes "hectix/backend/internal/scanner"
 	"hectix/backend/internal/uploads"
 	webroutes "hectix/backend/internal/web"
 )
@@ -51,6 +52,13 @@ func newServer(cfg config.Config, pool *pgxpool.Pool) http.Handler {
 	organizerroutes.Mount(organizer, d)
 	adminroles.Mount(admin, d)
 
+	scanner := chi.NewRouter()
+	scanner.Use(auth.OriginCheck, a.Load)
+	a.Routes(scanner)
+	a.ScannerInviteRoutes(scanner)
+	scannerroutes.Mount(scanner, d)
+	organizerroutes.MountInviteInspect(scanner, d)
+
 	web.Method(http.MethodPost, "/api/midtrans", &payments.Webhook{DB: pool, ServerKey: cfg.MidtransServerKey})
 	checkout := &orders.Checkout{DB: pool, Midtrans: &payments.Midtrans{
 		ServerKey: cfg.MidtransServerKey,
@@ -64,7 +72,7 @@ func newServer(cfg config.Config, pool *pgxpool.Pool) http.Handler {
 	root := http.NewServeMux()
 	root.HandleFunc("/healthz", healthz)
 	root.Handle("/", httpx.ByHost(cfg.Apps, map[string]http.Handler{
-		"web": web, "organizer": organizer, "admin": admin,
+		"web": web, "organizer": organizer, "admin": admin, "scanner": scanner,
 	}))
 	root.Handle("/uploads/", http.StripPrefix("/uploads/", publicFiles(http.Dir(filepath.Join(cfg.UploadDir, "public")))))
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {

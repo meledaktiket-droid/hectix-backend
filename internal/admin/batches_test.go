@@ -81,4 +81,38 @@ func TestPhysicalBatchGenerateAndExport(t *testing.T) {
 	if totalTickets != 100 || exportCount != 2 {
 		t.Fatalf("want totalTickets=100 exportCount=2, got totalTickets=%d exportCount=%d", totalTickets, exportCount)
 	}
+
+	// List batches returns sessions + summary, and admin can toggle allowReentry
+	recList := e.do(t, "GET", "/api/events/ev1/batches", nil, e.admin)
+	want(t, recList, 200, "")
+	listBody := decode[map[string]any](t, recList)
+	sessions := listBody["sessions"].([]any)
+	if len(sessions) == 0 {
+		t.Fatal("expected at least 1 event session in batches response")
+	}
+	sesID := sessions[0].(map[string]any)["id"].(string)
+
+	recToggle := e.do(t, "PATCH", "/api/events/ev1/sessions/"+sesID, map[string]any{
+		"allowReentry": true,
+	}, e.admin)
+	want(t, recToggle, 200, "")
+	if decode[map[string]any](t, recToggle)["allowReentry"] != true {
+		t.Fatal("expected allowReentry=true")
+	}
+
+	var allowReentry bool
+	e.scalar(t, &allowReentry, `select allow_reentry from event_session where id = $1`, sesID)
+	if !allowReentry {
+		t.Fatal("expected allow_reentry=true in DB")
+	}
+
+	// TicketType without valid_dates is blocked from batch generation
+	e.Exec(t, `insert into ticket_type(id, event_id, name, price, quantity, created_at, updated_at) values('tt_nodate', 'ev1', 'VVIP', 500000, 50, now(), now())`)
+	recBlocked := e.do(t, "POST", "/api/events/ev1/batches", map[string]any{
+		"requestId":    "req-batch-nodate",
+		"accessType":   "VVIP",
+		"ticketTypeId": "tt_nodate",
+		"quantity":     10,
+	}, e.admin)
+	want(t, recBlocked, 400, "")
 }

@@ -4,12 +4,29 @@ import (
 	"bytes"
 	"fmt"
 	"strconv"
+	"sync"
 
 	qrcode "github.com/skip2/go-qrcode"
 	"github.com/xuri/excelize/v2"
 )
 
 const ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
+var activeExports sync.Map
+
+// TryLock attempts to lock concurrent export for a specific batchID.
+// Returns an unlock function and true if acquired; false if another export is already running for the batch.
+func TryLock(batchID string) (func(), bool) {
+	if batchID == "" {
+		return func() {}, true
+	}
+	if _, loaded := activeExports.LoadOrStore(batchID, struct{}{}); loaded {
+		return nil, false
+	}
+	return func() {
+		activeExports.Delete(batchID)
+	}, true
+}
 
 type TicketRow struct {
 	Code         string

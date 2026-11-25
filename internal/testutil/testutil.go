@@ -21,7 +21,7 @@ import (
 
 const Secret = "test-secret"
 
-var hosts = map[string]string{"web": "web.test", "organizer": "organizer.test", "admin": "admin.test"}
+var hosts = map[string]string{"web": "web.test", "organizer": "organizer.test", "admin": "admin.test", "scanner": "scanner.test"}
 
 type Env struct {
 	DB     *pgxpool.Pool

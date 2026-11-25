@@ -103,3 +103,39 @@ func TestDeleteTicket(t *testing.T) {
 		t.Fatal("not deleted")
 	}
 }
+
+func TestTicketValidDatesAutoSyncSessions(t *testing.T) {
+	f := setup(t)
+	f.event(t, "e1", "org1")
+
+	rec := f.do(t, "POST", "/api/events/e1/tickets", map[string]any{
+		"name":       "2-Day VIP",
+		"price":      250000,
+		"quantity":   100,
+		"validDates": []string{"2026-12-10", "2026-12-11"},
+	}, f.owner)
+	expect(t, rec, 201, "")
+	tk := decode(t, rec)["ticket"].(map[string]any)
+	tID := tk["id"].(string)
+
+	if f.scalar(t, `select count(*) from ticket_type_dates where ticket_type_id = $1`, tID) != int64(2) {
+		t.Fatal("expected 2 ticket_type_dates rows")
+	}
+	if f.scalar(t, `select count(*) from event_session where event_id = 'e1'`) != int64(1) {
+		t.Fatal("expected 1 compact event_session row")
+	}
+	if f.scalar(t, `select name from event_session where event_id = 'e1' limit 1`) != "2-Day VIP" {
+		t.Fatal("expected session name to match ticket type name")
+	}
+	if f.scalar(t, `select access_type from ticket_type_access_map where ticket_type_id = $1`, tID) != "SPECIFIC_DATES" {
+		t.Fatal("expected SPECIFIC_DATES in ticket_type_access_map")
+	}
+
+	recUpdate := f.do(t, "PATCH", "/api/events/e1/tickets/"+tID, map[string]any{
+		"validDates": []string{"2026-12-12"},
+	}, f.owner)
+	expect(t, recUpdate, 200, "")
+	if f.scalar(t, `select count(*) from ticket_type_dates where ticket_type_id = $1`, tID) != int64(1) {
+		t.Fatal("expected 1 ticket_type_dates row after update")
+	}
+}

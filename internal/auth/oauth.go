@@ -233,7 +233,7 @@ func (a *Auth) callbackGoogle(w http.ResponseWriter, r *http.Request) {
 		isNew = created
 		var activeOrg *string
 		if app.Name == "organizer" {
-			err := tx.QueryRow(ctx, `select organization_id from member where user_id = $1 order by created_at asc limit 1`, userID).Scan(&activeOrg)
+			err := tx.QueryRow(ctx, `select m.organization_id from member m join organization o on o.id = m.organization_id where m.user_id = $1 order by (o.status = 'active') desc, m.created_at asc limit 1`, userID).Scan(&activeOrg)
 			if err != nil && err != pgx.ErrNoRows {
 				return err
 			}

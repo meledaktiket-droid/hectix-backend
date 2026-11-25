@@ -197,6 +197,7 @@ func (h *handlers) getEvent(w http.ResponseWriter, r *http.Request) {
 		serverError(w, "event tickets", err)
 		return
 	}
+	_ = h.attachTicketDates(ctx, tickets)
 	performers, err := list(ctx, h.db, scanPerformer, `select `+performerCols+` from performer
 		where event_id = $1 and deleted_at is null order by display_order`, id)
 	if err != nil {

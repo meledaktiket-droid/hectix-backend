@@ -37,9 +37,15 @@ func (a *Auth) OrgRoutes(r chi.Router) {
 	r.Post("/api/auth/organization/invite-member", a.inviteMember)
 	r.Post("/api/auth/organization/cancel-invitation", a.cancelInvitation)
 	r.Post("/api/auth/organization/accept-invitation", a.acceptInvitation)
+	r.Post("/api/auth/organization/reject-invitation", a.rejectInvitation)
 	r.Post("/api/auth/organization/remove-member", a.removeMember)
 	r.Post("/api/auth/organization/update-member-role", a.updateMemberRole)
 	r.Post("/api/auth/organization/leave", a.leaveOrganization)
+}
+
+func (a *Auth) ScannerInviteRoutes(r chi.Router) {
+	r.Post("/api/auth/organization/accept-invitation", a.acceptInvitation)
+	r.Post("/api/auth/organization/reject-invitation", a.rejectInvitation)
 }
 
 var orgErrors = map[string]string{
@@ -1178,15 +1184,114 @@ func (a *Auth) acceptInvitation(w http.ResponseWriter, r *http.Request) {
 		role = *inv.Role
 	}
 	now := time.Now().UTC()
-	member := &Member{ID: dbx.ID(), OrganizationID: inv.OrganizationID, UserID: user.ID, Role: role, CreatedAt: httpx.Time{Time: now}}
-	if _, err := a.DB.Exec(ctx, `insert into member (id, organization_id, user_id, role, created_at)
-		values ($1, $2, $3, $4, $5)`, member.ID, member.OrganizationID, member.UserID, member.Role, now); err != nil {
+	member, err := a.findMemberByOrgID(ctx, user.ID, inv.OrganizationID)
+	if err != nil {
 		serverError(w, "accept-invitation", err)
 		return
+	}
+	if member == nil {
+		member = &Member{ID: dbx.ID(), OrganizationID: inv.OrganizationID, UserID: user.ID, Role: role, CreatedAt: httpx.Time{Time: now}}
+		if _, err := a.DB.Exec(ctx, `insert into member (id, organization_id, user_id, role, created_at)
+			values ($1, $2, $3, $4, $5)`, member.ID, member.OrganizationID, member.UserID, member.Role, now); err != nil {
+			serverError(w, "accept-invitation", err)
+			return
+		}
+	}
+	if crewRows, err := a.DB.Query(ctx, `update event_crew set user_id = $1, status = 'accepted', accepted_at = $2
+		where lower(email) = lower($3) and status = 'pending'
+		  and event_id in (select id from event where organization_id = $4)
+		returning id, event_id, email`,
+		user.ID, now, user.Email, inv.OrganizationID); err == nil {
+		type acceptedCrew struct {
+			id, eventID, email string
+		}
+		var list []acceptedCrew
+		for crewRows.Next() {
+			var ac acceptedCrew
+			if err := crewRows.Scan(&ac.id, &ac.eventID, &ac.email); err == nil {
+				list = append(list, ac)
+			}
+		}
+		crewRows.Close()
+		for _, ac := range list {
+			metaJSON, _ := json.Marshal(map[string]any{
+				"email": ac.email,
+			})
+			_, _ = a.DB.Exec(ctx, `
+				insert into event_activity_history(
+					id, event_id, category, action, target_id, from_status, to_status, note, metadata, actor_id, actor_type, created_at
+				) values($1, $2, 'volunteer', 'accepted', $3, 'pending', 'accepted', $4, $5::jsonb, $6, 'volunteer', $7)`,
+				dbx.UUID(), ac.eventID, ac.id, "Menerima undangan volunteer: "+ac.email, string(metaJSON), user.ID, now)
+		}
 	}
 	if err := a.setActiveOrg(ctx, sess, &inv.OrganizationID); err != nil {
 		serverError(w, "accept-invitation", err)
 		return
 	}
 	httpx.JSON(w, http.StatusOK, map[string]any{"invitation": accepted, "member": member})
+}
+
+func (a *Auth) rejectInvitation(w http.ResponseWriter, r *http.Request) {
+	body, ok := bodyObject(w, r)
+	if !ok {
+		return
+	}
+	var v zv
+	id, _ := v.str(body, "body", "invitationId", required, false)
+	if v.failed(w) {
+		return
+	}
+	user, _, ok := sessionUser(w, r)
+	if !ok {
+		return
+	}
+	ctx := r.Context()
+	inv, err := a.findInvitation(ctx, id)
+	if err != nil {
+		serverError(w, "reject-invitation", err)
+		return
+	}
+	if inv == nil || inv.ExpiresAt.Before(time.Now()) || inv.Status != "pending" {
+		orgError(w, http.StatusBadRequest, "INVITATION_NOT_FOUND")
+		return
+	}
+	if !strings.EqualFold(inv.Email, user.Email) {
+		orgError(w, http.StatusForbidden, "YOU_ARE_NOT_THE_RECIPIENT_OF_THE_INVITATION")
+		return
+	}
+	rejected, err := one(scanInvitation(a.DB.QueryRow(ctx, `update invitation i set status = 'rejected'
+		where i.id = $1 returning `+invCols, id)))
+	if err != nil {
+		serverError(w, "reject-invitation", err)
+		return
+	}
+	now := time.Now().UTC()
+	if crewRows, err := a.DB.Query(ctx, `update event_crew set user_id = $1, status = 'rejected'
+		where lower(email) = lower($2) and status = 'pending'
+		  and event_id in (select id from event where organization_id = $3)
+		returning id, event_id, email`,
+		user.ID, user.Email, inv.OrganizationID); err == nil {
+		type rejectedCrew struct {
+			id, eventID, email string
+		}
+		var list []rejectedCrew
+		for crewRows.Next() {
+			var rc rejectedCrew
+			if err := crewRows.Scan(&rc.id, &rc.eventID, &rc.email); err == nil {
+				list = append(list, rc)
+			}
+		}
+		crewRows.Close()
+		for _, rc := range list {
+			metaJSON, _ := json.Marshal(map[string]any{
+				"email": rc.email,
+			})
+			_, _ = a.DB.Exec(ctx, `
+				insert into event_activity_history(
+					id, event_id, category, action, target_id, from_status, to_status, note, metadata, actor_id, actor_type, created_at
+				) values($1, $2, 'volunteer', 'rejected', $3, 'pending', 'rejected', $4, $5::jsonb, $6, 'volunteer', $7)`,
+				dbx.UUID(), rc.eventID, rc.id, "Menolak undangan volunteer: "+rc.email, string(metaJSON), user.ID, now)
+		}
+	}
+	httpx.JSON(w, http.StatusOK, map[string]any{"invitation": rejected})
 }

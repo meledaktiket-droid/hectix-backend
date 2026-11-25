@@ -23,6 +23,7 @@ func setup(t *testing.T) *fx {
 	t.Helper()
 	e := testutil.New(t, "organizer")
 	Mount(e.Router, e.Deps)
+	e.Auth.OrgRoutes(e.Router)
 	for _, u := range []string{"owner", "adm", "mem", "other", "stale", "buyer", "loner"} {
 		e.SeedUser(t, u, "user")
 	}

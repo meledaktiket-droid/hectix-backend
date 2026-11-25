@@ -78,12 +78,13 @@ type eventDetail struct {
 }
 
 type ticketStat struct {
-	ID       string `json:"id"`
-	Name     string `json:"name"`
-	Price    int64  `json:"price"`
-	Capacity int64  `json:"capacity"`
-	Sold     int64  `json:"sold"`
-	Revenue  int64  `json:"revenue"`
+	ID         string   `json:"id"`
+	Name       string   `json:"name"`
+	Price      int64    `json:"price"`
+	Capacity   int64    `json:"capacity"`
+	Sold       int64    `json:"sold"`
+	Revenue    int64    `json:"revenue"`
+	ValidDates []string `json:"validDates,omitempty"`
 }
 
 type orderItemSummary struct {
@@ -116,7 +117,9 @@ func (h *handlers) getEvent(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	stats, err := list[ticketStat](ctx, db, `select t.id, t.name, t.price, t.quantity,
-		coalesce(s.sold, 0), coalesce(s.revenue, 0)
+		coalesce(s.sold, 0), coalesce(s.revenue, 0),
+		(select array_agg(to_char(d.valid_date, 'YYYY-MM-DD') order by d.valid_date asc)
+		 from ticket_type_dates d where d.ticket_type_id = t.id)
 		from ticket_type t
 		left join (select oi.ticket_type_id, sum(oi.quantity) sold, sum(oi.quantity * oi.price) revenue
 			from order_item oi join "order" o on oi.order_id = o.id and o.status = 'paid'

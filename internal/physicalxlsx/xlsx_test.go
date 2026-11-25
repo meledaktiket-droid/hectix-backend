@@ -54,3 +54,35 @@ func TestExportPreservesLeadingZerosAndEmbedsQR(t *testing.T) {
 		t.Fatalf("expected 1 embedded PNG QR picture in C2, got %d (err=%v)", len(pics), err)
 	}
 }
+
+func TestTryLockConcurrentExport(t *testing.T) {
+	batchID := "batch-test-lock-1"
+	unlock1, ok1 := TryLock(batchID)
+	if !ok1 {
+		t.Fatal("first lock should succeed")
+	}
+	defer unlock1()
+
+	// Second concurrent attempt for the same batch must fail
+	unlock2, ok2 := TryLock(batchID)
+	if ok2 {
+		unlock2()
+		t.Fatal("second concurrent lock for same batch should fail")
+	}
+
+	// Lock for another batch should succeed independently
+	otherID := "batch-test-lock-2"
+	unlockOther, okOther := TryLock(otherID)
+	if !okOther {
+		t.Fatal("lock for different batch should succeed")
+	}
+	unlockOther()
+
+	// After unlocking the first, acquiring again should succeed
+	unlock1()
+	unlock3, ok3 := TryLock(batchID)
+	if !ok3 {
+		t.Fatal("lock after unlock should succeed")
+	}
+	unlock3()
+}

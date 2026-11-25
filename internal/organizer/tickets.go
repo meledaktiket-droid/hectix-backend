@@ -2,9 +2,13 @@ package organizer
 
 import (
 	"bytes"
+	"context"
+	"encoding/json"
 	"errors"
 	"fmt"
 	"net/http"
+	"regexp"
+	"slices"
 	"strings"
 	"time"
 
@@ -34,6 +38,7 @@ func (h *handlers) listTickets(w http.ResponseWriter, r *http.Request) {
 		serverError(w, "tickets", err)
 		return
 	}
+	_ = h.attachTicketDates(r.Context(), tickets)
 	httpx.JSON(w, http.StatusOK, map[string]any{"tickets": tickets})
 }
 
@@ -86,6 +91,15 @@ func (h *handlers) createTicket(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
+	var validDates []string
+	if b.has("validDates") {
+		var okDates bool
+		validDates, okDates = parseValidDates(b["validDates"])
+		if !okDates {
+			httpx.Error(w, http.StatusBadRequest, "Invalid validDates")
+			return
+		}
+	}
 	now := time.Now().UTC()
 	t, err := scanTicket(h.db.QueryRow(r.Context(), `insert into ticket_type(id, event_id, name, price, quantity, benefits,
 		display_order, created_at, updated_at) values($1, $2, $3, $4, $5, $6::jsonb, $7, $8, $8) returning `+ticketCols,
@@ -93,6 +107,13 @@ func (h *handlers) createTicket(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		serverError(w, "create ticket", err)
 		return
+	}
+	if b.has("validDates") {
+		if err := h.syncTicketDatesAndSessions(r.Context(), id, t.ID, t.Name, t.Quantity, validDates); err != nil {
+			serverError(w, "sync ticket dates", err)
+			return
+		}
+		t.ValidDates = validDates
 	}
 	httpx.JSON(w, http.StatusCreated, map[string]any{"ticket": t})
 }
@@ -165,6 +186,16 @@ func (h *handlers) updateTicket(w http.ResponseWriter, r *http.Request) {
 		}
 		set["display_order"] = v
 	}
+	var validDates []string
+	hasDates := b.has("validDates")
+	if hasDates {
+		var okDates bool
+		validDates, okDates = parseValidDates(b["validDates"])
+		if !okDates {
+			httpx.Error(w, http.StatusBadRequest, "Invalid validDates")
+			return
+		}
+	}
 	set["updated_at"] = time.Now().UTC()
 	var cols []string
 	args := []any{ticketID, id}
@@ -189,6 +220,15 @@ func (h *handlers) updateTicket(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		serverError(w, "update ticket", err)
 		return
+	}
+	if hasDates {
+		if err := h.syncTicketDatesAndSessions(ctx, id, t.ID, t.Name, t.Quantity, validDates); err != nil {
+			serverError(w, "sync ticket dates", err)
+			return
+		}
+		t.ValidDates = validDates
+	} else {
+		_ = h.attachTicketDates(ctx, []*ticketRow{t})
 	}
 	httpx.JSON(w, http.StatusOK, map[string]any{"ticket": t})
 }
@@ -222,4 +262,147 @@ func (h *handlers) deleteTicket(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	httpx.JSON(w, http.StatusOK, map[string]bool{"ok": true})
+}
+
+func parseValidDates(raw json.RawMessage) ([]string, bool) {
+	if len(bytes.TrimSpace(raw)) == 0 || string(bytes.TrimSpace(raw)) == "null" {
+		return nil, true
+	}
+	var in []string
+	if err := json.Unmarshal(raw, &in); err != nil {
+		return nil, false
+	}
+	var out []string
+	for _, s := range in {
+		d := strings.TrimSpace(s)
+		if d == "" {
+			continue
+		}
+		if _, err := time.Parse("2006-01-02", d); err != nil {
+			return nil, false
+		}
+		if !slices.Contains(out, d) {
+			out = append(out, d)
+		}
+	}
+	slices.Sort(out)
+	return out, true
+}
+
+func (h *handlers) attachTicketDates(ctx context.Context, tickets []*ticketRow) error {
+	if len(tickets) == 0 {
+		return nil
+	}
+	ids := make([]string, len(tickets))
+	byID := make(map[string]*ticketRow, len(tickets))
+	for i, t := range tickets {
+		ids[i] = t.ID
+		byID[t.ID] = t
+	}
+	rows, err := h.db.Query(ctx, `
+		select ticket_type_id, to_char(valid_date, 'YYYY-MM-DD')
+		from ticket_type_dates
+		where ticket_type_id = any($1)
+		order by valid_date asc`, ids)
+	if err != nil {
+		return err
+	}
+	defer rows.Close()
+	for rows.Next() {
+		var tid, d string
+		if err := rows.Scan(&tid, &d); err == nil {
+			if t := byID[tid]; t != nil {
+				t.ValidDates = append(t.ValidDates, d)
+			}
+		}
+	}
+	return rows.Err()
+}
+
+var soldOutSuffixRe = regexp.MustCompile(`(?i)\s*\((?:sudah\s+habis|sold\s+out|habis)\)\s*$`)
+
+func cleanSessionTicketName(name string) string {
+	if cleaned := strings.TrimSpace(soldOutSuffixRe.ReplaceAllString(strings.TrimSpace(name), "")); cleaned != "" {
+		return cleaned
+	}
+	return strings.TrimSpace(name)
+}
+
+func (h *handlers) syncTicketDatesAndSessions(ctx context.Context, eventID, ticketID, ticketName string, qty int64, validDates []string) error {
+	sesName := cleanSessionTicketName(ticketName)
+	return dbx.Tx(ctx, h.db, func(tx pgx.Tx) error {
+		var existingSesID string
+		_ = tx.QueryRow(ctx, `
+			select session_id from ticket_type_dates
+			where ticket_type_id = $1 and session_id is not null
+			limit 1`, ticketID).Scan(&existingSesID)
+
+		if _, err := tx.Exec(ctx, `delete from ticket_type_dates where ticket_type_id = $1`, ticketID); err != nil {
+			return err
+		}
+
+		var sessionIDs []string
+		if len(validDates) > 0 {
+			rangeStart, err := time.Parse("2006-01-02", validDates[0])
+			if err != nil {
+				return err
+			}
+			lastDay, err := time.Parse("2006-01-02", validDates[len(validDates)-1])
+			if err != nil {
+				return err
+			}
+			rangeEnd := lastDay.Add(23*time.Hour + 59*time.Minute + 59*time.Second)
+
+			sesID := existingSesID
+			if sesID == "" {
+				_ = tx.QueryRow(ctx, `
+					select id from event_session
+					where event_id = $1 and name = $2
+					limit 1`, eventID, sesName).Scan(&sesID)
+			}
+			if sesID == "" {
+				sesID = dbx.UUID()
+				if _, err := tx.Exec(ctx, `
+					insert into event_session(id, event_id, name, starts_at, ends_at, status, quota_limit)
+					values($1, $2, $3, $4, $5, 'open', $6)`,
+					sesID, eventID, sesName, rangeStart, rangeEnd, qty); err != nil {
+					return err
+				}
+			} else {
+				if _, err := tx.Exec(ctx, `
+					update event_session
+					set name = $1, starts_at = $2, ends_at = $3, quota_limit = $4
+					where id = $5 and event_id = $6`,
+					sesName, rangeStart, rangeEnd, qty, sesID, eventID); err != nil {
+					return err
+				}
+			}
+
+			for _, d := range validDates {
+				if _, err := tx.Exec(ctx, `
+					insert into ticket_type_dates(id, ticket_type_id, event_id, valid_date, session_id)
+					values($1, $2, $3, $4::date, $5)
+					on conflict (ticket_type_id, valid_date) do update set session_id = excluded.session_id`,
+					dbx.UUID(), ticketID, eventID, d, sesID); err != nil {
+					return err
+				}
+			}
+			sessionIDs = []string{sesID}
+		}
+
+		sesJSON, _ := json.Marshal(sessionIDs)
+		accessType := "SPECIFIC_DATES"
+		if len(sessionIDs) == 0 {
+			accessType = "ALL_DAYS"
+		}
+		_, err := tx.Exec(ctx, `
+			insert into ticket_type_access_map(ticket_type_id, event_id, access_type, session_ids, updated_at)
+			values($1, $2, $3, $4::jsonb, now())
+			on conflict (ticket_type_id) do update set
+				access_type = excluded.access_type,
+				session_ids = excluded.session_ids,
+				updated_at = now()`,
+			ticketID, eventID, accessType, string(sesJSON))
+		return err
+	})
 }

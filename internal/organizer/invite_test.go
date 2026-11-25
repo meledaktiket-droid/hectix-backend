@@ -70,3 +70,34 @@ func TestInspectInvite(t *testing.T) {
 		t.Fatal("inspect mutated state")
 	}
 }
+
+func TestVolunteerInviteInspectAndDecision(t *testing.T) {
+	f := setup(t)
+	f.SeedUser(t, "vol_user", "user")
+	f.Exec(t, `update "user" set email = 'vol_test@example.com' where id = 'vol_user'`)
+	f.event(t, "ev1", "org1")
+	f.Exec(t, `insert into invitation(id, organization_id, email, role, status, expires_at, inviter_id, created_at)
+		values('inv-vol', 'org1', 'vol_test@example.com', 'volunteer', 'pending', now() + interval '1 day', 'owner', now())`)
+	f.Exec(t, `insert into event_crew(id, event_id, email, user_id, role, status, token, invited_by, expires_at, created_at)
+		values('crew-vol', 'ev1', 'vol_test@example.com', null, 'volunteer', 'pending', 'tok-vol', 'owner', now() + interval '1 day', now())`)
+
+	volCookie := f.Login(t, "vol_user", nil)
+
+	// Inspect returns status: needs-accept with is_volunteer: true
+	rec := f.do(t, "POST", "/api/invitations/inspect", map[string]any{"id": "inv-vol"}, volCookie)
+	expect(t, rec, 200, "")
+	res := decode(t, rec)
+	if res["status"] != "needs-accept" || res["is_volunteer"] != true || res["eventName"] != "Event ev1" {
+		t.Fatalf("expected needs-accept with is_volunteer=true and eventName=Event ev1, got %+v", res)
+	}
+
+	// Reject invitation updates invitation status and event_crew status to rejected
+	recRej := f.do(t, "POST", "/api/auth/organization/reject-invitation", map[string]any{"invitationId": "inv-vol"}, volCookie)
+	expect(t, recRej, 200, "")
+
+	invStatus := f.scalar(t, `select status from invitation where id = $1`, "inv-vol").(string)
+	crewStatus := f.scalar(t, `select status from event_crew where id = $1`, "crew-vol").(string)
+	if invStatus != "rejected" || crewStatus != "rejected" {
+		t.Fatalf("expected rejected status, got inv=%s crew=%s", invStatus, crewStatus)
+	}
+}

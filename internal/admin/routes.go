@@ -23,15 +23,14 @@ func Mount(r chi.Router, d deps.Deps) {
 	r.Get("/api/events/{id}", h.getEvent)
 	r.Get("/api/events/{id}/batches", h.listEventBatches)
 	content.Post("/api/events/{id}/batches", h.createEventBatch)
-	r.Get("/api/events/{id}/batches/{batchId}/export", h.exportEventBatch)
+	content.Get("/api/events/{id}/batches/{batchId}/export", h.exportEventBatch)
+	content.Patch("/api/events/{id}/sessions/{sessionId}", h.updateEventSessionReentry)
+	r.Get("/api/events/{id}/volunteers", h.listEventVolunteers)
+	content.Post("/api/events/{id}/volunteers", h.inviteEventVolunteer)
+	content.Delete("/api/events/{id}/volunteers/{volunteerId}", h.removeEventVolunteer)
 
 	r.Get("/api/orders", h.listOrders)
 	r.Get("/api/orders/export", h.exportOrders)
-
-	r.Get("/api/scanner/samples", h.scannerSamples)
-	r.Post("/api/scanner/lookup", h.scannerLookup)
-	r.Post("/api/scanner/checkin", h.scannerCheckin)
-	r.Post("/api/scanner/reset", h.scannerReset)
 
 	r.Get("/api/orgs", h.listOrgs)
 	r.Get("/api/orgs/{id}", h.getOrg)

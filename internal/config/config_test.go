@@ -45,3 +45,45 @@ func TestLoadFailsWithoutSecret(t *testing.T) {
 		t.Fatal("want error")
 	}
 }
+
+func TestAppByName(t *testing.T) {
+	setRequired(t)
+	c, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	app, ok := c.AppByName("organizer")
+	if !ok || app.BaseURL != "https://organizer.dev.hectix.id" {
+		t.Fatalf("expected organizer app with BaseURL, got ok=%v app=%+v", ok, app)
+	}
+	_, okMissing := c.AppByName("unknown")
+	if okMissing {
+		t.Fatal("expected false for unknown app")
+	}
+}
+
+func TestLoadOptionalScannerBaseURL(t *testing.T) {
+	setRequired(t)
+	c, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, ok := c.AppByName("scanner"); ok {
+		t.Fatal("expected scanner app to be absent when SCANNER_BASE_URL is unset")
+	}
+
+	t.Setenv("SCANNER_BASE_URL", "https://scanner.hectix.id/")
+	c, err = Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	app, ok := c.AppByName("scanner")
+	if !ok || app.Host != "scanner.hectix.id" || app.BaseURL != "https://scanner.hectix.id" || !app.Secure {
+		t.Fatalf("unexpected scanner app: ok=%v app=%+v", ok, app)
+	}
+
+	t.Setenv("SCANNER_BASE_URL", "not-a-url")
+	if _, err := Load(); err == nil {
+		t.Fatal("expected error for invalid SCANNER_BASE_URL")
+	}
+}

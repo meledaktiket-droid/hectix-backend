@@ -12,10 +12,13 @@ import (
 	"hectix/backend/internal/httpx"
 )
 
-var orgRoleLabels = map[string]string{"owner": "Owner", "admin": "Admin", "member": "Member"}
+var orgRoleLabels = map[string]string{"owner": "Owner", "admin": "Admin", "member": "Member", "volunteer": "Volunteer"}
 
 type inviteResult struct {
-	Status string `json:"status"`
+	Status      string `json:"status"`
+	IsVolunteer bool   `json:"is_volunteer,omitempty"`
+	OrgName     string `json:"orgName,omitempty"`
+	EventName   string `json:"eventName,omitempty"`
 }
 
 type inviteNeedsSignin struct {
@@ -24,6 +27,7 @@ type inviteNeedsSignin struct {
 	OrgName     string `json:"orgName"`
 	RoleLabel   string `json:"roleLabel"`
 	InviterName string `json:"inviterName"`
+	EventName   string `json:"eventName,omitempty"`
 }
 
 type inviteMismatch struct {
@@ -94,6 +98,20 @@ func (h *handlers) inspectInvite(w http.ResponseWriter, r *http.Request) {
 		roleLabel = roleKey
 	}
 
+	var eventName string
+	if roleKey == "volunteer" {
+		_ = h.db.QueryRow(ctx, `
+			select e.name
+			from event_crew ec
+			join event e on e.id = ec.event_id
+			where e.organization_id = $1
+			  and lower(ec.email) = lower($2)
+			  and ec.status = 'pending'
+			  and e.deleted_at is null
+			order by ec.created_at desc
+			limit 1`, orgID, email).Scan(&eventName)
+	}
+
 	u := auth.UserFrom(ctx)
 	if u == nil {
 		var name, inviterEmail string
@@ -109,7 +127,7 @@ func (h *handlers) inspectInvite(w http.ResponseWriter, r *http.Request) {
 		if inviter == "" {
 			inviter = "A teammate"
 		}
-		httpx.JSON(w, http.StatusOK, inviteNeedsSignin{"needs-signin", email, orgName, roleLabel, inviter})
+		httpx.JSON(w, http.StatusOK, inviteNeedsSignin{"needs-signin", email, orgName, roleLabel, inviter, eventName})
 		return
 	}
 	if strings.ToLower(u.Email) != strings.ToLower(email) {
@@ -122,8 +140,28 @@ func (h *handlers) inspectInvite(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if memberRole != "" {
-		httpx.JSON(w, http.StatusOK, inviteResult{Status: "accepted"})
-		return
+		var hasPendingCrew bool
+		if roleKey == "volunteer" {
+			_ = h.db.QueryRow(ctx, `
+				select exists(
+					select 1 from event_crew ec
+					join event e on e.id = ec.event_id
+					where e.organization_id = $1 and lower(ec.email) = lower($2) and ec.status = 'pending'
+				)`, orgID, u.Email).Scan(&hasPendingCrew)
+		}
+		if !hasPendingCrew {
+			httpx.JSON(w, http.StatusOK, inviteResult{Status: "accepted"})
+			return
+		}
 	}
-	httpx.JSON(w, http.StatusOK, inviteResult{Status: "needs-accept"})
+	var volunteerOrgName string
+	if roleKey == "volunteer" {
+		volunteerOrgName = orgName
+	}
+	httpx.JSON(w, http.StatusOK, inviteResult{
+		Status:      "needs-accept",
+		IsVolunteer: roleKey == "volunteer",
+		OrgName:     volunteerOrgName,
+		EventName:   eventName,
+	})
 }

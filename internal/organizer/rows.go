@@ -50,6 +50,7 @@ type ticketRow struct {
 	Sold         int64           `json:"sold"`
 	Benefits     json.RawMessage `json:"benefits"`
 	DisplayOrder int64           `json:"displayOrder"`
+	ValidDates   []string        `json:"validDates,omitempty"`
 	CreatedAt    httpx.Time      `json:"createdAt"`
 	UpdatedAt    httpx.Time      `json:"updatedAt"`
 }

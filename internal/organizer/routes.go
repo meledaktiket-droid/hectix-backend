@@ -28,13 +28,12 @@ func Mount(r chi.Router, d deps.Deps) {
 	r.Post("/api/events/{id}/vouchers", h.createVoucher)
 	r.Delete("/api/events/{id}/vouchers", h.deleteVoucher)
 	r.Get("/api/events/{id}/orders", h.eventOrders)
+	r.Get("/api/events/{id}/batches", h.listEventBatches)
+	r.Get("/api/events/{id}/batches/{batchId}/export", h.exportEventBatch)
+	r.Get("/api/events/{id}/volunteers", h.listEventVolunteers)
 	r.Get("/api/orders", h.listOrders)
 	r.Get("/api/orders/export", h.exportOrders)
-	r.Get("/api/scanner/events", h.scannerEvents)
-	r.Get("/api/scanner/samples", h.scannerSamples)
-	r.Post("/api/scanner/lookup", h.scannerLookup)
-	r.Post("/api/scanner/checkin", h.scannerCheckin)
-	r.Post("/api/scanner/reset", h.scannerReset)
+	r.Post("/api/invitations/inspect", h.inspectInvite)
 	r.Get("/api/finance", h.finance)
 	r.Post("/api/finance", h.requestPayout)
 	r.Get("/api/org/payout", h.getPayoutAccount)
@@ -42,5 +41,10 @@ func Mount(r chi.Router, d deps.Deps) {
 	r.Get("/api/org/status", h.orgStatus)
 	r.Patch("/api/org/verify", h.verifyOrg)
 	r.Post("/api/org/log-creation", h.logOrgCreation)
+}
+
+// MountInviteInspect mounts invitation inspection endpoint for the standalone scanner app.
+func MountInviteInspect(r chi.Router, d deps.Deps) {
+	h := &handlers{db: d.DB, uploadDir: d.Cfg.UploadDir, apps: d.Cfg.Apps}
 	r.Post("/api/invitations/inspect", h.inspectInvite)
 }

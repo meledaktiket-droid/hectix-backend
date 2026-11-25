@@ -57,13 +57,37 @@ func Load() (Config, error) {
 	for _, name := range []string{"web", "organizer", "admin"} {
 		key := strings.ToUpper(name) + "_BASE_URL"
 		base := strings.TrimRight(os.Getenv(key), "/")
-		u, err := url.Parse(base)
-		if base == "" || err != nil || u.Host == "" {
-			return c, fmt.Errorf("%s must be an absolute URL", key)
+		app, err := parseApp(name, key, base)
+		if err != nil {
+			return c, err
 		}
-		c.Apps[u.Host] = App{Name: name, Host: u.Host, BaseURL: base, Secure: u.Scheme == "https"}
+		c.Apps[app.Host] = app
+	}
+	if base := strings.TrimRight(os.Getenv("SCANNER_BASE_URL"), "/"); base != "" {
+		app, err := parseApp("scanner", "SCANNER_BASE_URL", base)
+		if err != nil {
+			return c, err
+		}
+		c.Apps[app.Host] = app
 	}
 	return c, nil
+}
+
+func parseApp(name, key, base string) (App, error) {
+	u, err := url.Parse(base)
+	if base == "" || err != nil || u.Host == "" {
+		return App{}, fmt.Errorf("%s must be an absolute URL", key)
+	}
+	return App{Name: name, Host: u.Host, BaseURL: base, Secure: u.Scheme == "https"}, nil
+}
+
+func (c Config) AppByName(name string) (App, bool) {
+	for _, app := range c.Apps {
+		if app.Name == name {
+			return app, true
+		}
+	}
+	return App{}, false
 }
 
 func env(k, def string) string {

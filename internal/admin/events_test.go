@@ -2,6 +2,7 @@ package admin
 
 import (
 	"fmt"
+	"reflect"
 	"testing"
 )
 
@@ -65,8 +66,8 @@ func TestGetEvent(t *testing.T) {
 	if got.Event.OrganizationName != "Org One" || got.Event.EndsAt != nil {
 		t.Fatalf("event %+v", got.Event)
 	}
-	if len(got.Stats) != 2 || got.Stats[0] != (ticketStat{"reg", "reg", 50000, 100, 2, 100000}) ||
-		got.Stats[1] != (ticketStat{"vip", "vip", 200000, 10, 2, 400000}) {
+	if len(got.Stats) != 2 || !reflect.DeepEqual(got.Stats[0], ticketStat{"reg", "reg", 50000, 100, 2, 100000, nil}) ||
+		!reflect.DeepEqual(got.Stats[1], ticketStat{"vip", "vip", 200000, 10, 2, 400000, nil}) {
 		t.Fatalf("stats %+v", got.Stats)
 	}
 	if len(got.Buyers) != 3 || got.Buyers[0].OrderID != "c" || got.Buyers[2].OrderID != "a" ||

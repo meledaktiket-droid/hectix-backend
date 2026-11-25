@@ -2,6 +2,8 @@ package testdb
 
 import (
 	"context"
+	"os"
+	"strings"
 	"testing"
 
 	"github.com/jackc/pgx/v5/pgxpool"
@@ -14,6 +16,32 @@ import (
 func New(t *testing.T) *pgxpool.Pool {
 	t.Helper()
 	ctx := context.Background()
+
+	if dbURL := os.Getenv("TEST_DATABASE_URL"); dbURL != "" {
+		if !strings.Contains(dbURL, "test") {
+			t.Fatalf("testdb: TEST_DATABASE_URL must target a test database (containing 'test' in name), got: %s", dbURL)
+		}
+		adminPool, err := dbx.Open(ctx, dbURL)
+		if err != nil {
+			t.Fatalf("testdb: connect: %v", err)
+		}
+		if _, err := adminPool.Exec(ctx, "drop schema public cascade; create schema public;"); err != nil {
+			adminPool.Close()
+			t.Fatalf("testdb: reset schema: %v", err)
+		}
+		adminPool.Close()
+
+		if err := dbx.Migrate(dbURL); err != nil {
+			t.Fatalf("testdb: migrate: %v", err)
+		}
+		pool, err := dbx.Open(ctx, dbURL)
+		if err != nil {
+			t.Fatalf("testdb: open: %v", err)
+		}
+		t.Cleanup(pool.Close)
+		return pool
+	}
+
 	c, err := tcpg.Run(ctx, "postgres:17",
 		tcpg.WithDatabase("hectix"), tcpg.WithUsername("hectix"), tcpg.WithPassword("hectix"),
 		tcpg.BasicWaitStrategies(),
