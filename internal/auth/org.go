@@ -447,7 +447,7 @@ func (a *Auth) listOrganizations(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context()
 	orgs, err := collect(ctx, a.DB, scanOrg, `select `+orgCols+` from member m
 		join organization o on o.id = m.organization_id
-		where m.user_id = $1 order by m.created_at, m.id limit $2`, UserFrom(ctx).ID, orgLimit)
+		where m.user_id = $1 and m.role <> 'volunteer' order by m.created_at, m.id limit $2`, UserFrom(ctx).ID, orgLimit)
 	if err != nil {
 		serverError(w, "organization/list", err)
 		return

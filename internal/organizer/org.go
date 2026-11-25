@@ -48,7 +48,7 @@ func forbidden(w http.ResponseWriter) { httpx.Error(w, http.StatusForbidden, "Fo
 func notFound(w http.ResponseWriter)  { httpx.Error(w, http.StatusNotFound, "Not found") }
 func badJSON(w http.ResponseWriter)   { httpx.Error(w, http.StatusBadRequest, "Invalid JSON body") }
 
-func (h *handlers) scannerOrg(w http.ResponseWriter, r *http.Request) (*orgCtx, bool) {
+func (h *handlers) org(w http.ResponseWriter, r *http.Request) (*orgCtx, bool) {
 	ctx := r.Context()
 	if err := auth.LoadError(ctx); err != nil {
 		serverError(w, "session", err)
@@ -60,65 +60,21 @@ func (h *handlers) scannerOrg(w http.ResponseWriter, r *http.Request) (*orgCtx, 
 		return nil, false
 	}
 	s := auth.SessionFrom(ctx)
-	var orgID string
-	if s != nil && s.ActiveOrganizationID != nil && *s.ActiveOrganizationID != "" {
-		orgID = *s.ActiveOrganizationID
-	} else {
-		// Standalone scanner sessions have no active org; infer from accepted crew or membership.
-		_ = h.db.QueryRow(ctx, `
-			select e.organization_id
-			from event_crew ec
-			join event e on e.id = ec.event_id
-			where ec.status = 'accepted'
-			  and e.deleted_at is null
-			  and (ec.user_id = $1 or ec.email = lower($2))
-			order by e.starts_at desc
-			limit 1`, u.ID, u.Email).Scan(&orgID)
-		if orgID == "" {
-			_ = h.db.QueryRow(ctx, `
-				select organization_id from member where user_id = $1 limit 1`, u.ID).Scan(&orgID)
-		}
-		if orgID == "" {
-			httpx.Error(w, http.StatusBadRequest, "No active organization")
-			return nil, false
-		}
+	if s == nil || s.ActiveOrganizationID == nil || *s.ActiveOrganizationID == "" {
+		httpx.Error(w, http.StatusBadRequest, "No active organization")
+		return nil, false
 	}
+	orgID := *s.ActiveOrganizationID
 	role, err := h.memberRole(ctx, orgID, u.ID)
 	if err != nil {
 		serverError(w, "member", err)
 		return nil, false
 	}
-	if role == "" {
-		var isCrew bool
-		_ = h.db.QueryRow(ctx, `
-			select exists(
-				select 1 from event_crew ec
-				join event e on e.id = ec.event_id
-				where e.organization_id = $1 and e.deleted_at is null
-				  and ec.status = 'accepted'
-				  and (ec.user_id = $2 or ec.email = lower($3))
-			)`, orgID, u.ID, u.Email).Scan(&isCrew)
-		if isCrew {
-			role = "volunteer"
-		}
-	}
-	if role == "" {
+	if role == "" || role == "volunteer" {
 		forbidden(w)
 		return nil, false
 	}
 	return &orgCtx{user: u, orgID: orgID, role: role}, true
-}
-
-func (h *handlers) org(w http.ResponseWriter, r *http.Request) (*orgCtx, bool) {
-	c, ok := h.scannerOrg(w, r)
-	if !ok {
-		return nil, false
-	}
-	if c.role == "volunteer" {
-		forbidden(w)
-		return nil, false
-	}
-	return c, true
 }
 
 func (h *handlers) memberRole(ctx context.Context, orgID, userID string) (string, error) {
