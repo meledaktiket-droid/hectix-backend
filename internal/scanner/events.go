@@ -129,22 +129,8 @@ func (h *handlers) listSessions(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if len(sessions) == 0 {
-		sid := "ses_" + eventID + "_main"
-		if _, err := h.db.Exec(ctx, `
-			insert into event_session(id, event_id, name, starts_at, ends_at, status, allow_reentry, quota_limit, current_inside, unique_entered)
-			values($1, $2, 'Main Session', now() - interval '1 day', now() + interval '30 days', 'open', true, 100000, 0, 0)
-			on conflict (id) do nothing`, sid, eventID); err != nil {
-			log.Printf("scanner listSessions default insert: %v", err)
-			httpx.Error(w, http.StatusInternalServerError, "Internal server error")
-			return
-		}
-		sessions = append(sessions, sessionItem{
-			ID:           sid,
-			Name:         "Main Session",
-			AllowReentry: true,
-			QuotaLimit:   100000,
-		})
+	if sessions == nil {
+		sessions = []sessionItem{}
 	}
 
 	httpx.JSON(w, http.StatusOK, map[string]any{

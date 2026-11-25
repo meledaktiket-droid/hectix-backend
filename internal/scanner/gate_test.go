@@ -189,4 +189,52 @@ func TestScannerGateInAndOut(t *testing.T) {
 			t.Fatalf("expected at least 1 session, got 0")
 		}
 	})
+
+	t.Run("rejects wrong session and cross-session double gate-in preserving original actor", func(t *testing.T) {
+		f.SeedUser(t, "vol_gate2", "user")
+		f.Exec(t, `insert into member(id, organization_id, user_id, role, created_at) values('m-vol-gate2', 'org1', 'vol_gate2', 'volunteer', now())`)
+		f.Exec(t, `insert into event_crew(id, event_id, email, user_id, role, status, token, invited_by, expires_at, created_at, accepted_at)
+			values('crew-gate2', 'ev_gate1', 'vol_gate2@example.com', 'vol_gate2', 'volunteer', 'accepted', 'tok-gate2', 'owner', now() + interval '7 days', now(), now())`)
+		vol2 := f.Login(t, "vol_gate2", &org1)
+
+		// Ticket restricted to ses_gate1 cannot be scanned in ses_gate2
+		f.Exec(t, `insert into physical_ticket(id, batch_id, event_id, serial_number, code, access_type, session_ids, validity_status, assignment_status, created_at)
+			values('pt_g3', 'pb_gate', 'ev_gate1', '0003', 'WR-GATE-03', 'DAY_1', '["ses_gate1"]'::jsonb, 'ACTIVE', 'ASSIGNED', now())`)
+
+		recWrongSes := f.do(t, "POST", "/api/scanner/gate-in", map[string]any{
+			"requestId": "req-wrong-ses",
+			"code":      "WR-GATE-03",
+			"eventId":   "ev_gate1",
+			"sessionId": "ses_gate2",
+		}, vol2)
+		expect(t, recWrongSes, 409, "")
+
+		// Multi-session ticket scanned in ses_gate1 by vol cannot be scanned again in ses_gate2 by vol2 while INSIDE
+		f.Exec(t, `insert into physical_ticket(id, batch_id, event_id, serial_number, code, access_type, session_ids, validity_status, assignment_status, created_at)
+			values('pt_g4', 'pb_gate', 'ev_gate1', '0004', 'WR-GATE-04', 'ALL_DAYS', '["ses_gate1","ses_gate2"]'::jsonb, 'ACTIVE', 'ASSIGNED', now())`)
+
+		recFirst := f.do(t, "POST", "/api/scanner/gate-in", map[string]any{
+			"requestId": "req-cross-1",
+			"code":      "WR-GATE-04",
+			"eventId":   "ev_gate1",
+			"sessionId": "ses_gate1",
+		}, vol)
+		expect(t, recFirst, 200, "")
+
+		recSecond := f.do(t, "POST", "/api/scanner/gate-in", map[string]any{
+			"requestId": "req-cross-2",
+			"code":      "WR-GATE-04",
+			"eventId":   "ev_gate1",
+			"sessionId": "ses_gate2",
+		}, vol2)
+		expect(t, recSecond, 409, "")
+
+		// Verify lastActorName remains vol (original scanner), not overwritten by vol2
+		recList := f.do(t, "GET", "/api/scanner/physical-tickets?eventId=ev_gate1&q=WR-GATE-04", nil, vol)
+		expect(t, recList, 200, "")
+		tickets := decode(t, recList)["tickets"].([]any)
+		if len(tickets) != 1 || tickets[0].(map[string]any)["lastActorName"] != "vol_gate" {
+			t.Fatalf("expected lastActorName to stay vol_gate, got %+v", tickets)
+		}
+	})
 }

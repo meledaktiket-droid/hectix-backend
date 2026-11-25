@@ -6,6 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"net/http"
+	"slices"
 	"strings"
 	"time"
 
@@ -69,19 +70,9 @@ func (h *handlers) resolveEventSession(ctx context.Context, db dbx.DB, eventID, 
 		return
 	}
 
-	// Create default main session if none exists
-	sessionID = "ses_" + eventID + "_main"
-	sessionName = "Main Session"
-	allowReentry = true
-	quotaLimit = 100000
-	currentInside = 0
-	uniqueEntered = 0
-
-	_, err = db.Exec(ctx, `
-		insert into event_session(id, event_id, name, starts_at, ends_at, status, allow_reentry, quota_limit, current_inside, unique_entered)
-		values($1, $2, $3, now() - interval '1 day', now() + interval '30 days', 'open', true, 100000, 0, 0)
-		on conflict (id) do nothing`,
-		sessionID, eventID, sessionName)
+	if errors.Is(err, pgx.ErrNoRows) {
+		err = errors.New("Event ini belum memiliki sesi gate / tiket fisik")
+	}
 	return
 }
 
@@ -132,11 +123,13 @@ func (h *handlers) scannerGateIn(w http.ResponseWriter, r *http.Request) {
 			ptID, ptValidity, ptAssignment, ptAccessType string
 			ptEventID, ptOrgID, eventName               string
 			ptOrderID, ptOrderItemID, ptOTSRef          *string
+			ptSessionIDs                                []string
 		)
 		err := tx.QueryRow(ctx, `
 			select pt.id, pt.validity_status, pt.assignment_status, pt.access_type,
 			       pt.event_id, e.organization_id, e.name,
-			       pt.order_id, pt.order_item_id, pt.ots_reference
+			       pt.order_id, pt.order_item_id, pt.ots_reference,
+			       pt.session_ids
 			from physical_ticket pt
 			join event e on e.id = pt.event_id
 			where pt.code = $1 and pt.event_id = $2
@@ -144,6 +137,7 @@ func (h *handlers) scannerGateIn(w http.ResponseWriter, r *http.Request) {
 			&ptID, &ptValidity, &ptAssignment, &ptAccessType,
 			&ptEventID, &ptOrgID, &eventName,
 			&ptOrderID, &ptOrderItemID, &ptOTSRef,
+			&ptSessionIDs,
 		)
 		if errors.Is(err, pgx.ErrNoRows) {
 			return errors.New("Gelang fisik tidak ditemukan untuk event ini")
@@ -162,10 +156,18 @@ func (h *handlers) scannerGateIn(w http.ResponseWriter, r *http.Request) {
 			return fmt.Errorf("Gelang fisik tidak valid (Status: %s)", ptValidity)
 		}
 
+		reqSessionID := strings.TrimSpace(body.SessionID)
+		if reqSessionID == "" && len(ptSessionIDs) > 0 {
+			reqSessionID = ptSessionIDs[0]
+		}
+
 		// Resolve session
-		sID, sName, allowReentry, _, currInside, uniqEntered, err := h.resolveEventSession(ctx, tx, eventID, body.SessionID)
+		sID, sName, allowReentry, _, currInside, uniqEntered, err := h.resolveEventSession(ctx, tx, eventID, reqSessionID)
 		if err != nil {
 			return fmt.Errorf("Gagal memuat sesi acara: %w", err)
+		}
+		if err := sessionAllowedForTicket(ptSessionIDs, sID, sName); err != nil {
+			return err
 		}
 
 		// Check ticket_session_usage
@@ -190,12 +192,20 @@ func (h *handlers) scannerGateIn(w http.ResponseWriter, r *http.Request) {
 		}
 
 		if uState == "INSIDE" {
-			lastInStr := "beberapa saat lalu"
-			if uLastIn != nil {
-				wib := time.FixedZone("WIB", 7*3600)
-				lastInStr = uLastIn.In(wib).Format("15:04:05 WIB")
-			}
-			return fmt.Errorf("Pengunjung SUDAH BERADA DI DALAM (Check-in pada %s di %s)", lastInStr, derefStr(uLastGate, "Gate Masuk"))
+			return fmt.Errorf("Pengunjung SUDAH BERADA DI DALAM (Check-in pada %s di %s)", formatWIBTime(uLastIn), derefStr(uLastGate, "Gate Masuk"))
+		}
+
+		var otherLastIn *time.Time
+		var otherGate *string
+		err = tx.QueryRow(ctx, `
+			select last_in_at, last_gate_label
+			from ticket_session_usage
+			where physical_ticket_id = $1 and session_id <> $2 and state = 'INSIDE'
+			limit 1`, ptID, sID).Scan(&otherLastIn, &otherGate)
+		if err == nil {
+			return fmt.Errorf("Pengunjung SUDAH BERADA DI DALAM (Check-in pada %s di %s)", formatWIBTime(otherLastIn), derefStr(otherGate, "Gate Masuk"))
+		} else if !errors.Is(err, pgx.ErrNoRows) {
+			return err
 		}
 
 		if uState == "EXITED" && !allowReentry {
@@ -330,11 +340,13 @@ func (h *handlers) scannerGateOut(w http.ResponseWriter, r *http.Request) {
 			ptID, ptValidity, ptAssignment, ptAccessType string
 			ptEventID, ptOrgID, eventName               string
 			ptOrderID, ptOrderItemID, ptOTSRef          *string
+			ptSessionIDs                                []string
 		)
 		err := tx.QueryRow(ctx, `
 			select pt.id, pt.validity_status, pt.assignment_status, pt.access_type,
 			       pt.event_id, e.organization_id, e.name,
-			       pt.order_id, pt.order_item_id, pt.ots_reference
+			       pt.order_id, pt.order_item_id, pt.ots_reference,
+			       pt.session_ids
 			from physical_ticket pt
 			join event e on e.id = pt.event_id
 			where pt.code = $1 and pt.event_id = $2
@@ -342,6 +354,7 @@ func (h *handlers) scannerGateOut(w http.ResponseWriter, r *http.Request) {
 			&ptID, &ptValidity, &ptAssignment, &ptAccessType,
 			&ptEventID, &ptOrgID, &eventName,
 			&ptOrderID, &ptOrderItemID, &ptOTSRef,
+			&ptSessionIDs,
 		)
 		if errors.Is(err, pgx.ErrNoRows) {
 			return errors.New("Gelang fisik tidak ditemukan untuk event ini")
@@ -353,9 +366,17 @@ func (h *handlers) scannerGateOut(w http.ResponseWriter, r *http.Request) {
 			return errors.New("Tiket bukan milik organisasi ini")
 		}
 
-		sID, sName, _, _, currInside, uniqEntered, err := h.resolveEventSession(ctx, tx, eventID, body.SessionID)
+		reqSessionID := strings.TrimSpace(body.SessionID)
+		if reqSessionID == "" && len(ptSessionIDs) > 0 {
+			reqSessionID = ptSessionIDs[0]
+		}
+
+		sID, sName, _, _, currInside, uniqEntered, err := h.resolveEventSession(ctx, tx, eventID, reqSessionID)
 		if err != nil {
 			return fmt.Errorf("Gagal memuat sesi acara: %w", err)
+		}
+		if err := sessionAllowedForTicket(ptSessionIDs, sID, sName); err != nil {
+			return err
 		}
 
 		var (
@@ -447,6 +468,21 @@ func derefStr(s *string, fallback string) string {
 		return fallback
 	}
 	return *s
+}
+
+func formatWIBTime(t *time.Time) string {
+	if t == nil {
+		return "beberapa saat lalu"
+	}
+	wib := time.FixedZone("WIB", 7*3600)
+	return t.In(wib).Format("15:04:05 WIB")
+}
+
+func sessionAllowedForTicket(sessionIDs []string, sID, sName string) error {
+	if len(sessionIDs) > 0 && !slices.Contains(sessionIDs, sID) {
+		return fmt.Errorf("Tiket tidak berlaku untuk sesi %s", sName)
+	}
+	return nil
 }
 
 type physicalTicketRow struct {
