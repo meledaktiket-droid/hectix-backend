@@ -14,6 +14,7 @@ internal/
   auth/       session cookie, Google OAuth, OriginCheck (CSRF), organisasi/member/invitation (org.go 1191 baris — file terbesar, hati-hati)
   admin/      handler app admin + RequireStaff/IsAdminRole + AcceptPath
   organizer/  handler app organizer (events, tickets, vouchers, publish, finance, export)
+  scanner/    handler app scanner (event/session access, ticket redemption, gate in/out, wristband, reconciliation)
   web/        handler app pembeli (events, search, favorites, histori, orders/cancel, profile, vouchers)
   orders/     checkout.go — reservasi stok + voucher + charge Midtrans
   payments/   midtrans.go (charge), webhook.go (/api/midtrans), transitions.go (ApplyStatus/markPaid/Release), sweep.go (expire)
@@ -23,20 +24,22 @@ internal/
   uploads/    upload ber-token HMAC, file privat, /uploads publik
   httpx/ dbx/ config/ settings/ deps/   helper inti (fan-in tinggi: httpx.JSON/Error, dbx.Tx, httpx.Time.Scan)
   testdb/ testutil/ golden/   helper test
-migrations/   000001_baseline, 000002_job (embedded) — JANGAN DIEDIT
+migrations/   000001_baseline s.d. 000006_scanner_perf_indexes (semua SQL di-embed; 000001 dan 000002 jangan diedit sesuai AGENTS workspace; lihat file aktual sebelum membuat migrasi baru)
 ```
 
-Hotspot (fan-in tinggi, MCP): `httpx.Time.Scan`(110), `dbx.DB.QueryRow`(106), `dbx.DB.Exec`(103), `httpx.JSON`(95), `httpx.Error`(65), `settings.Get`(41), `auth.UserFrom`(40). **Mengubah signature/perilaku helper ini = mengubah ratusan endpoint. Dilarang.**
+Contoh helper bersama dengan fan-in tinggi menurut indeks MCP: `httpx.Time.Scan`, `dbx.DB.QueryRow`, `dbx.DB.Exec`, `httpx.JSON`, `httpx.Error`, `settings.Get`, dan `auth.UserFrom`. Jumlah caller berubah seiring kode; cek indeks dan `rg` sebelum menyimpulkan dampak. **Jangan mengubah signature/perilaku helper bersama ini tanpa izin eksplisit.**
 
 ---
 
 ## 2. Routing & Auth (invariant)
 
-- `server.go`: tiap app punya `chi.Router` sendiri; middleware urut `auth.OriginCheck` → `a.Load` → (admin: `staffOnly`). Urutan ini **jangan diubah**.
+- `server.go`: tiap app punya `chi.Router` sendiri; middleware urut `auth.OriginCheck` → `a.Load` → (admin: `staffOnly`). Router scanner juga memakai `OriginCheck` dan `a.Load`, tanpa `staffOnly`; urutan middleware **jangan diubah**.
 - App dipilih `httpx.ByHost` dari `r.Host`; `X-Forwarded-Host` menimpa Host (asumsi: hanya dipanggil lewat Caddy/Next, port 8080 bind `127.0.0.1`).
+- App `scanner` hanya didaftarkan bila `SCANNER_BASE_URL` tersedia. Handler scanner berada di `internal/scanner`; izin akses event/crew diperiksa backend berdasarkan event, bukan hanya role atau route UI.
 - `staffOnly` membebaskan `/api/auth*` dan tepat `AcceptPath` (cek `RawPath` juga — anti bypass encoding). Jangan tambah pengecualian baru tanpa izin.
 - Endpoint baru yang butuh login: taruh di `r.Group` dengan `r.Use(auth.Required)`. Ambil user hanya dari `auth.UserFrom(ctx)` — **jangan** dari body/query.
 - Endpoint organizer: wajib scope ke organisasi aktif member (ikuti pola handler organizer yang ada). Endpoint admin: sudah tergate staff.
+- Endpoint scanner: ikuti pemeriksaan akses event dan crew di `internal/scanner`; jangan mengandalkan pembatasan UI scanner sebagai otorisasi.
 - Cookie: nama `{app}.session_token` (prefix `__Secure-` bila https), nilai `Sign(token)` HMAC. `ExpiresIn` 7 hari, `UpdateAge` 1 hari. Jangan ubah.
 
 ---
